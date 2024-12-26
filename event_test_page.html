@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link href="//cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.dynamicyield.com/scripts/2.32.0/dy-coll-nojq-min.js" type="text/javascript" async="true"></script>
+    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <style>
+        select,
+        option {
+            letter-spacing: -1px;
+        }
+
+        li::marker {
+            color: #CCCCCC;
+        }
+
+        .form-control[disabled],
+        .form-control[readonly],
+        fieldset[disabled] .form-control,
+        input[disabled] {
+            /* color: #929292; */
+            opacity: 1;
+        }
+
+        .codeinfo {
+            padding: 50px 0 0;
+            display: block;
+        }
+
+        .codeinfo .text-code {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            flex-direction: column-reverse;
+        }
+
+        .codeinfo p {
+            display: block;
+            text-align: center;
+            font-size: 13.5px;
+            word-break: keep-all;
+        }
+
+        .list-unstyled {
+            list-style: inherit;
+            white-space: pre-line;
+            gap: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .second ul li {
+            list-style: none;
+        }
+
+        .second .list-unstyled {
+            gap: 0;
+        }
+
+        .row>* {
+            padding-right: calc(var(--bs-gutter-x) * .0);
+        }
+
+        .cnrk1 {
+            padding: 16px 0 0;
+        }
+
+        .cnrk1,
+        .cnrk2 {
+            color: #fff;
+            max-width: 400px;
+            margin: 0 auto;
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        .cnrk4 {
+            margin-bottom: 0 !important;
+        }
+
+        .fontstyle {
+            font-family: "hyperspace-race-variable", sans-serif;
+            font-variation-settings: 'wght' 500, 'wdth' 200, 'ital' 0;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        @media (max-width: 862px) {
+            .row {
+                --bs-gutter-x: 0;
+            }
+
+            .codeinfo {
+                padding: 50px 0 0;
+            }
+
+            .codeinfo .text-code {
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column-reverse;
+                gap: 10px;
+
+            }
+
+            .codeinfo p {
+                padding: 0 40px;
+                line-height: inherit;
+            }
+
+        }
+
+        @media (max-width: 420px) {
+            .row {
+                --bs-gutter-x: 0;
+            }
+        }
+
+        .form-check-input {
+            border-radius: 50%;
+        }
+
+        ::placeholder {
+            color: aaa;
+            font-size: 13px;
+        }
+
+    </style>
+
+<style id="dy-global-style">.dy-auto-embedder ~ * {
+    display: none !important;
+}
+</style>
+
+<style id="dy-common-style" class="dy-common-style">
+    .dy-wysiwyg{line-height:normal;direction:ltr;align-text:left;margin:0;padding:0;background-color:transparent}
+    .dy-wysiwyg a{text-decoration:none;color:#00e}
+    .dynotifyjs-wrapper 
+    .dy-lb-close{z-index:1;top:-8px;right:-9px;border:none;transition:opacity .15s;opacity:.7;background-size:14px;background-repeat:no-repeat;background-position:2px;width:18px;height:18px}
+    .dynotifyjs-wrapper .dy-lb-close:hover{opacity:1}
+    .dynotifyjs-corner{position:fixed;margin:0;z-index:1050}
+    .dynotifyjs-corner .dynotifyjs-container,.dynotifyjs-corner .dynotifyjs-wrapper{position:relative;display:block;height:inherit;width:inherit;margin:11px 8px}
+    .dynotifyjs-wrapper{z-index:1;position:absolute;display:inline-block;height:0;width:0}
+    .dynotifyjs-container{display:none;z-index:1;position:absolute}[data-dynotify-html],[data-dynotify-text]{position:relative}
+    .dynotifyjs-arrow{position:absolute;z-index:2;width:0;height:0}
+    .dy-lb-close{position:absolute;top:-12px;right:-11px;cursor:pointer;color:#fff;border:1px solid #918686;border-radius:30px;display:inline-block;height:22px;width:22px;background:#575757 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTUgNTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU1IDU1IiB4bWw6c3BhY2U9InByZXNlcnZlIj48ZyBpZD0iY2xvc2UiPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNDMuNSwxNC43IDQwLjMsMTEuNSAyNy41LDI0LjMgMTQuNywxMS41IDExLjUsMTQuNyAyNC4zLDI3LjUgMTEuNSw0MC4zIDE0LjcsNDMuNSAyNy41LDMwLjcgNDAuMyw0My41IDQzLjUsNDAuMyAzMC43LDI3LjUgIi8+PC9nPjwvc3ZnPg==);background-size:22px}
+    .dy-full-width-notifications-close{top:5px;right:5px;z-index:1;border:none;transition:opacity .15s;-webkit-transition:opacity .15s;opacity:.7;width:18px;height:18px;position:absolute;cursor:pointer;color:#fff;border-radius:30px;display:inline-block;background:#575757 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTUgNTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU1IDU1IiB4bWw6c3BhY2U9InByZXNlcnZlIj48ZyBpZD0iY2xvc2UiPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNDMuNSwxNC43IDQwLjMsMTEuNSAyNy41LDI0LjMgMTQuNywxMS41IDExLjUsMTQuNyAyNC4zLDI3LjUgMTEuNSw0MC4zIDE0LjcsNDMuNSAyNy41LDMwLjcgNDAuMyw0My41IDQzLjUsNDAuMyAzMC43LDI3LjUgIi8+PC9nPjwvc3ZnPg==);background-size:14px;background-repeat:no-repeat;background-position:2px}
+    .dy-full-width-notifications-close:hover{opacity:1}
+    .dy_full_width_notifications_container{position:fixed;left:0;right:0;z-index:1040}
+    .dy_full_width_notifications_container.dy_bottom_notification{bottom:0}
+    .dy_full_width_notifications_container.dy_top_notification{top:0}
+    .dy_full_width_notifications_container .dy_full_width_notification_instance{opacity:0;-webkit-transition:opacity .15s;transition:opacity .15s;position:relative}
+    .dy_full_width_notifications_container .dy_full_width_notification_instance.dy_notification_instance_active{opacity:1}
+    .dy_full_width_notifications_container .dy_full_width_notification_instance.dy_notification_from_bottom{-webkit-animation:dy_appear_from_bottom .25s;animation:dy_appear_from_bottom .25s}
+    .dy_full_width_notifications_container .dy_full_width_notification_instance.dy_notification_from_top{-webkit-animation:dy_appear_from_top .25s;animation:dy_appear_from_top .25s}
+    .dy_full_width_notifications_container .dy_full_width_notification_instance.dy_notification_instance_will_exit_top{-webkit-animation:dy_exit_top .25s;animation:dy_exit_top .25s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}
+    .dy_full_width_notifications_container .dy_full_width_notification_instance.dy_notification_instance_will_exit_bottom{-webkit-animation:dy_exit_bottom .25s;animation:dy_exit_bottom .25s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes dy_appear_from_bottom{0%{-webkit-transform:translateY(100%);transform:translateY(100%)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes dy_appear_from_bottom{0%{-webkit-transform:translateY(100%);transform:translateY(100%)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes dy_appear_from_top{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes dy_appear_from_top{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes dy_exit_top{100%{-webkit-transform:translateY(-100%);transform:translateY(-100%)}}@keyframes dy_exit_top{100%{-webkit-transform:translateY(-100%);transform:translateY(-100%)}}@-webkit-keyframes dy_exit_bottom{100%{-webkit-transform:translateY(100%);transform:translateY(100%)}}@keyframes dy_exit_bottom{100%{-webkit-transform:translateY(100%);transform:translateY(100%)}}
+    .dy-modal-container{position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;width:100%;height:100vh;display:table;-webkit-transition:opacity .2s ease;transition:opacity .2s ease}.dy-modal-container .dy-modal-backdrop{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;opacity:0;-webkit-transition:opacity .2s;transition:opacity .2s;background-color:#000}
+    .dy-modal-container .dy-modal-wrapper{position:relative;z-index:1;display:table-cell;vertical-align:middle;text-align:center;width:100%}
+    .dy-modal-container .dy-modal-wrapper.dy-modal-bottom{padding-bottom:20px;vertical-align:bottom}
+    .dy-modal-container .dy-modal-wrapper.dy-modal-top{padding-top:20px;vertical-align:top}
+    .dy-modal-container .dy-modal-wrapper .dy-modal-contents{position:relative;display:inline-block;-webkit-animation:dy-modal-enter .25s;animation:dy-modal-enter .25s;visibility:hidden}
+    .dy-modal-container .dy-modal-wrapper .dy-modal-contents .dy-lb-close{z-index:1;top:-9px;right:-9px;border:none;opacity:.7;transition:opacity .15s;width:18px;height:18px;cursor:pointer;position:absolute;border-radius:30px;color:#fff;background:#575757 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTUgNTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU1IDU1IiB4bWw6c3BhY2U9InByZXNlcnZlIj48ZyBpZD0iY2xvc2UiPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNDMuNSwxNC43IDQwLjMsMTEuNSAyNy41LDI0LjMgMTQuNywxMS41IDExLjUsMTQuNyAyNC4zLDI3LjUgMTEuNSw0MC4zIDE0LjcsNDMuNSAyNy41LDMwLjcgNDAuMyw0My41IDQzLjUsNDAuMyAzMC43LDI3LjUgIi8+PC9nPjwvc3ZnPg==) no-repeat 2px;background-size:14px}
+    .dy-modal-container .dy-modal-wrapper .dy-modal-contents .dy-lb-close:hover{opacity:1}@-webkit-keyframes dy-modal-enter{0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}50%{-webkit-transform:scale(1.05);transform:scale(1.05)}85%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}
+</style>
+    
+<script type="text/javascript" async="true" src="//st.dynamicyield.com/st?sec=8777545&amp;inHead=true&amp;id=-2377900352438845398&amp;jsession=b839801a1601d5f45571ee1768530572&amp;ref=https%3A%2F%2Fkr.callawaygolf.com%2F&amp;scriptVersion=2.32.0&amp;dyid_server=">
+</script>
+</head>
+
+    <body>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="//cdn.dynamicyield.com/api/8777545/api_dynamic.js"></script>
+        <script type="text/javascript" src="//cdn.dynamicyield.com/api/8777545/api_static.js"></script>
+        <link rel="stylesheet" href="/css/navi_style.css">
+    <style>
+        #dy_bar{
+                padding:10px!important;
+        }
+
+        .swiper-container {
+            width: 100%; 
+            height: auto;
+            overflow: hidden; 
+            background:#0d183a;
+        }
+
+        .swiper-wrapper li{
+            list-style:none;
+        }
+
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Thin.woff') format('woff');
+            font-weight: 100;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+            font-weight: 200;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Light.woff') format('woff');
+            font-weight: 300;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Medium.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Bold.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+            font-weight: 800;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Black.woff') format('woff');
+            font-weight: 900;
+            font-display: swap;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                var swiper = new Swiper('.swiper-container', {
+                    speed: 1300,
+                    loop: true,
+                    pagination: {
+                        clickable: true,
+                    },
+                    autoplay: {
+                        delay: 3000,//
+                    },
+                    reverseDirection: true
+                });
+            }, 4000); 
+        });
+    </script>
+
+        <div class="horizontal_navi">
+            <header id="header" style="display:block!important">
+                <div class="callaway-hdrWrap"></div>
+            </header>
+
+            <div class="horizontal_navi_menu">
+                <div class="horizontal_navi_ham_ui">
+                    <i class="fal fa-bars"></i>
+                    <i class="fal fa-bars close_after"></i>
+                </div>
+
+                <div class="callaway-top-header">
+                    <div class="callaway-top-headerWrap">
+                    <!-- Top left header -->
+                    <div class="callaway-topleft-header">
+                        <div class="callaway-topleft-headerDiv kr callaway-link-headerActive">
+                            <div class="yCmsComponent">
+                                <a class="callaway-link-header" href="https://kr.callawaygolf.com/">
+                                    <img title="" alt="" src="/img/callaway-icon.svg">골프 기어
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="callaway-topleft-headerDiv kr ">
+                            <div class="yCmsComponent">
+                                <a class="callaway-link-header" href="https://kr.callawaygolf.com/kr/apparel" aria-label="Callaway golf">
+                                    <img title="" alt="" src="/img/callaway-icon.svg" target="_blank">어패럴
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="callaway-topleft-headerText">
+                            <p>
+                                <span>
+                                </span>
+                                <span>
+                                </span>
+                            </p>
+                            </div>
+                        </div>
+
+                        <!-- Top right header -->
+                        <div class="callaway-topright-header">
+                            <div class="callaway-linkright-header none-medium-device callaway-linkright-login">
+                                <a href="/my-account/update-profile" class="header-user-icon" aria-label="Join / Log In">
+                                
+                                    <span>
+                                        <!-- not signed in -->
+                                        </span></a><a href="/kr/login" class="header-login-link">
+                                                    회원 가입 /
+                                                    로그인</a>
+                                            <!-- signed in -->
+                                <!-- Account dropdown starts  -->
+                                <!-- Account dropdown starts  -->
+                                <!-- Account dropdown ends  -->
+                                <!-- Account dropdown ends  -->
+                            </div>
+                            <div class="callaway-linkright-header callaway-linkright-cart">
+                            <div class="callaway-search-icon none-desktop">
+                                    <button title="Search" role="button" class="callaway-search-img" id="searchBtn" onclick="searchData();" href="javascript:;" trap="event">
+                                    
+                                    </button>
+                                    <button title="Search" role="button" class="callaway-fixedsearch-img none-medium-device" id="searchBtn" onclick="searchData();" href="javascript:;" trap="event">
+                                                                    
+                                    </button>
+                                    <button title="Search" role="button" class="callaway-fixedsearch-close" tabindex="-1">
+                                        <i class="fal fa-times"></i>
+                                    </button>
+                                </div>
+                                <a href="/kr/cart" class="js-cart-refresher" aria-label="Cart" title="Cart" data-mini-cart-refresh-url="/kr/cart/miniCart/SUBTOTAL">
+            
+            <span class="cart-text">Cart</span>
+            <span class="cart-count"></span>
+            </a>
+                            
+            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="horizontal_navi_top_ui">
+                    <ul>
+                        <li>
+                            <a href="https://kr.callawaygolf.com/kr/login">
+                                <span>
+                                    <img src="https://kr.callawaygolf.com/_ui/responsive/theme-alpha/images/cakk/profile.svg">
+                                </span>
+                                <p>회원 가입 / 로그인</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://kr.callawaygolf.com/kr/cart">
+                                <span>
+                                    <img src="https://kr.callawaygolf.com/_ui/responsive/theme-alpha/images/cakk/cart.svg">
+                                </span>
+                                <p>Cart</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="horizontal_navi_logo">
+                    <a href="https://kr.callawaygolf.com">
+                        <!-- <img src="/img/CallawayLogo.svg" alt=""> -->
+                        <img src="https://kr.callawaygolf.com/medias/CallawayLogo.svg?context=bWFzdGVyfGltYWdlc3w1MjE1fGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2hjYi9oNzIvODkyNjc0OTAzMjQ3OC5zdmd8YzgxOGI0NmQzZWY1MzQ1NmRlNTA1YWFjNjdlM2UzYzY0NzE2ZGVjOTEwMWMyM2MwZDhlNGYwZWI0OTU2MzMwZA" alt="">                        
+                    </a>
+                </div>
+                <ul class="m_1ds_ui">
+                    <li class="ani_logo">
+                        <a href="https://kr.callawaygolf.com" style="border-bottom: none;">
+                        
+                        </a>
+                    </li>
+                    <!-- <li class="membership_ui">
+                        <a href="https://kr.callawaygolf.com/kr/login">
+                            <i class="fas fa-user-circle"></i>
+                            <p>회원 가입 / 로그인</p>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#" style="border-bottom: none;">
+                            <p>클럽</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui" style="display: none;">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>클럽</p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/CLUBS">
+                                        <p>클럽 전체보기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/DRIVERS">
+                                        <p>드라이버</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/FAIRWAYWOODS">
+                                        <p>페어웨이우드</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/HYBRIDS">
+                                        <p>하이브리드</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/IRONS">
+                                        <p>아이언</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WEDGES">
+                                        <p>웨지</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/COMPLETESETS">
+                                        <p>세트</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <p><strong>오디세이퍼터</strong></p>
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/ODYSSEYPUTTERS_ALL">
+                                        <p>전체보기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/Ai-ONE/c/Ai-ONE">
+                                        <p>Ai-ONE</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/Ai-ONE MILLED">
+                                        <p>Ai-ONE Milled</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WH-BLK">
+                                        <p>화이트 핫 블랙</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/Tri-beam">
+                                        <p>트라이빔</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/Elevenputters">
+                                        <p>일레븐</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/TOULONPUTTERS">
+                                        <p>툴롱디자인</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/TriHot5K">
+                                        <p>트라이 핫 5 K</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WHITEHOTVERSA">
+                                        <p>화이트 핫 버사</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WHITEHOTOG">
+                                        <p>화이트 핫 OG</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WHITEHOTOG22">
+                                        <p>화이트 핫 OG 22</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/TenSeries">
+                                        <p>텐 시리즈</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/TRIPLETRACKPUTTER">
+                                        <p>트리플트랙</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/EYETRAXPUTTERS">
+                                        <p>아이트랙스</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/DFX/c/DFX">
+                                        <p>DFX</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/CHIPPER">
+                                        <p>X-ACT 치퍼</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/k/c/SMALLBATCH">
+                                        <p>스몰 배치 컬렉션</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/PUTTINGTRAINER">
+                                        <p>오디세이 퍼팅 트레이너</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/LEFTHANDED">
+                                        <p>왼손클럽</p>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="https://kr.callawaygolf.com/product_library">
+                                        <p>이전 제품보기</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        
+                        </div>
+                    </div>
+                    <li>
+                        <a href="#" style="border-bottom: none;">
+                            <p>골프볼</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui" style="display: none;">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>골프볼</p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/BALLS">
+                                        <p>볼 전체보기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/k/c/CHROMETOUR">
+                                        <p>크롬투어</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/ERC%20SOFT">
+                                        <p>ERC 소프트</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/SUPERSOFT">
+                                        <p>슈퍼소프트</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/RevaBall">
+                                        <p>레바</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/ERC">
+                                        <p>E・R・C</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/DIABLOBALL">
+                                        <p>디아블로</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/limited-balls">
+                                        <p>한정판 골프볼</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!-- <li>
+                                    <a href="https://kr.callawaygolf.com/product_library">
+                                        <p>이전 제품보기</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="javascript:void(0);" style="border-bottom: none;">
+                            <p>골프백</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui" style="display: none;">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>골프백</p>
+                                </a>
+                            </div>
+                            <ul>
+
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/MENCADDIEBAGS">
+                                        <p>카트백</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/k/c/MENSTANDBAG">
+                                        <p>스탠드백</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/MENPENCILBAGS">
+                                        <p>하프백</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!-- <li>
+                                    <a href="https://kr.callawaygolf.com/product_library">
+                                        <p>이전 제품보기</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="javascript:void(0);" style="border-bottom: none;">
+                            <p>가방</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui" style="display: none;">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>가방</p>
+                                </a>
+                            </div>
+                            <ul>
+
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/MENBOSTONBAGS">
+                                        <p>보스턴백</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!-- <li>
+                                    <a href="https://kr.callawaygolf.com/product_library">
+                                        <p>이전 제품보기</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="javascript:void(0);" style="border-bottom: none;">
+                            <p>슈즈</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui" style="display: none;">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>슈즈</p>
+                                </a>
+                            </div>
+                            <ul>
+
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/MENSHOES">
+                                        <p>골프화</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <!-- <li>
+                                    <a href="https://kr.callawaygolf.com/product_library">
+                                        <p>이전 제품보기</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <li>
+                        <a href="#" style="border-bottom: none;">
+                            <p>액세서리</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui" style="display: none;">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="https://kr.callawaygolf.com/kr/c/MENGLOVES">
+                                    <p>장갑</p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/MENGLOVES">
+                                        <p>장갑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/MENHEADWEARS">
+                                        <p>모자</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/MENPOUCHES">
+                                        <p>파우치</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/UMBRELLAS">
+                                        <p>우산</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/BALLMARKER">
+                                        <p>볼마커</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/HEADCOVERS">
+                                        <p>헤드커버</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/MISCACCESSORIES">
+                                        <p>기타골프용품</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!-- <li>
+                                    <a href="https://kr.callawaygolf.com/product_library">
+                                        <p>이전 제품보기</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="javascript:void(0);" style="border-bottom: none;">
+                            <p>여성용</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui" style="display: none;">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>여성용</p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <p><b>클럽</b></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENDRIVERS">
+                                        <p>드라이버</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENFAIRWAYWOODS">
+                                        <p>페어웨이우드</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENHYBRIDS">
+                                        <p>하이브리드</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENIRONS">
+                                        <p>아이언</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENWEDGES">
+                                        <p>웨지</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENPUTTERS">
+                                        <p>퍼터</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENSET">
+                                        <p>세트</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <p><b>액세서리</b></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENACCESSORIES">
+                                        <p>전체보기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENCADDIEBAGS">
+                                        <p>카트백</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENBOSTONBAGS">
+                                        <p>보스턴백</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENSTANDBAGS">
+                                        <p>스탠드백</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENPENCILBAGS">
+                                        <p>하프백</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENHEADWEARS">
+                                        <p>모자</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENGLOVES">
+                                        <p>장갑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENSHOES">
+                                        <p>골프화</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENACCESSORYBAGS">
+                                        <p>액세서리백</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/WOMENPOUCHES">
+                                        <p>파우치</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul>
+                                <!-- <li>
+                                    <a href="https://kr.callawaygolf.com/product_library">
+                                        <p>이전 제품보기</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="javascript:void(0);" style="border-bottom: none;">
+                            <p>OGIO</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="javascript:void(0);">
+                                    <p><b>전체보기</b></p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <p><b onclick="location.href='https://kr.callawaygolf.com/kr/c/OGIOGOLF'">전체보기</b></p>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="https://kr.callawaygolf.com/kr/OGIO/%EC%97%AC%ED%96%89/c/OGIOTRAVEL">
+                                        <p>여행</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/OGIO/%EA%B3%A8%ED%94%84/c/OGIOGOLF">
+                                        <p>골프</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="javascript:void(0);" style="border-bottom: none;">
+                            <p style="color:#ff6326;">아울렛</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="javascript:void(0);">
+                                    <p><b>기어</b></p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <p><b>클럽</b></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETCLUB">
+                                        <p>전체보기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETDR">
+                                        <p>드라이버</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETFW">
+                                        <p>페어웨이우드</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETHY">
+                                        <p>하이브리드</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETIR">
+                                        <p>아이언</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETWG">
+                                        <p>웨지</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETPT">
+                                        <p>퍼터</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <p><b>기어</b></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETGEAR">
+                                        <p>전체보기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETBAGS">
+                                        <p>가방</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETHEADWEAR">
+                                        <p>모자</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETSHOES">
+                                        <p>골프화</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETPOUCH">
+                                        <p>파우치&amp;볼케이스</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/kr/c/OUTLETMARKER">
+                                        <p>볼마커</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li style="display:none;">
+                        <a href="#" style="border-bottom: none;">
+                            <p>이벤트</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>이벤트</p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/levelupclass">
+                                        <p>캘러웨이 레벨업 클래스</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/event/monthly_award">
+                                        <p>캘러웨이 어워드</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/truvis_collaball_s2">
+                                        <p>트루비스 콜라볼 디자인공모전</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/no1chromesoft">
+                                        <p><b>MAJOR TOUR #1 BALL</b> 퀴즈 이벤트</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li style="display:none;">
+                        <a href="#" style="border-bottom: none;">
+                            <p>뉴스</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>콘텐츠</p>
+                                </a>
+                            </div>
+                            <!-- <ul>
+                                <li>
+                                    <a href="#">
+                                        <p><strong>비디오</strong></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/news/callaway_originals">
+                                        <p>캘러웨이오리지널</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/news/instruction">
+                                        <p>레슨</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/news/product">
+                                        <p>제품</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/news/tour">
+                                        <p>투어</p>
+                                    </a>
+                                </li>
+                            </ul> -->
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p><strong>뉴스</strong></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/news/product_news">
+                                        <p>브랜드 뉴스</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/news/tour_news">
+                                        <p>투어 뉴스</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://kr.callawaygolf.com/news/golf_n_story">
+                                        <p>골프<b>N</b>스토리</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="#" style="border-bottom: none;">
+                            <p>피팅 스튜디오</p>
+                        </a>
+                    </li>
+                    <div class="m_2ds_ui">
+                        <div class="m_2ds_flex">
+                            <div class="mobile_title">
+                                <a href="#">
+                                    <p>서비스</p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="https://fittingstudio.callawaygolf.com/">
+                                        <p><strong>피팅 스튜디오 예약하기</strong></p>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="https://callaway-golf.co.kr/cpc/?location=1">
+                                        <p>캘러웨이 피팅 스튜디오 청담</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://callaway-golf.co.kr/cpc/index_3.html">
+                                        <p>캘러웨이 피팅 스튜디오 동탄</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://callaway-golf.co.kr/cpc/index_4.html">
+                                        <p>캘러웨이 피팅 스튜디오 고양</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://callaway-golf.co.kr/cpc/index_2.html">
+                                        <p>캘러웨이 이천 퍼포먼스 센터</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="membership_ui">
+                        <a href="https://kr.callawaygolf.com/kr/login" style="border-bottom: none;">
+                            <i class="fas fa-user-circle"></i>
+                            <p>회원 가입 / 로그인</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                function pc_menu_ui() {
+                    $('.m_1ds_ui > li').on({
+                        mouseenter: function(){
+                            //alert("됨");
+                            var submenu = $(this).next(".m_2ds_ui");
+                            var submenuEtc = $(".m_2ds_ui");
+                            var underbar = $(this).children('a')
+                            var underbarEtc = $(".m_1ds_ui > li > a");
+                            if( submenu.is(":visible") ){
+                                //submenu.slideUp();
+                                //$(this).children('a').css("border-bottom","none");
+                                
+                            }else{
+                                submenu.stop().fadeIn(200);
+                                underbar.css("border-bottom","3px solid #000");			
+                                submenuEtc.not( submenu ).fadeOut(200);
+                                underbarEtc.not( underbar ).css("border-bottom","none");
+                            }
+                        },
+                         mouseleave: function(){
+                            //$(this).children('a').css("border-bottom","none");
+                        },
+                        click: function(){
+                            //$(this).off('mouseleave');
+                        }
+                    });
+                    $('.m_1ds_ui').on({
+                         mouseleave: function(){
+                            $(this).children('.m_2ds_ui').fadeOut(200);
+                            $('.m_1ds_ui > li > a').css("border-bottom","none");
+                        }
+                    });
+                    var jbOffset = $( '.m_1ds_ui' ).offset();
+                    $( window ).scroll( function() {
+                        if ( $( document ).scrollTop() > jbOffset.top + 100 ) {
+                            $( '.horizontal_navi_menu' ).addClass( 'jbFixed' );
+                        }
+                        else {
+                            $( '.horizontal_navi_menu' ).removeClass( 'jbFixed' );
+                        }
+                    });
+                }
+                //모바일
+            
+            
+                function mo_menu_ui() {
+            
+            
+                    $(".horizontal_navi_ham_ui").click(function() {
+                        var icon = $(this).find('i'); // 'i' 태그를 찾습니다.
+                if (icon.hasClass('fa-bars')) {
+                    icon.removeClass('fa-bars').addClass('fa-times'); // 'fa-bars' 클래스가 있으면 'fa-times'로 변경
+                } else {
+                    icon.removeClass('fa-times').addClass('fa-bars'); // 'fa-times' 클래스가 있으면 'fa-bars'로 변경
+                }
+                // 기존의 메뉴 토글 로직
+                        $(this).children('.fa-times').css("display","none");//
+                        var menu = $(".m_1ds_ui");
+                        var chk_left = $( window ).width();
+                        var chk_left_ntv = chk_left - chk_left*2;
+                        var thisleft = menu.css("left").replace(/[^-\d\.]/g, '');
+                        if ( thisleft == chk_left_ntv ) { 
+                            $(this).children('.fa-times').css("display", "block");
+                $(this).children('.fa-bars').css("display", "none");
+            
+                            $(this).children('.fa-times').css("display","block");
+                            var test = $( document ).scrollTop();
+                            $("body").css("overflow","hidden");
+                            window.scrollTo({top:test, left:0, behavior:'auto'});
+                            menu.animate({
+                                left: "0",
+                                height: "100%",	
+                            });
+                        } else {
+                            
+                            $(this).children('.fa-bars').css("display","block");
+                            $(this).children('.fa-times').css("display","none");
+                            $("body").css("overflow","auto");	
+                            menu.animate({
+                                left: chk_left_ntv,
+                                height: "100%",					
+                            });
+                        }
+                    });
+                    $(".m_1ds_ui > li").click(function() {
+                        var smenu = $(this).next(".m_2ds_ui");
+                        var chk_left = $( window ).width();
+                        var chk_left_ntv = chk_left - chk_left*2;
+                        var thisleft = smenu.css("left").replace(/[^-\d\.]/g, '');
+                    
+                        if ( thisleft == chk_left_ntv ) { 
+                            smenu.animate({
+                                left: "0",
+                                height: "100%",					
+                            });
+                        } else {
+                            smenu.animate({
+                                left: chk_left_ntv,
+                                height: "100%",					
+                            });
+                        }
+                        return false;
+                    });
+                    $(".mobile_title").click(function() {
+                        $('.m_2ds_ui').animate({
+                            left: "-100%",
+                            height: "100%",					
+                        });
+                        return false;
+                    });
+                    var jbOffset = $( '.horizontal_navi_menu' ).offset();
+                    $( window ).scroll( function() {
+                        if ( $( document ).scrollTop() > jbOffset.top + 150 ) {
+                            $( '.horizontal_navi_menu' ).addClass( 'jbFixed' );
+                        }
+                        else {
+                            $( '.horizontal_navi_menu' ).removeClass( 'jbFixed' );
+                        }
+                    });
+                }
+                if($(window).width() >1024) {
+                    //alert("pc");
+                    pc_menu_ui();
+                } else {
+                    //alert("mo");
+                    mo_menu_ui();
+                }
+            });
+            
+            $(window).resize(function() { 
+                if($(window).width() >1024) {
+                    //alert("pc");
+                    pc_menu_ui();
+                } else {
+                    //alert("mo");
+                    mo_menu_ui();
+                }
+            });
+            
+        </script>
+
+        <style>
+            .eventForm_box .col3{margin-top:-8px;}
+            @media(max-width:767px){
+                .eventForm_box .col-form-label22{display:block;}
+                .eventForm_box .col2{display:inline-block; width:65%; margin-right:2%;}
+                .eventForm_box .col3{margin-left:-4px;}
+                .eventForm_box .g-col22{display:inline-block; width:30%;}
+                .g-col22 .btn_zip{margin-top:0 !important;}
+            }
+        </style>
+        <!--메인시작-->
+        <main>
+            <div class="aismokeGift_main">
+
+                <div class="aismokeGift_title">
+                    <img src="https://bit.ly/3J7eWZd" onerror="this.style.display='none'" alt="callawaylogo" loading="lazy">
+                    <p>KLPGA 9년 연속 드라이버 사용률 1위</p>
+                    <div class="title_t1">
+                        <h1>Ai SMOKE</h1>
+                        <h2>스마트 페스티벌</h2>
+                    </div>
+
+                </div>
+
+                <div class="text-center">
+                    <div class="text-center aismoke_driver">
+                        <img src="https://bit.ly/3xpzoC4" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="aismoke_notice">
+                <div class="outerContainer">
+                    <div class="aismoke_t1 text-center">
+                        <div class="lid">
+                            <p><span class="fontstyle">Ai SMOKE</span> 와 비교 시타 후 구매시
+                            </p><h3>캘러웨이 공식몰 최대 15만원 쿠폰 증정!</h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="aismoke_t2 text-center">
+                        <p class="aismoke_t2_title">Ai Smoke 드라이버를 타사 제품과 비교 시타 후 구매 시
+                            공식 온라인 스토어에서 현금처럼 사용 가능한 쿠폰을 증정합니다.
+                        </p>
+                        <div class="aismoke_eventInfo">
+                            <div class="eventInfo_box">
+                                <p class="eventInfo_title">구매 기간</p>
+                                <p class="eventInfo_text">2024.04.15 ~ 2024.05.31</p>
+                            </div>
+                            <div class="eventInfo_box">
+                                <p class="eventInfo_title">대 상</p>
+                                <p class="eventInfo_text">온라인/오프라인에서 타사 제품과 비교 후 Ai Smoke 드라이버를 구매한 고객</p>
+                            </div>
+                            <div class="eventInfo_box">
+                                <p class="eventInfo_title">혜 택</p>
+                                <p class="eventInfo_text">드라이버 구매시 : 10만원 쿠폰 증정
+                                    드라이버와 페어웨이우드 OR 하이브리드 함께 구매시 : 15만원 쿠폰 증정</p>
+                            </div>
+                            <div class="eventInfo_box">
+                                <p class="eventInfo_title" style="border:none;"></p>
+                                <span style="color:#0172BA;">(최대 사용 가능 쿠폰은 15만원 입니다.)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center" id="">
+                        <div class="frame-container">
+                            <div class="title">참여 방법</div>
+                            <div class="group-container">
+                                <div class="step-container step-01">
+                                    <div class="icon-container">
+                                        <img loading="lazy" src="https://cdn2.webdamdb.com/150th_sm_IYwdZYZHi61wzHxm.png?1712278925" alt="Step 1 Icon">
+                                    </div>
+                                    <div class="step-details mb-3">
+                                        <div class="step-title">step.01</div>
+                                        <div class="step-description">온 / 오프라인 전국 매장에서
+                                            경쟁사 제품과 비교 후 구매</div>
+                                    </div>
+                                    <div class="buttonBox mo">
+                                        <button type="button" role="button" class="btn btn-primary final" onclick="window.open('https://kr.callawaygolf.com/kr/c/Aismoke-family')">온라인
+                                            구매하기</button>
+                                        <button type="button" role="button" class="btn btn-primary final" onclick="window.open('https://callaway-golf.co.kr/retail/?_gl=1*1x1ewwp*_ga*MTAxNzg4ODU3Ny4xNzEyMTA1NjQy*_ga_JMT67XP48P*MTcxMjU2MzcwNy4yMy4wLjE3MTI1NjM3MDcuNjAuMC4w')">오프라인
+                                            매장 찾기</button>
+                                    </div>
+
+                                </div>
+                                <div class="arrow-icon">
+                                    <img loading="lazy" src="https://cdn2.webdamdb.com/100th_sm_Q4GdsM3Daz9852WO.png?1712285577" alt="Arrow Icon">
+                                </div>
+                                <div class="step-container step-02">
+                                    <div class="icon-container">
+                                        <img loading="lazy" src="https://cdn2.webdamdb.com/150th_sm_MmHtHMiA418Q0waO.png?1712278926" alt="Step 2 Icon">
+                                    </div>
+                                    <div class="step-details mb-3">
+                                        <div class="step-title">step.02</div>
+                                        <div class="step-description">바코드와 영수증으로
+                                            구매 인증
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="arrow-icon">
+                                    <img loading="lazy" src="https://cdn2.webdamdb.com/100th_sm_Q4GdsM3Daz9852WO.png?1712285577" alt="Arrow Icon">
+                                </div>
+                                <div class="step-container step-03">
+                                    <div class="icon-container">
+                                        <img loading="lazy" src="https://cdn2.webdamdb.com/150th_sm_2kTxGVpH8Wn61g3W.png?1712278925" alt="Step 3 Icon">
+                                    </div>
+                                    <div class="step-details mb-3">
+                                        <div class="step-title">step.03</div>
+                                        <div class="step-description">구매 인증일로부터 2주 후
+                                            개별 쿠폰 코드 발송
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="buttonBox pc">
+                                <button type="button" role="button" class="btn btn-primary final" onclick="window.open('https://kr.callawaygolf.com/kr/c/Aismoke-family')">온라인
+                                    구매하기</button>
+                                <button type="button" role="button" class="btn btn-primary final" onclick="window.open('https://callaway-golf.co.kr/retail/?_gl=1*1x1ewwp*_ga*MTAxNzg4ODU3Ny4xNzEyMTA1NjQy*_ga_JMT67XP48P*MTcxMjU2MzcwNy4yMy4wLjE3MTI1NjM3MDcuNjAuMC4w')">오프라인
+                                    매장 찾기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>0
+
+
+            <form class="aismokeGift_box" method="POST" action="./submit.php" name="Join" id="event_join" enctype="multipart/form-data">
+
+                <div class="title pb-4">구매 인증</div>
+
+
+                <div class="eventForm ">
+                    <div class="eventForm_box row">
+                        <label class="eventForm_label col-sm-6 col-form-label">구매자 성함</label>
+                        <div class="col">
+                            <input type="text" class="form-control" id="nameInput" name="event_name" placeholder="2자 이상" minlength="2" autocomplete="off">
+                        </div>
+                    </div>
+
+
+                    <!-- 휴대폰 번호 입력 -->
+                    <div class="eventForm_box row">
+                        <label for="phoneInput" class="eventForm_label col-sm-6 col-form-label col-form-label22">휴대폰 번호</label>
+                        <div class="col col2">
+                            <input type="tel" class="form-control" id="phoneInput" name="event_phone" placeholder="구매 시 입력한 구매자 연락처를 입력해주세요" autocomplete="off" pattern="\d*" minlength="10" maxlength="11" oninput="validateNumberOnly(this)">
+                        </div>
+                        <div class="g-col g-col22 col-sm-2 pe-0 btn_box">
+                            <button type="button" role="button" class="btn btn-primary btn_zip" onclick="requestVerificationCode()">인증번호 요청</button>
+                        </div>
+                    </div>
+
+                    <script>
+                        function validateNumberOnly(input) {
+                            input.value = input.value.replace(/[^0-9]/g, '');
+                        }
+                    </script>
+
+                    <div class="eventForm_box row">
+                        <label for="verificationCode" class="eventForm_label col-sm-6 col-form-label col-form-label22">휴대폰 인증 번호</label>
+                        <div class="col col2">
+                            <input type="tel" class="form-control" id="verificationCodeInput" name="verificationCode" placeholder="인증번호" autocomplete="off" readonly="">
+                        </div>
+                        <div class="g-col g-col22 col-sm-2 pe-0 btn_box">
+                            <button type="button" role="button" class="btn btn-primary btn_zip final" onclick="verifyVerificationCode()">인증번호 확인</button>
+                        </div>
+                    </div>
+
+                    <div class="eventForm_box row">
+                        <label for="" class="eventForm_label col-sm-6 col-form-label col-form-label22">주소</label>
+                        <div class="col col2">
+                            <input type="" class="form-control" id="" name="" placeholder="주소" autocomplete="" readonly="">
+                        </div>                                          
+                        <div class="g-col g-col22 col-sm-2 pe-0 btn_box">
+                            <button type="button" role="button" class="btn btn-primary btn_zip final" onclick="">주소 검색</button>
+                        </div>                        
+                    </div>
+
+                    <div class="eventForm_box row">
+                        <label for="" class="eventForm_label col-sm-6 col-form-label"></label>
+                        <div class="col col2 col3">
+                            <input type="text" class="form-control" id="" name="" placeholder="상세주소" minlength="2" autocomplete="off">
+                        </div>                           
+                    </div>
+
+                    <div class="eventForm_box row">
+                        <label for="purchaseDateInput" class="eventForm_label col-sm-6 col-form-label">구매일</label>
+                        <div class="col">
+                            <input type="date" class="form-control" name="order_date" id="purchaseDateInput">
+                        </div>
+                    </div>
+
+                    <div class="eventForm_box product_box row purchase_reason">
+                        <div class="product_label">
+                            <label for="route" class="eventForm_label col-sm-6 col-form-label pb-0">구매처</label>
+                        </div>
+                        <div class="product_check">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="route" id="callaway" value="캘러웨이 공식몰">
+                                <label class="form-check-label" for="callaway">캘러웨이 공식몰</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="route" id="naver" value="네이버 브랜드 스토어">
+                                <label class="form-check-label" for="naver">네이버 브랜드 스토어</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="route" id="shop" value="오프라인">
+                                <label class="form-check-label" for="shop">오프라인</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventForm_box row">
+                        <label class="eventForm_label col-sm-8 col-form-label">제품 바코드</label>
+                        <div class="col" id="barcode-container">
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" data-type="driver" id="event_order" name="driver_order[]" placeholder="드라이버 바코드(필수)" maxlength="10" autocomplete="off" oninput="removeSpaces(this)" style="border-radius:5px;">
+                                <button type="button" class="btn btn-secondary btn-fixed" id="add-barcode">바코드
+                                    추가</button>
+                            </div>
+                        </div>
+
+                        <div class="col" id="barcode-container2">
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" data-type="wood" id="event_order2" name="hybrid_order[]" placeholder="우드/하이브리드 바코드(선택)" maxlength="10" autocomplete="off" oninput="removeSpaces(this)" style="border-radius:5px;">
+                                <button type="button" class="btn btn-secondary btn-fixed" id="add-barcode2">바코드
+                                    추가</button>
+                            </div>
+                        </div>
+                        <div class="codeimg">
+                            <div><img src="https://cdn2.webdamdb.com/220th_sm_6bPmkjCK21ELpMbA.png?1698285474" alt=""></div>
+                            <div>
+                                <p class="code_text">
+                                    한국캘러웨이골프의 정품 인증 바코드는 각 클럽의 그립 쪽 샤프트에
+                                    홀로그램 스티커로 부착되어 있습니다. K로 시작하는 9개 숫자,
+                                    K 포함 총 10 자리로 표기되어 있습니다. (예: K123456789)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="eventForm_box row">
+                        <label for="receiptUpload" class="eventForm_label col-sm-6 col-form-label">구매 영수증 사진</label>
+
+                        <div class="col">
+                            <input type="file" class="form-control" id="receiptUpload" name="event_receipt[]" accept="image/*" multiple="">
+                            <p class="uploadTitle">* PC 또는 스마트폰에 있는 영수증 이미지를 첨부해주세요. (최대 15MB)</p>
+                        </div>
+                    </div>
+
+
+                    <div class="eventForm_box row">
+                        <label for="productComparison" class="eventForm_label col-sm-6 col-form-label pb-0">구매시 비교한
+                            제품</label>
+
+                        <div class="col mb-2">
+                            <input type="text" class="form-control" name="brand" id="brand" placeholder="브랜드 필수입력" autocomplete="off">
+                        </div>
+                        <div class="col mb-2">
+                            <input type="text" class="form-control" name="model" id="model" placeholder="모델명 필수입력" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="eventForm_box product_box row purchase_reason">
+                        <div class="product_label">
+                            <label for="purchaseReason" class="eventForm_label col-sm-6 col-form-label pb-0">Ai Smoke 선택
+                                요인</label>
+                            <label class="pb-20"><span class="check_common">(* 복수 응답 가능)</span></label>
+                        </div>
+                        <div class="product_check">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="reason1" name="selectionReason[]" value="비거리">
+                                <label class="form-check-label" for="reason1">비거리</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="reason2" name="selectionReason[]" value="관용성">
+                                <label class="form-check-label" for="reason2">관용성</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="reason3" name="selectionReason[]" value="디자인">
+                                <label class="form-check-label" for="reason3">디자인</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="reason4" name="selectionReason[]" value="타구감">
+                                <label class="form-check-label" for="reason4">타구감</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="reasonOther" name="selectionReason[]" value="other">
+                                <label class="form-check-label" for="reasonOther">기타(직접입력)</label>
+                            </div>
+                            <div class="rareCase"><input type="text" class="form-control" id="otherReasonInput" name="otherReasonInput" autocomplete="off" placeholder="간략하게 입력해주세요." style="display: none;"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="container">
+                        <div class="row ptpb-24">
+                            <div class="col-md-3">
+                                <h6 class="fw-bold pb-2">유의사항</h6>
+                            </div>
+                            <div class="col-md-9 first">
+                                <ul class="list-unstyled">
+                                    <li>쿠폰은 입력하신 휴대폰 번호로 인증 완료 후 2주 후 발송됩니다.</li>
+                                    <li>발급된 쿠폰은 발행일로부터 3개월간 사용 가능합니다.</li>
+                                    <li>쿠폰은 1회 사용 가능하며, 잔액은 재사용 불가능합니다.</li>
+                                    <li>기어 / 어패럴에 모두 사용 하실 수 있습니다.</li>
+                                    <li>쿠폰 수령 이후 구매 상품을 구매처에서 반품, 교환하시는 경우 쿠폰은 반납하셔야 합니다.</li>
+                                    <li>잘못된 개인정보 입력으로 구매자에게 연락이 불가능하거나 쿠폰이 반송될 경우 재발송 되지 않으며,
+                                        당사에서 책임지지 않습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row ptpb-24">
+                            <div class="col-md-3">
+                                <h6 class="fw-bold pb-2">약관동의</h6>
+                            </div>
+                            <div class="col-md-9 second">
+                                <ul class="list-unstyled">
+                                    <li><b>개인 정보 수집 동의</b></li>
+                                    <li>개인정보를 제공받는 자 : 한국캘러웨이골프(유)</li>
+                                    <li>개인 정보 수집 목적 : 이벤트 참여 확인 및 증정품 발송</li>
+                                    <li>제공하는 개인 정보의 항목 : 이름, 전화번호, 주소, 구매제품관련 정보</li>
+                                    <li>이용자의 개인 정보는 이벤트가 종료되는 일자로 부터 1년까지 저장되며, 향후 자사에서
+                                        진행하는 마케팅 활동에 활용 될 수 있습니다.</li>
+                                </ul>
+
+                                <div class="form-check w-100 mt-3">
+                                    <input class="form-check-input" type="checkbox" id="agree_1">
+                                    <label class="form-check-label d-flex flex-column flex-md-row" for="agree_1">
+                                        개인정보 수집 및 이용약관에 동의합니다.
+                                        <a class="joinbtn" href="https://kr.callawaygolf.com/kr/login" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">[ 자세히 보기 ]</a>
+                                    </label>
+                                    <div class="collapse mt-3 mb-4" id="collapseExample">
+                                        <div class="card card-body" style="background:#f0f0f0;width: 100%;">
+                                            <object class="privacy_txt" data="./privacy_policy.html" type="text/html" style="width: 100%;min-height: 300px;">
+                                                <!DOCTYPE html>
+                                                <html>
+                                                    <head>
+                                                        <style>
+                                                        *{box-sizing: border-box;}
+                                                    body{
+                                                        margin: 0;
+                                                        padding: 0;
+                                                    }
+                                                        pre{
+                                                            margin: 0;
+                                                            padding: 15px;
+                                                            color:#000;
+                                                            background-color: #f0f0f0;
+                                                            white-space: pre-line;
+                                                            font-size: 13px;
+                                                            display: block;
+                                                            font-family: Pretendard, sans-serif;
+                                                            font-weight: 300;
+                                                            font-style: normal;
+                                                            word-break: keep-all;
+                                                            overflow-x:scroll;
+                                                            height:300px;
+                                                        }
+                                                        </style>
+                                                    </head>
+                                                    <body>
+                                                        <pre>이벤트 개인정보처리방침
+                                                            한국캘러웨이골프 유한회사(kr.callawaygolf.com, 이하 '회사')는 회사가 운영하는 웹사이트의 이용과 관련 하여 이용자의 개인정보를 소중하게 생각하며, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련 법령을 준수하기 위해 개인정보처리방침을 제정하고 이를 준수하고 있습니다.
+                                                            회사는 개인정보 처리방침을 통하여 이용자의 개인정보가 어떠한 목적과 방식으로 수집, 이용되고 있으며, 이용자의 개인정보 보호를 위해 회사가 어떠한 조치를 취하고 있는지 알려드립니다.
+                                                            1. 처리하는 개인정보의 항목
+                                                            회사는 웹사이트에서 운영되는 이벤트 참여 시 이용자로부터 개인정보를 수집하고 있습니다.
+                                                            (1) 수집항목
+                                                            이벤트참여자 이름, 휴대폰번호, 구매일, 구매 제품 바코드, 구매영수증, 비교제품명, Ai Smoke 선택요인
+                                                            필수항목
+                                                            이벤트참여자 이름, 휴대폰번호, 구매일, 구매 제품 바코드, 구매영수증, 비교제품명, Ai Smoke 선택요인
+                                                            ※ 개인정보 수집 시 필수 항목의 수집ㆍ이용에 대한 동의를 거부하실 수 있으며, 동의를 거부하실 경우 서비스 이용이 제한 될 수 있습니다. 선택 항목의 수집ㆍ이용 동의를 거부 하실 경우에는 서비스 이용은 제한되지 않습니다.
+                                                            (2) 수집방법
+                                                            - 웹사이트에서 운영되는 이벤트 참여를 통한 수집
+                                                            - 로그분석 프로그램을 통한 자동 수집
+                                                            2. 개인정보의 처리 목적
+                                                            회사는 수집한 개인정보를 이벤트 참여 목적을 위해 활용합니다.
+                                                            목적 이벤트 경품 배송
+                                                            - 이벤트 참여 시 이벤트 경품 배송
+                                                            3. 개인정보의 처리 및 보유 기간
+                                                            회사는 원칙적으로 수집한 개인정보를 이벤트 종료 후 3개월까지 보유 및 이용하며 동의 받은 보유 기간이 도래하면 해당 정보를 지체 없이 파기합니다.
+                                                            다만 상법, 국세기본법, 전자상거래 등에서의 소비자 보호에 관한 법률 등 관련 법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다. 이 경우 회사는 보관하는 개인정보를 그 보관의 목적으로만 이용하며 보존 기간 및 보존 항목은 아래와 같습니다.
+                                                            - 계약 또는 청약철회 등에 관한 기록 : 5 년(전자상거래 등에서의 소비자보호에 관한 법률)
+                                                            - 대금 결제 및 재화 등의 공급에 관한 기록 : 5년(전자상거래 등에서의 소비자보호에 관한 법률)
+                                                            - 소비자 불만 또는 분쟁 처리에 관한 기록 : 3년(전자상거래 등에서의 소비자보호에 관한 법률)
+                                                            - 납세 증거에 관한 기록 : 5년(국세 기본법)
+                                                            4. 개인정보 파기에 관한 사항
+                                                            1) 파기절차
+                                                            서비스 이용을 위해 입력하신 정보는 목적이 달성된 후 기타 관련 법령에 의한 개인정보보관 사유에 해당하지 않는 한 지체없이 파기됩니다.
+                                                            2) 파기방법
+                                                            종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+                                                            5. 개인정보 제3자 제공에 관한 사항
+                                                            회사는 이용자의 동의가 있거나 관련 법령의 규정에 의한 경우를 제외하고는 어떠한 경우에도 '1. 처리하는 개인정보의 항목', '2. 개인정보의 처리 목적'에서 고지한 범위를 넘어 이용자의 개인정보를 이용하거나 제3자에게 제공하지 않습니다. 다만, 다음의 경우에는 예외로 합니다.
+                                                            가. 이용자가 사전에 동의한 경우
+                                                            나. 관련 법령의 규정에 의하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우
+                                                            다. 서비스 제공에 따른 요금정산을 위해 필요한 경우
+                                                            라. 계약 이행을 위해 필요한 경우
+                                                            마. 타인에게 정신적,물질적 피해를 줌으로써 그에 대한 법적 조치를 취하기 위해 이용자의 정보를 공개해야 한다고 판단되는 충분한 근거가 있는 경우
+                                                            바. 통계작성, 마케팅분석 또는 시장조사를 위해 필요한 경우로 특정 개인을 식별할 수 없는 형태로 가공하여 외부 기관 또는 단체 등에 제공하는 경우
+                                                            사. 서비스의 제공에 관한 계약의 이행을 위하여 필요한 개인정보로서 경제적/기술적인 사유로 통상의 동의를 받는 것이 현저히 곤란한 경우
+                                                            6. 개인정보의 위탁에 관한 사항
+                                                            회사는 서비스 이행을 위해 개인정보 처리업무를 아래와 같이 외부 전문 업체에 위탁하여 운영하고 있습니다.
+                                                            위탁업체 위탁업무 내용
+                                                            바이런인턱랙티브
+                                                            이벤트 신청 및 이벤트와 관련한 업무
+                                                            7. 개인정보 자동 수집의 목적 및 거부에 관한 사항
+                                                            회사는 이용자의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie)', 'ActiveX'등 개인정보를 자동으로 수집하는 장치(이하 “쿠키등”)를 설치 운용합니다. 쿠키란 웹사이트를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 아주 작은 텍스트 파일로서 이용자의 컴퓨터 하드디스크에 저장됩니다.
+                                                            가. 쿠키등 사용 목적
+                                                            1. 회사는 개인 맞춤 서비스를 제공하기 위해서 이용자에 대한 정보를 저장하고 수시로 불러오는 '쿠키(cookie)'를 사용합니다. 쿠키는 웹사이트의 서버가 이용자의 브라우저에게 전송하는 소량의 정보로서 이용자 컴퓨터의 하드디스크에 저장됩니다.
+                                                            2. 회사는 쿠키의 사용을 통해서만 가능한 특정된 맞춤형 서비스를 제공할 수 있으며, 이용자를 식별하고 이용자의 로그인 상태를 유지하기 위해 쿠키를 사용할 수 있습니다.
+                                                            3. 이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 이용자가 쿠키 설치 허용 여부를 지정 하는 방법(Internet Explorer의 경우)은 다음과 같습니다.
+                                                            [도구] 메뉴에서 [인터넷 옵션]을 선택합니다.
+                                                            [개인정보 탭]에서 설정을 이용하여 모든 쿠키를 허용/거부하거나, 쿠키가 저장될 때마 다 확인을 거치도록 할 수 있습니다.
+                                                            4. 쿠키의 저장을 거부할 경우에는 개인 맞춤서비스 등 회사가 제공하는 일부 서비스의 이용이 어려울 수 있습니다.
+                                                            1) 개인정보 열람, 정정, 삭제 요구의 권리:
+                                                            이용자 및 법정대리인은 언제든지 등록되어 있는 자신의 개인정보를 열람하거나 정정, 삭제하실 수 있습니다. 개인정보 열람 및 정정, 삭제를 하고자 할 경우에는 개인정보보호책임자 및 담당자에게 서면, 전화 또는 전자우편주소로 연락하시면 지체 없이 조치하겠습니다.
+                                                            2) 개인정보 수집, 이용, 제공에 대한 동의 철회의 권리:
+                                                            이용자 및 법정대리인은 서비스 이용을 위해 입력하신 개인정보의 수집, 이용, 제공, 저장에 대해 동의하신 내용을 철회하실 수 있습니다.
+                                                            동의 철회는 개인정보보호 담당자에게 서면, 전화 또는 전자우편주소로 연락하시면 본인 확인 절차 후 개인정보의 삭제 등 필요한 조치를 하겠습니다.
+                                                            8. 개인정보의 열람청구를 접수, 처리하는 부서
+                                                            개인정보 관련한 민원처리는 이용자의 개인정보를 보호하고 개인정보와 관련한 의문사항을 처리하기 위하여 다음과 같이 민원처리 콜센터를 운영하고 있습니다.
+                                                            ① 전자우편 : 고객 이메일 문의 이용
+                                                            ② 전화번호 : 02-3218-1900
+                                                            ③ 팩스 :02-3218-7404
+                                                            기타 개인정보에 관한 상담이 필요한 경우에는 개인정보침해 신고센터, 대검찰청 인터넷 범죄수사센터, 경찰청 사이버테러대응센터 등으로 문의하실 수 있습니다.
+                                                            1) 개인정보침해신고센터
+                                                            - 전화 : (국번없이) 118
+                                                            - URL : http://privacy.kisa.or.kr
+                                                            2) 개인정보분쟁조정위원회
+                                                            - 전화 : 1833-6972
+                                                            - URL : http://www.kopico.go.kr
+                                                            3) 대검찰청 사이버수사과
+                                                            전화 : (국번없이) 1301
+                                                            - URL : http://www.spo.go.kr
+                                                            4) 경찰청 사이버안전국
+                                                            전화 : (국번없이) 182
+                                                            - URL : http://cyberbureau.police.go.kr
+                                                            9. 개인정보보호 책임자
+                                                            회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보 보호 책임자를 두고 있습니다
+                                                            1. 회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 이 용자의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 관리책임자를 지정하고 있습니 다.
+                                                            ㄱ. 개인정보 관리책임자
+                                                            성명 : 문신혜
+                                                            직책 : 이사
+                                                            전화 02-3218-1900
+                                                            이메일 tess.moon@callawaygolf.com
+                                                            ㄴ. 개인정보 보호 담당부서
+                                                            부서명 : 이커머스
+                                                            담당자 : 이혜정
+                                                            전화 : 02-3218-1900
+                                                            이메일 jen.lee@callawaygolf.com
+                                                            2. 이용자는 회사의 서비스를 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피 해구제 등에 관한 사항을 개인정보 관리책임자 및 담당부서로 문의하실 수 있습니다. 회사는 이 용자의 문의에 대해 지체 없이 답변 및 처리해 드릴 것입니다.
+                                                            10. 개인정보 처리방침의 변경에 관한 사항
+                                                            이 개인정보처리방침은 법령ㆍ정책 또는 보안 기술의 변경에 따라 내용의 추가ㆍ삭제 및 수정이 있을 시에는 아래와 같은 방법으로 사전 공지하도록 하겠습니다.
+                                                            - 인터넷 홈페이지 첫 화면 공지 사항 란 또는 별도의 창을 통하여 수정내용 공지
+                                                            시행일자 2024년 04월 11일
+                                                        </pre>
+                                                    </body>
+                                                </html>   
+                                            </object>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input type="hidden" name="pub_date" value="">
+                    <div class="aismoke_btn text-center d-flex justify-content-center gap-3">
+                        <button class="btn rounded-2" type="button" onclick="window.open('https://kr.callawaygolf.com/kr/c/Aismoke-family')">제품 바로가기</button>
+                        <button class="btn rounded-2" type="submit">참여하기</button>
+                    </div>
+
+
+                </div>
+            </form>
+
+        </main>
+
+
+
+
+
+
+        <script>
+            function removeSpaces(element) {
+                element.value = element.value.replace(/\s+/g, '');
+            }
+            document.addEventListener('DOMContentLoaded', (event) => { // 기타 입력란 이벤트
+                const otherReasonCheckbox = document.getElementById('reasonOther');
+                const otherReasonInput = document.getElementById('otherReasonInput');
+                if (otherReasonCheckbox && otherReasonInput) { // 요소가 존재하는지 확인
+                    otherReasonCheckbox.addEventListener('change', function () {
+                        otherReasonInput.style.display = this.checked ? 'block' : 'none';
+                    });
+                }
+            });
+            
+            $(document).ready(function () {
+                $('#add-barcode').click(function () {
+                    if ($('#barcode-container .input-group').length >= 5) {
+                        alert('필드 추가는 총 4개까지입니다.\n신청하신 후 추가 등록해주세요.');
+                        return;
+                    }
+            
+                    var newInputGroup = $('<div class="input-group mb-2"></div>');
+                    var newInput = $('<input type="text" class="form-control" data-type="driver" name="driver_order[]" placeholder="드라이버 바코드(필수)" maxlength="10" autocomplete="off" style="border-radius:5px;">');
+                    var removeButton = $('<button type="button" class="btn btn-danger">삭제</button>');
+            
+                    removeButton.click(function () {
+                        $(this).parent().remove();
+                    });
+            
+                    newInputGroup.append(newInput);
+                    newInputGroup.append(removeButton);
+                    $('#barcode-container').append(newInputGroup);
+                });
+            
+                $('#add-barcode2').click(function () {
+                    if ($('#barcode-container2 .input-group').length >= 5) {
+                        alert('필드 추가는 총 4개까지입니다.\n신청하신 후 추가 등록해주세요.');
+                        return;
+                    }
+            
+                    var newInputGroup = $('<div class="input-group mb-2"></div>');
+                    var newInput = $('<input type="text" class="form-control" data-type="wood" name="hybrid_order[]" placeholder="우드/하이브리드 바코드(필수)" maxlength="10" autocomplete="off" style="border-radius:5px;">');
+                    var removeButton = $('<button type="button" class="btn btn-danger">삭제</button>');
+            
+                    removeButton.click(function () {
+                        $(this).parent().remove();
+                    });
+            
+                    newInputGroup.append(newInput);
+                    newInputGroup.append(removeButton);
+                    $('#barcode-container2').append(newInputGroup);
+                });
+            });
+            
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('event_join').addEventListener('submit', function (event) {
+                    var isValid = validateAndSubmitForm();
+                    if (!isValid) {
+                        event.preventDefault(); // 폼 제출을 방지
+                    }
+                });
+            
+                function validateAndSubmitForm() {
+                    var barcodeFields = document.querySelectorAll('[name="event_order[]"]');
+                    var barcodes = [];
+                    var isDuplacatedBarcode = false;
+                    var isBarcodeEntered = false;
+                    var nameField = document.getElementById('nameInput');
+                    var phoneField = document.getElementById('phoneInput');
+                    var errorMessage = '';
+                    var verificationCodeInput = document.getElementById('verificationCodeInput');
+                    var date = document.getElementById('purchaseDateInput');
+                    var receiptUpload = document.getElementById('receiptUpload');
+                    // let isEmptyFieldExists = false;
+                    let isAllFieldsEmpty = true;
+                    var driverBarcodeInput = document.getElementById('event_order');
+                    var driverBarcodeInput2 = document.getElementById('event_order2');
+            
+                    var driverBarcodeInputs = document.querySelectorAll('[name="driver_order[]"]');
+                    var hybridBarcodeInputs = document.querySelectorAll('[name="hybrid_order[]"]');
+                    var nameRegExp = /^[가-힣a-zA-Z\s]+$/;
+            
+            
+                    if (nameField.value.trim() === '') { //테스트 중 주석 처리
+                        alert('*구매자 성함을 입력해주세요.');
+                        nameField.focus();
+                        return false;
+                    } else if (nameField.value.trim().length < 2) {
+                        alert('*구매자 성함은 2자 이상 입력해주세요.');
+                        nameField.focus();
+                        return false;
+                    } else if (!nameRegExp.test(nameField.value.trim())) {
+                        alert('한글 또는 영문으로만 입력해주세요.');
+                        nameField.focus();
+                        return false;
+                    }
+                    // 휴대폰 번호 필드 확인
+                    if (phoneField.value.trim() === '') {
+                        alert('*휴대폰 번호를 입력해주세요.');
+                        phoneField.focus();
+                        return false;
+                    } else if (phoneField.value.trim().length < 10) {
+                        alert('*휴대폰 번호를 정확히 입력해주세요.');
+                        phoneField.focus();
+                        return false;
+                    }
+                    if (verificationCodeInput.value.trim() === '') {
+                        alert('*인증번호를 입력해주세요.');
+                        verificationCodeInput.focus();
+                        return false;
+                    }
+                    if (date.value.trim() === '') {
+                        alert('*구매일을 입력해주세요.');
+                        date.focus();
+                        return false;
+                    }
+            
+                    if (!$('input[name="route"]').is(':checked')) {
+                        alert('*구매처를 선택해주세요.');
+                        $('input[name="route"]').focus();
+                        return false;
+                    }
+            
+                    if (driverBarcodeInput.value.trim() === '') {// 드라이버 바코드 필수 입력 검증
+                        alert('*드라이버 바코드를 추가해주세요');
+                        driverBarcodeInput.focus();
+                        return false;
+                    }
+                    
+                    // if (driverBarcodeInput2.value.trim() === '') {//우드/하이브리드 바코드 필수 입력 검증
+                    //     alert('*우드/하이브리드 바코드를 추가해주세요');
+                    //     driverBarcodeInput2.focus();
+                    //     return false;
+                    // }
+                    var allBarcodeInputs = Array.from(driverBarcodeInputs).concat(Array.from(hybridBarcodeInputs));
+            
+                    // 모든 바코드 필드 검증
+                    for (let input of allBarcodeInputs) {
+                        const barcode = input.value.trim();
+                        if (barcode === '') {
+                            // 빈 필드는 검증을 건너뜁니다
+                            continue;
+                        }
+                        if (!/^[Kk][0-9]{9}$/.test(barcode)) {
+                            alert(`*바코드 ${barcode}가 양식에 맞지 않습니다.`);
+                            input.focus();
+                            return false;
+                        }
+                        if (barcodes.includes(barcode)) {
+                            alert(`중복되는 바코드 ${barcode}를 확인해주세요.`);
+                            input.focus();
+                            return false;
+                        }
+                        barcodes.push(barcode);
+                    }
+            
+                    if (receiptUpload.value.trim() === "") {
+                        alert("영수증 사진을 첨부해주세요.");
+                        receiptUpload.focus();
+                        return false;
+                    }
+                    if ($('#brand').val().trim() === '') {
+                        alert('*브랜드를 입력해주세요.');
+                        $('#brand').focus();
+                        return false;
+                    }
+                    if ($('#model').val().trim() === '') {
+                        alert('*모델명을 입력해주세요.');
+                        $('#model').focus();
+                        return false;
+                    }
+                    if (!$('input[name="selectionReason[]"]:checked').length) {
+                        alert('*Ai Smoke 선택 요인 중 최소 하나를 선택해주세요.');
+                        return false;
+                    }
+                    if (!document.getElementById('agree_1').checked) {
+                        alert("개인정보 수집 및 이용 동의에 체크해주세요.");
+                        document.getElementById('agree_1').focus();
+                        return false;
+                    }
+                    return true;
+                }
+            });
+            
+        </script>
+
+        <script>
+            function requestVerificationCode() {//인증번호 요청
+                var phone = document.getElementById('phoneInput').value;
+                var phone = phoneInput.value;
+                var verificationCodeInput = document.getElementById('verificationCodeInput');
+
+                if (!phone.trim()) {
+                    alert("본인 인증을위한 휴대폰 번호를 입력해주세요.");
+                    return;
+                }
+
+                var requestButton = document.querySelector('.btn_zip');
+
+                $.ajax({
+                    type: "POST",
+                    url: "../ajax/sms_auth.php",
+                    data: { "phoneNumber": phone, "mode": "insert" },
+                    dataType: "json",
+                    success: function (response) {
+                        if (response.result == "success_send") {
+                            phoneInput.readOnly = true; // 휴대폰 번호 입력 필드를 readonly로 설정
+                            requestButton.disabled = true; // 요청 버튼을 disabled 상태로 변경
+                            verificationCodeInput.readOnly = false; // 인증번호 입력 필드 활성화
+                        }
+                        alert(response.message); // 서버 응답 메시지 표시
+                    },
+                    error: function () {
+                        // AJAX 요청 실패 시 처리
+                        alert(response.message);
+                        console.log(response);
+                    }
+                });
+            }
+            function verifyVerificationCode() {
+                var phone = document.getElementById('phoneInput').value;
+                var verifyButton = document.querySelector('.btn_zip.final');
+                var verificationCodeInput = document.getElementById('verificationCodeInput').value;
+                var formData = { "phoneNumber": phone, "authCode": verificationCodeInput, "mode": "auth" };
+                console.log(formData);
+
+                $.ajax({
+                    type: "POST",
+                    url: "../ajax/sms_auth.php",
+                    data: formData,
+                    dataType: "json",
+                    success: function (response) {
+                        if (response.result == 1) {
+                            // readonly input 자바스크립트 버튼 액션 없애고
+                            $("#authStatusIdx").val(response.authCode);
+                            document.getElementById('verificationCodeInput').readOnly = true;
+                            document.getElementById('verificationCodeInput').focus();
+                            verifyButton.disabled = true;
+                        }
+
+                        alert(response.message);
+                        console.log(response);
+                    }
+                });
+            }
+            function checkSession() {
+                if (sessionStorage.getItem("loginKey") == null) {
+                    window.location = "https://kr.callawaygolf.com";
+                }
+            }
+            setInterval(checkSession, 900000);
+        </script>
+
+    </body>
+</html>
+

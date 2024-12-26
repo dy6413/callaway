@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<noscript>Your browser does not support JavaScript!</noscript>
+
+<meta name="keywords">
+<meta name="description" content="ai smoke,PARADYM,  AI SMOKE FAMILY">
+<meta name="robots" content="index,follow">
+
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- <script type="text/javascript" async="" src="js/main.js"></script> -->
+
+<script type="text/javascript" async="" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" async="" src="js/slick.js"></script>
+<script type="text/javascript" async="" src="js/slick.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+<link href="css/golf.css" rel="stylesheet">
+<link href="css/golf_css.css" rel="stylesheet">
+<!-- <link href="css/crmsft242.css" rel="stylesheet"> -->
+<link href="css/main.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+
+<html>
+
+   <style>
+
+        .model_view{position: relative;}
+
+        .Container .nabContainer {  
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            transition: top 0.3s ease-in-out;
+            animation: slideUp 0.3s;
+            margin: 0 auto;            
+            padding:0 calc(20em / 7.5);
+            height:62px;
+        }
+
+        .nabContainer{scroll-behavior:smooth; scroll-behavior:auto;}
+
+        .nabContainer.sticky{
+            position: -webkit-sticky; 
+            position: sticky;            
+            top:0;
+        }
+        
+
+        @media(max-width:767px){
+            .Container .nabContainer{
+                padding:0 calc(40em / 7.5);
+            }
+        }     
+
+       
+
+        .nabContainer.fixed{
+            position: fixed;
+            top:0;
+            padding:0;
+            /* width: 94.5%; */
+        }
+/* 
+        @media(max-width:767px){
+            .nabContainer.fixed{
+                position: fixed;
+                top:76px;
+                padding:0;
+            }
+        }      */
+
+
+
+        .Container .nabContainer .nabList {
+            width: 100%;
+            position: sticky;
+            position: -webkit-sticky; 
+            top:0;
+            display: flex;
+            background: #fff;
+            border: 1px solid #222;
+            height:62px;
+        }
+
+
+        .Container .nabContainer .nabList ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding:0;
+        }
+
+        .Container .nabContainer .nabList ul li {
+            color: #666666;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 2.4px;
+            list-style: none;
+            line-height: 24px;
+            width: 50%;
+        }
+
+
+        .Container .nabContainer .nabList ul li a {
+            color: #666666;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 2.4px;
+            list-style: none;
+            display: block;
+            padding: calc(7.5em / 7.5) 0;
+            /* height: 80px;
+            line-height: 80px; */
+        }
+
+        @media(max-width:767px){
+            .Container .nabContainer .nabList ul li a{
+                font-size: calc(5.5em / 7.5);
+                line-height: calc(8em / 6.5);
+                padding: calc(8em / 7.5) 0;
+            }
+        }          
+        
+        .Container .nabContainer .nabList ul li a:hover {
+            background:#222;
+            color:#fff;
+            font-weight:600;
+        }
+
+        .Container .nabContainer .nabList ul li a.active {
+            background:#222;
+            color:#fff;
+            transition: box-shadow 0.2s;
+            font-weight:600;
+        }
+
+        .Container .nabContainer .nabList ul li.on a {
+            background:#222;
+            color:#fff;
+            transition: box-shadow 0.2s;
+            font-weight:600;
+        }
+
+   </style>
+    <body>
+        <div id="spring" class="spring">
+            <div class="Container">
+
+                <div class="item_wrap" style="display:block; height:100%; width:100%;">
+                    <div class="spring_look pc">
+                        <div class="look01">
+                            <img src="https://cdn1-originals.webdamdb.com/12212_156267929?cache=1708320812&response-content-disposition=inline;filename=1look01_01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTU2MjY3OTI5P2NhY2hlPTE3MDgzMjA4MTImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MWxvb2swMV8wMV9wYy5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=Xlf70IR5HnCJDsZrxMubG67oqYohc1-QgTPVojiMfvsoJHE8WIHVTwa6jmwPIxSERIuA4CHZIhVLRd8TKbiqrckvR30yP7EsGjF2gICCOGzq2iSb2yp5HZfB~fYG57n0m01ZVtMFj4~EO9gfkzHjFiLDPpOqk94FaS3LeMUjNqz3wt0TybXMx4Xe1jl7SqH-vAhrlqzYTd8uiXGMOld~0aL8SM5M77djrdU7y9HCYMMlGfSJPJQiaNxy7vZWztla1Hd4jFVsmMz20HpmLfiQ2aSrU-ZS91ywaJ9uHvYAtsQhmWAD-TLa9rIDZ~6Gs52JFBWzN7ZZNrji9-xlo7b~iA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="" />
+                        </div>
+                    </div><!--01_01_pc-->
+                </div>
+                <div class="model_view">
+                    <!--navs-->
+                    <div id ="test" class="nabContainer">
+                        <div class="nabList">
+                            <ul id="moving">
+                                <li> <a href="#;" onclick="$('html,body').stop().animate({scrollTop: $('#model_spring01').offset().top - 135}, 600)">모델 착용 제품</a></li>
+                                <li ><a href="#;" onclick="$('html,body').stop().animate({scrollTop: $('#model_spring02').offset().top - 145}, 600)">24SS 신상품</a></li>                                  
+                            </ul>                       
+                        </div>
+                    </div>                <!--navs-->   
+                </div><!--view-->     
+                <div class="item_wrap" style="padding-top:6rem;">
+                    <div class="spring_look pc">
+                        <div class="look01">
+                            <img src="https://cdn1-originals.webdamdb.com/12212_156267929?cache=1708320812&response-content-disposition=inline;filename=1look01_01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTU2MjY3OTI5P2NhY2hlPTE3MDgzMjA4MTImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MWxvb2swMV8wMV9wYy5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=Xlf70IR5HnCJDsZrxMubG67oqYohc1-QgTPVojiMfvsoJHE8WIHVTwa6jmwPIxSERIuA4CHZIhVLRd8TKbiqrckvR30yP7EsGjF2gICCOGzq2iSb2yp5HZfB~fYG57n0m01ZVtMFj4~EO9gfkzHjFiLDPpOqk94FaS3LeMUjNqz3wt0TybXMx4Xe1jl7SqH-vAhrlqzYTd8uiXGMOld~0aL8SM5M77djrdU7y9HCYMMlGfSJPJQiaNxy7vZWztla1Hd4jFVsmMz20HpmLfiQ2aSrU-ZS91ywaJ9uHvYAtsQhmWAD-TLa9rIDZ~6Gs52JFBWzN7ZZNrji9-xlo7b~iA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="" />
+                        </div>
+                    </div><!--01_01_pc-->
+                    <div class="spring_look pc">
+                        <div class="look01">
+                            <img src="https://cdn1-originals.webdamdb.com/12212_156267929?cache=1708320812&response-content-disposition=inline;filename=1look01_01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTU2MjY3OTI5P2NhY2hlPTE3MDgzMjA4MTImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MWxvb2swMV8wMV9wYy5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=Xlf70IR5HnCJDsZrxMubG67oqYohc1-QgTPVojiMfvsoJHE8WIHVTwa6jmwPIxSERIuA4CHZIhVLRd8TKbiqrckvR30yP7EsGjF2gICCOGzq2iSb2yp5HZfB~fYG57n0m01ZVtMFj4~EO9gfkzHjFiLDPpOqk94FaS3LeMUjNqz3wt0TybXMx4Xe1jl7SqH-vAhrlqzYTd8uiXGMOld~0aL8SM5M77djrdU7y9HCYMMlGfSJPJQiaNxy7vZWztla1Hd4jFVsmMz20HpmLfiQ2aSrU-ZS91ywaJ9uHvYAtsQhmWAD-TLa9rIDZ~6Gs52JFBWzN7ZZNrji9-xlo7b~iA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="" />
+                        </div>
+                    </div><!--01_01_pc-->                    
+                    <div class="spring_look pc">
+                        <div class="look01">
+                            <img src="https://cdn1-originals.webdamdb.com/12212_156267929?cache=1708320812&response-content-disposition=inline;filename=1look01_01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTU2MjY3OTI5P2NhY2hlPTE3MDgzMjA4MTImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MWxvb2swMV8wMV9wYy5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=Xlf70IR5HnCJDsZrxMubG67oqYohc1-QgTPVojiMfvsoJHE8WIHVTwa6jmwPIxSERIuA4CHZIhVLRd8TKbiqrckvR30yP7EsGjF2gICCOGzq2iSb2yp5HZfB~fYG57n0m01ZVtMFj4~EO9gfkzHjFiLDPpOqk94FaS3LeMUjNqz3wt0TybXMx4Xe1jl7SqH-vAhrlqzYTd8uiXGMOld~0aL8SM5M77djrdU7y9HCYMMlGfSJPJQiaNxy7vZWztla1Hd4jFVsmMz20HpmLfiQ2aSrU-ZS91ywaJ9uHvYAtsQhmWAD-TLa9rIDZ~6Gs52JFBWzN7ZZNrji9-xlo7b~iA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="" />
+                        </div>
+                    </div><!--01_01_pc-->
+                    <div class="spring_look pc">
+                        <div class="look01">
+                            <img src="https://cdn1-originals.webdamdb.com/12212_156267929?cache=1708320812&response-content-disposition=inline;filename=1look01_01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTU2MjY3OTI5P2NhY2hlPTE3MDgzMjA4MTImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MWxvb2swMV8wMV9wYy5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=Xlf70IR5HnCJDsZrxMubG67oqYohc1-QgTPVojiMfvsoJHE8WIHVTwa6jmwPIxSERIuA4CHZIhVLRd8TKbiqrckvR30yP7EsGjF2gICCOGzq2iSb2yp5HZfB~fYG57n0m01ZVtMFj4~EO9gfkzHjFiLDPpOqk94FaS3LeMUjNqz3wt0TybXMx4Xe1jl7SqH-vAhrlqzYTd8uiXGMOld~0aL8SM5M77djrdU7y9HCYMMlGfSJPJQiaNxy7vZWztla1Hd4jFVsmMz20HpmLfiQ2aSrU-ZS91ywaJ9uHvYAtsQhmWAD-TLa9rIDZ~6Gs52JFBWzN7ZZNrji9-xlo7b~iA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="" />
+                        </div>
+                    </div><!--01_01_pc-->                                        
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script type="text/javascript">
+            
+            const content2 = document.querySelector('.model_view');
+            const contentTop2 = content2.getBoundingClientRect().top + window.scrollY;
+            const wing2 = document.querySelector('.nabContainer');
+    
+            window.addEventListener('scroll', function(){
+                if(content2.getBoundingClientRect().top <= 0){
+                    wing2.classList.add('fixed');
+                }else{
+                    wing2.classList.remove('fixed');
+                }
+            });
+    
+
+
+    </script>
+
+</html>
+
