@@ -1,0 +1,344 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+        .contentpage_title {
+            margin: 0 !important;
+            letter-spacing: 0 !important;
+            padding: 0;
+            font-size: 0;
+        }        
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        @font-face {
+            font-family: 'Pretendard Variable';
+            font-weight: 45 920;
+            font-style: normal;
+            font-display: swap;
+            src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Thin.woff') format('woff');
+            font-weight: 100;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+            font-weight: 200;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Light.woff') format('woff');
+            font-weight: 300;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Medium.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Bold.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+            font-weight: 800;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Black.woff') format('woff');
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        html{overflow: inherit !important;}
+        body{overflow: inherit !important;}
+
+        .Container {
+            font-family: 'Pretendard', sans-serif; 
+            width: 100%;
+            position: relative;
+            word-break: keep-all;
+            text-align: center;
+            font-size:1vw !important;
+            margin-top: -8px;
+        }
+        .Container img{width:100%;}
+        .contents{position: relative;}
+        .contents a{display: block; position: absolute; font-size:0;}
+
+        .mo{display:none;}
+        .pc{display:block;}
+
+        .video_wrap{position:relative;padding-top:56.25%; width:100%; height:0;}
+        .video_wrap video{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+        /* contents */
+        .ca25ss_03 .link{width: 3.20%; height: 1.84%;}
+        .ca25ss_03 .link01{top: 37.62%; left: 64.10%;}
+        .ca25ss_03 .link02{top: 42.05%; left: 56.91%;}
+        .ca25ss_03 .link03{top: 37.2%; left: 88.30%;}
+        .ca25ss_03 .link04{top: 48.15%; left: 79.76%;}
+
+        .ca25ss_03 .link05{bottom: 44.44%; left: 10.29%;}
+        .ca25ss_03 .link06{bottom: 37.22%; left: 25.32%;}
+        .ca25ss_03 .link07{bottom: 27.65%; left: 15.23%;}
+        .ca25ss_03 .link08{bottom: 19.53%; left: 9.24%;}
+        .ca25ss_03 .link09{bottom: 13.61%; left: 21.59%;}
+        .ca25ss_03 .link10{bottom: 8.24%; left: 25.85%;}
+
+        .ca25ss_04 .link{width: 3.20%; height: 1.65%;}
+        .ca25ss_04 .link01{top: 6.01%; left: 78.13%;}
+        .ca25ss_04 .link02{top: 11.42%; left: 75.56%;}
+        .ca25ss_04 .link03{top: 19.91%; left: 74.56%;}
+        .ca25ss_04 .link04{top: 23.93%; left: 75.14%;}       
+        .ca25ss_04 .link05{top: 31.85%; left: 68.99%;}
+        .ca25ss_04 .link06{top: 39.74%; left: 66.63%;}
+        .ca25ss_04 .link07{top: 39.74%; left: 48.38%;}
+            
+        .ca25ss_04 .link08{bottom: 28.34%; left: 53.28%;}
+        .ca25ss_04 .link09{bottom: 19.06%; left: 58.64%;}
+        .ca25ss_04 .link10{bottom: 52.80%; left: 15.76%;}
+        .ca25ss_04 .link11{bottom: 47.25%; left: 9.24%;}
+        .ca25ss_04 .link12{bottom: 40.77%; left: 14.45%;}
+        .ca25ss_04 .link13{bottom: 32.42%; left: 16.13%;}
+        .ca25ss_04 .link14{bottom: 11.77%; left: 24.17%;}       
+        .ca25ss_04 .link15{bottom: 5.71%; left: 12.82%;}       
+				
+        .video_wrap.pc{padding-top: 56.25%;}
+
+
+        /* 기획전 하단 링크 */
+        .model_wrap{position: relative;}
+        .model_list{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .list_box{
+            position: relative;
+            width:50%;
+        }
+        .model_list .list_box a{
+            display: block;
+        }
+        .model_list .list_box picture{
+            display:block;
+        }
+        .model_list .list_box picture img{
+            width:100%;
+            opacity:0.8;
+            transition: all 0.3s;
+        }        
+        .model_list .list_box .model_txt{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 31.51%;          
+            font-size:0.39vw;
+        }
+        .model_list .list_box .model_txt span{
+            font-size:calc(22em / 7.5);
+            font-weight:600;
+            background:rgba(255,255,255,0.7);
+            display: block;
+            padding: calc(9.3em / 7.5) calc(0em / 7.5);
+            transition: all 0.3s;       
+        }        
+        .model_list .list_box:hover img{
+            opacity:1;
+        }
+        .model_list .list_box:hover .model_txt span{
+            background:rgba(255,255,255,1)
+        }
+        
+
+        /* 미디어쿼리 */
+        @media(max-width:720px){
+          .Container{font-size:1vw;margin-top: 0;}
+          .pc{display:none;}
+          .mo{display:block;}
+
+          /* contents */
+          .ca25ss_03 .link{width: 8.47%; height: 1.27%;}
+          .ca25ss_03 .link01{top: 22.45%; left: 69.72%;}
+          .ca25ss_03 .link02{top: 25.10%; left: 52.36%;}
+          .ca25ss_03 .link03{top: 34.72%; left: 67.63%;}
+          .ca25ss_03 .link04{top: 43.09%; left: 47.08%;}
+
+          .ca25ss_03 .link05{bottom: 28.18%; left: 18.61%;}
+          .ca25ss_03 .link06{bottom: 22.74%; left: 58.33%;}
+          .ca25ss_03 .link07{bottom: 17.96%; left: 29.58%;}
+          .ca25ss_03 .link08{bottom: 12.35%; left: 15.83%;}
+          .ca25ss_03 .link09{bottom: 8.94%; left: 42.63%;}
+          .ca25ss_03 .link10{bottom: 4.83%; left: 55.13%;}
+
+          .ca25ss_04 .link{width: 8.47%; height: 1.05%;}
+          .ca25ss_04 .link01{top: 15.71%; left: 67.22%;}
+          .ca25ss_04 .link02{top: 19.19%; left: 58.33%;}
+          .ca25ss_04 .link03{top: 24.24%; left: 52.36%;}
+          .ca25ss_04 .link04{top: 26.55%; left: 60.83%;}       
+          .ca25ss_04 .link05{top: 30.61%; left: 44.86%;}
+          .ca25ss_04 .link06{top: 35.03%; left: 38.33%;}
+
+          .ca25ss_04 .link07{top: 39.21%; left: 36.11%;}
+          .ca25ss_04 .link08{bottom: 45.31%; left: 19.58%;}
+          .ca25ss_04 .link09{bottom: 40.99%; left: 27.63%;}
+          .ca25ss_04 .link10{bottom: 31.96%; left: 28.33%;}
+          .ca25ss_04 .link11{bottom: 28.73%; left: 14.02%;}
+          .ca25ss_04 .link12{bottom: 25.04%; left: 27.57%;}
+          .ca25ss_04 .link13{bottom: 20.65%; left: 29.57%;}
+          .ca25ss_04 .link14{bottom: 8.79%; left: 52.06%}    
+          .ca25ss_04 .link15{bottom: 4.78%; left: 30.13%;}    
+
+          .video_wrap.mo{padding-top: 177.63%;}
+
+          /* 기획전 하단 링크 */
+          .model_list{display:block;}
+          .model_list .list_box .model_txt{font-size:1vw; width:41.66%;}
+          .list_box{width:100%;}
+          .model_list .list_box .model_txt span{
+              font-size:calc(25em / 7.5);
+              width:auto;
+              padding: calc(7.95em / 7.5) 0;
+          }
+          .model_list .list_box .model_txt2 span{padding: calc(8.8em / 7.5) 0;}
+        }
+</style>
+
+<div class="ca25ss" id="ca25ss">
+	<div class="Container">
+		<div class="contents ca25ss_01">
+			<picture>
+					<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162041242?cache=1739974531&response-content-disposition=inline;filename=tit_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQyP2NhY2hlPTE3Mzk5NzQ1MzEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9dGl0X21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=CbFDeOv41TpJ~l5PeLeDFDX6KljN7BwqayhnTu3ztXd9ZXwqULNzahxQpaCN42tYN6UiKdiLYj4sATFlpS8r4zZIsF7XZgE~wQdjr8YmZaQKzXMOX6QYPrqEezsD2I7mvEhLqcTp21D6tEfHhGFpVNR-V6Pipy9ZyMMk2smWP6bYtmFufC38BJgVZQuKRi7bmDZkqn2vIMTfJb2hpfrPuMra-A0GP6VKAtRVeYf3GGnFv0u7q4qYoTrTOSS0aim3MKV6P4PISbXwTGYzixCkFVxTzDEtZqj5kxbGms1egkYKebCvbYX4PTg3sC-7-qb3NSH64h1PbyQ7Vw~VPQv3rg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+					<!--모바일 이미지-->
+					<img alt="" src="https://cdn1-originals.webdamdb.com/12212_162041243?cache=1739974542&response-content-disposition=inline;filename=tit_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQzP2NhY2hlPTE3Mzk5NzQ1NDImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9dGl0X3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=UdqaeO1Qmo6GmcUXFlo38DGrDVZ8cJV-H~rVi2dARS8z0FDtDRjwqvUkHPPe98SPuG2vINZE0d~0-WRu~BB845VjIrrNuNBF3OtaDzTT70uWEKdGZX6wPXqsL9167nG3CY13QvXKot8~u-0zWj5UrchkoHf~7Go6YwhhrYeP0gtI47wcVZhwq6bA3SUo1Y~Kna~B5dBwAjxWsipPRIxvuEwST6NnQM~6qa7iFBlvtneqRSNjRbYH7E9ZEZolCyEHvfocKMKZcwzlqfbdQj80ziLs8onyWLbKFJVtB9eWbqyoo28y2avOCZs0D2EGjQhA9lR3oYZOzdHN7gui2lH~5A__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+					<!--피시 이미지-->
+			</picture> 
+		</div>
+
+		<div class="contents ca25ss_02">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162041244?cache=1739974532&response-content-disposition=inline;filename=img01_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQ0P2NhY2hlPTE3Mzk5NzQ1MzImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDFfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=h0WkOausq1-poniyBhkDIWbMphpT0UMC5wXuIZnjSm7jccLW2JNu0Lyu91MN~GF1EF4e8ZglVq5hxlpPH81sGWzKobz~4Ocn-iR2jytbzEck26klqUTwL~YEgWKTnb3G8wn7aIlCcGvOnVOTskwB7-4pFPfCGsabMV9m-yZ70MnhUiJTGXykBlZS9rd~uEsbCIOeQF4iGR1wWZOhsEIf0dmZILCnnbMe1OY34ISjjlEZC8jVUVAroN-WBGJ~vTGbWDX5uOHMo-Fp8E8OU4nFp~zDmpg4CbYMF1qbhxOE4gW1jwwot6eDceB1twrNtQ87xz5rCQ~xgjWTx2bOtZ7Xcw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--모바일 이미지-->
+				<img alt="" src="https://cdn1-originals.webdamdb.com/12212_162041245?cache=1739974535&response-content-disposition=inline;filename=img01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQ1P2NhY2hlPTE3Mzk5NzQ1MzUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDFfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=kuhB589cU-p3LlZjXn~f9mTVKm3quIO2eTbCvxZQrD9wdHqT8olVtZJxoCNE6qwKsktKg9rVKh8pSbemLNDFgqgdHyDhgmv0gddRtA9kFea83QnvmjkE-wWDJ~O8~m7SpbLK5Fn7345H1I1iu7wy7hSZf7Aqs3CkOYnQxdOOhEhufs0rtNxMtqLExEhd5Tc5OUZgnwuf946hQJ5oszAvtmXl-2-hdsvwD2Q06GTVa0c0G-SWbqADITkD58AzA1e~I5Q0Tm1u2fnvZgQuRXgBurV0J5ld9kJLSlJ4KDRylHDbMexYiDytdbQhlhIVzNKXk0dW-FspOfCesV1hrUOH9A__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--피시 이미지-->
+			</picture>
+		</div>
+
+		<div class="contents ca25ss_03">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162041246?cache=1739974546&response-content-disposition=inline;filename=img02_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQ2P2NhY2hlPTE3Mzk5NzQ1NDYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=cKQlnksGnFTcMyGd6x9ZC2TasTiWZAkZ2TXi5GqKam4JQ~hTlXrfRlXYx~crh7KBFEzRQAHMbyRaxM0DwTym0We3kinglNGMQAI4Oss~oEpP5IcYxBFpZz4qoS-DLP~nVSozid~8XYFiCvUFoTvxcVjurFYHaaeqsS9PW7-V3~oclX3yabVwwLYcFkWXNubAKS~mbf12hdmI-ohycuIg-R8ShZjn4DvcstXk-wjeH8jdreY1vIoIM1r6dBTjh94~XRrrFXPCe81JHlh3RjyAUf3AP1TDWkCBsDyZ2kzTdzyUmGOnSQWEJoBHsmpbU7yBX28U9nciPBGGHi0lLdtxlA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--모바일 이미지-->
+				<img alt="" src="https://cdn1-originals.webdamdb.com/12212_162041247?cache=1739974556&response-content-disposition=inline;filename=img02_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQ3P2NhY2hlPTE3Mzk5NzQ1NTYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=gTBMtYn4oScpIl-UmxHMoU4jvkXjHer29~v7~3SPlOx6TDrWup6Cy4KuhTLUobwlP6l25Z5GKYp6kW972EKKw6QDvWFReyMH9Ny~4hSlBjuzT9xnNEP2QGvs8XENAiR7BXj0NyOwPIN0PCuL9tiMIXaVwoWu-7fdv4e77AtSlmluhleURXqTLBFS5dps72akGCc1vOKWFwikIjEF~dEwjjJIsPpQkn9ib2qO-QAJcfS0sU-V7ic28t1p9oGM-RJdtSEK7l4pW9dkjKG1lPz6JqvH-Rbhww2XqlJ2xLwDIGYpdvufc4hx93ykgii2MoYeLRiE7LaTS8Wt8a-VAGic~A__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--피시 이미지-->
+			</picture> 
+			<a class="link link01" href="https://kr.callawaygolf.com/kr/p/CMJP25S301_BE_"><span>남성 봄 블루종 안감 점퍼</span></a>
+			<a class="link link02" href="https://kr.callawaygolf.com/kr/p/CMSO25S303_OW_"><span>남성 봄 소매포인트 긴팔 풀오버</span></a>
+			<a class="link link03" href="https://kr.callawaygolf.com/kr/p/CWSO25S401_OR_"><span>여성 봄 변형에리 긴팔 풀오버</span></a>
+			<a class="link link04" href="https://kr.callawaygolf.com/kr/p/CWPC25S402_OW_"><span>여성 봄 시그니처 플리츠 큐롯</span></a>
+
+			<a class="link link05" href="https://kr.callawaygolf.com/kr/p/CMAC25X102_OW_"><span>남성 BI 로고 볼마커 볼캡</span></a>
+			<a class="link link06" href="https://kr.callawaygolf.com/kr/p/CMSO25S301_OR_"><span>남성 봄 우븐 MIX 긴팔 풀오버</span></a>
+			<a class="link link07" href="https://kr.callawaygolf.com/kr/p/CMPT25S301_BE_"><span>남성 봄 플레이어 에디션 슬림핏 팬츠</span></a>
+			<a class="link link08" href="https://kr.callawaygolf.com/kr/p/CWJP25S401_BE_"><span>여성 봄 밑단변형 안감 점퍼</span></a>
+			<a class="link link09" href="https://kr.callawaygolf.com/kr/p/CWSO25S402_BE_"><span>여성 봄 쟈가드 긴팔 풀오버</span></a>
+			<a class="link link10" href="https://kr.callawaygolf.com/kr/p/CWPC25S201_OW_"><span>여성 봄 변형A라인 밴딩 큐롯</span></a>
+		</div>
+
+		<div class="contents ca25ss_04">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162041248?cache=1739974547&response-content-disposition=inline;filename=img03_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQ4P2NhY2hlPTE3Mzk5NzQ1NDcmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDNfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=asCg-qkJEtWQJi~B7tA4YkDG8K4zQ2NIjhIH7yA-tm3DyRIPn1va-xaKzv49cmj2Ce6mltBdi5WCrCc~M7AmQBIPgkJtAY3MiI3HUKJ2SML5SiI1hmiRpgPuncvON4b24UZM68PqL-eUNmjuJJK792WUxciXVNUIULOi9swN9dGn-pBNksVyH-Q15DLHcglFOGqfVSrqLiXs~ShXs1Ylwrcep2~LqlxFBhGaKgZvjWyTpwwbVMAA3qbFFWQxi5O4lkk~Mex6FH01ZuYM~GS2KQwPdr-fiKPjZY55BE7tPd28sgSfOYaWNaXkUDRmwhJ7mhDEq4m0k6VXecRV51EUtg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--모바일 이미지-->
+				<img alt="" src="https://cdn1-originals.webdamdb.com/12212_162041239?cache=1739974562&response-content-disposition=inline;filename=img03_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjM5P2NhY2hlPTE3Mzk5NzQ1NjImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDNfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=F6EwT1A5SbmZlWlHZTYTxvOsmQ2a451xLUIGHQDWOnFPPghFsUEFXp-W5zISFK8q7UKOqEpybrGClptXh5BnIFu4gINC~JSiP~2rCWdN6o9PuYGearp3~POIdqv-E2~R25gK7QlvDmndu9uqclbTqWGR4XGWn7goTkDDCisKTSkI9q1t9N9pj6l2S19I~-aj9gBGtxcepB~lTZSPnLiX9ok0LpuDjBKWuUhvNsm7fxSDekoVtY1m~9fAM3Q-YgBp8iXm8BzkNPqZxkVkhGeXxkC6JYuKqmaPv9mdKkYXYmT3Y-LyT6q9W38HBPYfojaBO~0b~NAbT9XgNxfsRS8FrA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--피시 이미지-->
+			</picture> 
+			<a class="link link01" href="https://kr.callawaygolf.com/kr/p/CWAC25X206_OW_"><span>여성 알파벳 로고 리본 버킷햇</span></a>
+			<a class="link link02" href="https://kr.callawaygolf.com/kr/p/CWVE25S401_LB_"><span>여성 봄 중힙기장 홑겹 베스트</span></a>
+			<a class="link link03" href="https://kr.callawaygolf.com/kr/p/CWPT25S404_OW_"><span>여성 봄 부츠컷 밴딩 팬츠</span></a>
+			<a class="link link04" href="https://kr.callawaygolf.com/kr/p/CMAC25X103_NA_"><span>남성 트리플트랙 볼캡</span></a>
+			<a class="link link05" href="https://kr.callawaygolf.com/kr/p/CMJP25S303_GY_"><span>남성 봄 홑겹 아노락</span></a>
+			<a class="link link06" href="https://kr.callawaygolf.com/kr/p/CMPT25S305_GY_"><span>남성 봄 아노락 SET-UP 반조거 팬츠</span></a>
+
+			<a class="link link07" href="https://kr.callawaygolf.com/kr/p/CWAB25X202_LE_"><span>여성 고딕 레터링 큐브백</span></a>
+			<a class="link link08" href="https://kr.callawaygolf.com/kr/p/CMJP25S302_LG_"><span>남성 봄 홑겹 스윙바람막이</span></a>
+			<!-- <a class="link link09" href="https://kr.callawaygolf.com/kr/p/CMPT25S302_LB_"><span>남성 봄 초두 DO성 슬림핏 팬츠</span></a> -->
+			<a class="link link10" href="https://kr.callawaygolf.com/kr/p/CWTH25S201_OW_"><span>여성 봄 하이넥 베이스레이어</span></a>
+			<a class="link link11" href="https://kr.callawaygolf.com/kr/p/CWJP25S402_OW_"><span>여성 봄 블루종 기장 점퍼</span></a>
+			<a class="link link12" href="https://kr.callawaygolf.com/kr/p/CWPC25S403_LB_"><span>여성 봄 변형 플리츠 큐롯</span></a>
+			<a class="link link13" href="https://kr.callawaygolf.com/kr/p/CMTY25S305_OW_"><span>남성 봄 하이브리드 Y에리 긴팔 티셔츠</span></a>
+			<a class="link link14" href="https://kr.callawaygolf.com/kr/p/CMAD25X101_BK_"><span>남성 경량 퍼포먼스 스탠드백</span></a>
+			<a class="link link15" href="https://kr.callawaygolf.com/kr/p/CWAF25X202_BK_"><span>남성 JASMINE 4.0 (스파이크리스)</span></a>
+		</div>
+
+		<div class="video_wrap pc">
+			<video autoplay="" loop="" muted="">
+				<source src="https://cdn1-originals.webdamdb.com/12212_162041215?cache=1739973719&response-content-disposition=inline;filename=25SS%2520Video%25201_%25EA%25B0%2580%25EB%25A1%259C%25ED%2598%2595.mp4&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjE1P2NhY2hlPTE3Mzk5NzM3MTkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MjVTUyUyNTIwVmlkZW8lMjUyMDFfJTI1RUElMjVCMCUyNTgwJTI1RUIlMjVBMSUyNTlDJTI1RUQlMjU5OCUyNTk1Lm1wNCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=f5zVqdJ8c7fj0UIMxAG~UL~rzMWDDRlUkYJM0hvzeiAlfZg8G95PGJJJZ1VftQabK7PWqOscNNrO088mVprV0e0bieimuXzmzi7JKY4GWjcQ56xQ1AOUoyP98dDOPMPPzjV-LTpeZk~IGhf6BvRczuquoPOQ~47xPbO3~ZW~gtvmVSNyQk~up1GremSa2bg2cawQ7G1RFH~sMLbzCqZRdDzMiF6Czm0jCPf2-cL8KmIm3YKNZCWluiLM3pETTTVvOO7TFzYT8B6z7ASl8v9pWomW2pC4RrAmXc~0T4NWLgXTg6JDm7vAes1wDaxEU6pUarFVJkcWdChSf~Xis31AdQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" type="video/mp4">
+			</video>
+		</div>                    
+
+		<div class="video_wrap mo">
+			<video autoplay="" loop="" muted="">
+				<source src="https://cdn1-originals.webdamdb.com/12212_162041216?cache=1739973763&response-content-disposition=inline;filename=Final%2520Vertical.mp4&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjE2P2NhY2hlPTE3Mzk5NzM3NjMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9RmluYWwlMjUyMFZlcnRpY2FsLm1wNCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=av-TegP7H4YNSVPW4sVImUndqHnNiNtxXpE-B-YUqIYrF~UqIs6r~22PiQLcmGiYOElryzLJjE6qRUrZUsceTgAQ-7fEgSdJC3HFhi510j9JFiUxwUxF8qyrmGkKx2qDNqXJ1QaznOURBCidexv3cD84pGULZvUMglCMh1Pufv~kRIJy9vtzeyj485OC7PyAhe9rLJvc-v6KCtL91Pb6QGObG0YgKpNslKDYWnag~fVRHGFY7IqU0nkjCuHJaG5pzUTP0tAvLrP-lwDn22ZWyP~gl3H9x0trn1PWHXNYkv0IqA0qUXuUDVM3QCx~Ibjrm6tqctqn-6wCY1BaergqPw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" width="100%" height="auto" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen; picture-in-picture" type="video/mp4">
+			</video>
+		</div>                    
+
+		<div class="model_wrap">
+			<div class="model_list">
+				<div class="list_box">
+					<a href="https://kr.callawaygolf.com/kr/25SS-%EB%82%A8%EC%84%B1-%EC%8B%A0%EC%83%81%ED%92%88/c/04440">
+						<picture>
+							<source media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162041238?cache=1739974522&response-content-disposition=inline;filename=img04_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjM4P2NhY2hlPTE3Mzk5NzQ1MjImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDRfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=odrgEylttiHOXgaiqRXXfAnwhGxkx7Qt-pGQ7GTmmK-6qIYO9N4rzEfDjJ4AbeuhOVqsMYovXFGk6W71QDHFiGmfLjX0N5WMjSVYRHBcdrAiQySPO8Pm~LZKgZOUK~bVCVrRP1jGKhR-MDIkBJn5uwyv7I0wepZA8l7whv9id0PfM9-S8xkxnzTgubDV4eVb3eV~B9Ot3ghTmgpIqN~22Puqwras7DPu8p4Nl~nLouUwT6ZZzbvkp8qTcJNfXRPMpcoiUmKKTFlv7NcH2TeZfJmem2IEsq2~pz7CkYPI8uIwtYXv9rr~VTNJaueYjqdWVzOoLywwzS-1aovhOrVLkQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+							<img alt="" src="https://cdn1-originals.webdamdb.com/12212_162041237?cache=1739974528&response-content-disposition=inline;filename=img04_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjM3P2NhY2hlPTE3Mzk5NzQ1MjgmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDRfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=DdSFVY83WYKwTwSZXeq-u2l0sPuWQaDnRh~FD~rtrlLdWPaEN04TJlJIQ3D~CsMaeRAEN1xfwqki4HSJvuTUR16GZdD1nX~CVnr5aiYI8-uoTRD7gRo5Jrc7BbDy~NoSWOeAMAty9KetdtJJN2XOTtooLlX7JsiE8MUv7Ws8bCmfLt9MjfoFbw~UnoacxUjxekP13h3~uY2Ewe48KzTjTMV~IeUmulHxnxiFxztrP9fLL0Is32Su4vrvyNz1H81wmr~sdbqcdad1cXXn6gU1L8bO26CJoDJsjHAlS4AjIE33chh8zwOpqDC~bekR1T7nsGhtBt0r6fXWWitO7mpgdA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+						</picture> 
+					</a>
+					<div class="model_txt">
+							<a href="https://kr.callawaygolf.com/kr/25SS-%EB%82%A8%EC%84%B1-%EC%8B%A0%EC%83%81%ED%92%88/c/04440">
+							<span>남성 신상품</span>
+						</a>
+					</div>
+				</div>
+				<div class="list_box">
+					<a href="https://kr.callawaygolf.com/kr/25SS-%EC%97%AC%EC%84%B1-%EC%8B%A0%EC%83%81%ED%92%88/c/044403">
+						<picture>
+							<source media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162041240?cache=1739974524&response-content-disposition=inline;filename=img05_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQwP2NhY2hlPTE3Mzk5NzQ1MjQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDVfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=hIIIl25uPNCjLOrQ0Dhfc4MmI2wkBA4SjG4q9z~WN~qACutV2YN1jWz5O2oDxSyDDssd2cgxPJXu2cP9Gys-E5Ba0n2Ze6bSfHa8V4DsnJqiD3RGZBGBaFuuiBKr~R0AZEQzLINxgnc39BcQ1gyYNM1m8BlBrAXg3AsfccGJX~xFDc-v2ZCCtx7PPQxrL4ZjOfSDOGIR3G9yoUWCte8kK6nuYlqTxO-mBn5nh9kAc02I2HmC1zlZqV9bofqDWXbChnwjUxhNMnNI44GKSpJ07qoEpHDwGP8bO3GIDwqkUG6ZfmHGeqq3gBRp9WpoHzriRLYUbuJE9LbFEZNvgbew5w__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+							<img alt="" src="https://cdn1-originals.webdamdb.com/12212_162041241?cache=1739974528&response-content-disposition=inline;filename=img05_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyMDQxMjQxP2NhY2hlPTE3Mzk5NzQ1MjgmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDVfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=Jfq3LBpvXUPmfDRRL0525rW8S-rtjeNQgEJYxVib4XGYX5MHOzl~oIGswJUHFr-t2w2Cj3OxgaCG5lhDxRBQISGdd-vpL4Pl3GVIO8h54ySrvgFg6AaOqxxI9QqAUQP5wMDdxane56oVfUWcu46LcSGhgUzW8r~33-Jg9c1d4fAfBO2wPT4Hu8j-9AhvPbW2yOCcntbZavWWzKIjfq22gfyn666Ldi2jE8X~-eMAkSKYkY0UIO6RbcxeAZVe2fPyISOO3d09qZHWMc1o4d-VpxuQfWtKWKgIJw2TZ1VuwHZMp3tTsspXmuCEm28m5DrYZnhLW3rsXC-zCYhAZ0Kxgg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+						</picture> 
+					</a>
+					<div class="model_txt">
+						<a href="https://kr.callawaygolf.com/kr/25SS-%EC%97%AC%EC%84%B1-%EC%8B%A0%EC%83%81%ED%92%88/c/044403">
+						<span>여성 신상품</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
