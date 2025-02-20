@@ -83,7 +83,6 @@
             word-break: keep-all;
             text-align: center;
             font-size:1vw !important;
-            margin-top: -8px;
         }
         .Container img{width:100%;}
         .contents{position: relative;}
@@ -176,8 +175,12 @@
         
 
         /* 미디어쿼리 */
+        @media(min-width:1200px){
+          .Container{margin-top: -8px;}
+        }
+
         @media(max-width:720px){
-          .Container{font-size:1vw;margin-top: 0;}
+          .Container{font-size:1vw;}
           .pc{display:none;}
           .mo{display:block;}
 
