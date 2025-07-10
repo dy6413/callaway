@@ -1,0 +1,359 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+        .contentpage_title {
+            margin: 0 !important;
+            letter-spacing: 0 !important;
+            padding: 0;
+            font-size: 0;
+        }        
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        @font-face {
+            font-family: 'Pretendard Variable';
+            font-weight: 45 920;
+            font-style: normal;
+            font-display: swap;
+            src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Thin.woff') format('woff');
+            font-weight: 100;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+            font-weight: 200;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Light.woff') format('woff');
+            font-weight: 300;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Medium.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Bold.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+            font-weight: 800;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Black.woff') format('woff');
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        html{overflow: inherit !important;}
+        body{overflow: inherit !important;}
+
+        .Container {
+            font-family: 'Pretendard', sans-serif; 
+            width: 100%;
+            position: relative;
+            word-break: keep-all;
+            text-align: center;
+            font-size:1vw !important;
+        }
+        .Container img{width:100%;}
+        .contents{position: relative;}
+        .contents a{display: block; position: absolute; font-size:0;}
+
+        .mo{display:none;}
+        .pc{display:block;}
+
+        .video_wrap.pc{position:relative;padding-top:56.25%; width:100%; height:0;}
+        .video_wrap.mo{position:relative;padding-top:177.77%; width:100%; height:0;}
+        .video_wrap video{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+        /* contents */
+        .ss25lmj_02 .link01{width: 28.84%; height: 8.69%; left: 60.58%; bottom: 8.58%;}
+
+        /* ss25lmj_03 */
+        .ss25lmj_03 .link{height: 1.23%;}
+        .ss25lmj_03 .link01{width: 11.82%; top: 43.56%; left: 6.41%;}
+        .ss25lmj_03 .link02{width: 14.71%; top: 45.62%; left: 6.41%;}
+        .ss25lmj_03 .link03{width: 9.2%; top: 47.68%; left: 6.41%;}
+
+        .ss25lmj_03 .link04{width: 14.19%; top: 54.63%; left: 59.85%;}
+        .ss25lmj_03 .link05{width: 12.61%; top: 56.52%; left: 59.85%;}
+
+        .ss25lmj_03 .link06{width: 15.76%; bottom: 5.06%; left: 8.09%;}
+        .ss25lmj_03 .link07{width: 7.88%; bottom: 2.96%; left: 8.09%;}
+        .ss25lmj_03 .link08{width: 13.66%; bottom: 0.9%; left: 8.09%;}
+        
+        .ss25lmj_03 .link09{width: 15.76%; bottom: 5.64%; left: 63.69%;}
+        .ss25lmj_03 .link10{width: 11.82%; bottom: 3.62%; left: 63.69%;}
+
+        /* ss25lmj_04 */
+        .ss25lmj_04 .link{height: 0.9%;}
+        .ss25lmj_04 .link01{width: 11.56%; top: 34.22%; left: 8.93%;}
+        .ss25lmj_04 .link02{width: 9.98%; top: 35.69%; left: 8.93%;}
+        .ss25lmj_04 .link03{width: 9.46%; top: 37.19%; left: 8.93%;}
+
+        .ss25lmj_04 .link04{width: 12.61%; top: 28.2%; left: 59.06%;}
+        .ss25lmj_04 .link05{width: 12.09%; top: 29.73%; left: 59.06%;}
+        .ss25lmj_04 .link06{width: 12.09%; top: 31.23%; left: 59.06%;}
+        .ss25lmj_04 .link07{width: 11.49%; top: 32.72%; left: 59.06%;}
+        .ss25lmj_04 .link08{width: 15.76%; top: 34.22%; left: 59.06%;}
+
+        .ss25lmj_04 .link09{width: 11.56%; bottom: 38.74%; left: 33.74%;}
+        .ss25lmj_04 .link10{width: 12.61%; bottom: 37.28%; left: 33.74%;}
+
+        .ss25lmj_04 .link11{width: 9.98%; bottom: 34.46%; left: 64.84%;}
+        .ss25lmj_04 .link12{width: 12.35%; bottom: 32.93%; left: 64.84%;}
+        .ss25lmj_04 .link13{width: 11.56%; bottom: 31.44%; left: 64.84%;}
+
+        .ss25lmj_04 .link14{width: 12.87%; bottom: 5.75%; left: 40.99%;}
+        .ss25lmj_04 .link15{width: 16.29%; bottom: 4.25%; left: 40.99%;}       
+        .ss25lmj_04 .link16{width: 8.93%; bottom: 2.75%; left: 40.99%;} 
+
+        /* 기획전 하단 링크 */
+        .model_wrap{position: relative;}
+        .model_list{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .list_box{
+            position: relative;
+            width:100%;
+        }
+        .model_list .list_box a{
+            display: block;
+        }
+        .model_list .list_box picture{
+            display:block;
+        }
+        .model_list .list_box picture img{
+            width:100%;
+            opacity:0.8;
+            transition: all 0.3s;
+        }        
+        .model_list .list_box .model_txt{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 18.39%;          
+            font-size:0.39vw;
+        }
+        .model_list .list_box .model_txt span{
+            font-size:calc(22em / 7.5);
+            font-weight:600;
+            background:rgba(255,255,255,0.7);
+            display: block;
+            padding: calc(9.3em / 7.5) calc(0em / 7.5);
+            transition: all 0.3s;       
+        }        
+        .model_list .list_box:hover img{
+            opacity:1;
+        }
+        .model_list .list_box:hover .model_txt span{
+            background:rgba(255,255,255,1)
+        }
+        
+
+        /* 미디어쿼리 */
+        @media(min-width:1200px){
+          .Container{margin-top: -8px;}
+        }
+
+        @media(max-width:720px){
+          .Container{font-size:1vw;}
+          .pc{display:none;}
+          .mo{display:block;}
+
+          /* contents */
+          .ss25lmj_02 .link01{width: 76.25%; height: 4.12%; left: 11.94%; bottom: 4.12%;}
+
+          /* ss25lmj_03 */
+          .ss25lmj_03 .link{height: 0.65%;}
+          .ss25lmj_03 .link01{width: 31.94%; top: 20.33%; left: 11.39%;}
+          .ss25lmj_03 .link02{width: 40.28%; top: 21.44%; left: 11.39%;}
+          .ss25lmj_03 .link03{width: 25%; top: 22.53%; left: 11.39%;}
+
+          .ss25lmj_03 .link04{width: 41.67%; top: 49.63%; left: 5.97%;}
+          .ss25lmj_03 .link05{width: 36.81%; top: 50.7%; left: 5.97%;}
+
+          .ss25lmj_03 .link06{width: 44.44%; bottom: 24.69%; left: 9.58%;}
+          .ss25lmj_03 .link07{width: 22.22%; bottom: 23.6%; left: 9.58%;}
+          .ss25lmj_03 .link08{width: 38.89%; bottom: 22.51%; left: 9.58%;}
+          
+          .ss25lmj_03 .link09{width: 45.83%; bottom: 3.49%; left: 28.47%;}
+          .ss25lmj_03 .link10{width: 34.72%; bottom: 2.4%; left: 28.47%;}
+
+          /* ss25lmj_04 */
+          .ss25lmj_04 .link{height: 0.5%;}
+          .ss25lmj_04 .link01{width: 34.03%; top: 15.03%; left: 10.42%;}
+          .ss25lmj_04 .link02{width: 28.47%; top: 15.86%; left: 10.42%;}
+          .ss25lmj_04 .link03{width: 27.78%; top: 16.66%; left: 10.42%;}
+
+          .ss25lmj_04 .link04{width: 36.11%; top: 34.66%; left: 9.31%;}
+          .ss25lmj_04 .link05{width: 33.33%; top: 35.51%; left: 9.31%;}
+          .ss25lmj_04 .link06{width: 32.64%; top: 36.34%; left: 9.31%;}
+          .ss25lmj_04 .link07{width: 29.17%; top: 37.18%; left: 9.31%;}
+          .ss25lmj_04 .link08{width: 44.44%; top: 38.05%; left: 9.31%;}
+
+          .ss25lmj_04 .link09{width: 33.33%; bottom: 38.43%; left: 9.72%;}
+          .ss25lmj_04 .link10{width: 36.11%; bottom: 37.6%; left: 9.72%;}
+
+          .ss25lmj_04 .link11{width: 27.78%; bottom: 21.76%; left: 28.47%;}
+          .ss25lmj_04 .link12{width: 36.11%; bottom: 20.94%; left: 28.47%;}
+          .ss25lmj_04 .link13{width: 32.64%; bottom: 20.15%; left: 28.47%;}
+
+          .ss25lmj_04 .link14{width: 36.81%; bottom: 3.74%; left: 13.75%;}
+          .ss25lmj_04 .link15{width: 47.22%; bottom: 2.91%; left: 13.75%;}       
+          .ss25lmj_04 .link16{width: 25%; bottom: 2.06%; left: 13.75%;} 
+
+          /* 기획전 하단 링크 */
+          .model_list{display:block;}
+          .model_list .list_box .model_txt{font-size:1vw; width:48.75%;}
+          .list_box{width:100%;}
+          .model_list .list_box .model_txt span{
+              font-size:calc(25em / 7.5);
+              width:auto;
+              padding: calc(7.95em / 7.5) 0;
+          }
+          .model_list .list_box .model_txt2 span{padding: calc(8.8em / 7.5) 0;}
+        }
+</style>
+
+<div class="ss25lmj" id="ss25lmj">
+	<div class="Container">
+		<div class="contents ss25lmj_01">
+			<picture>
+					<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162785058?cache=1745239174&response-content-disposition=inline;filename=img01_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyNzg1MDU4P2NhY2hlPTE3NDUyMzkxNzQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDFfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=QwWH1wOY3YHe0L0Y0w~6KKUpKmRAXcKuR~OGR7OjRXqZJ41ZnLRmrY~HXlzrhcS22e~wUR20GVFkr8t3pi-qT8oX5HKPXbcbNRymjCFP6DgX8QsGgI0YvqE7u3lmJGJjMXxqUhA6NVjYHLAoywPhl4FzETfWkyQZ0aaQ7KaQx3TpCAzATzaqfL1Scpy01etMzRcTiVnLkUYmNUWkZYiAVULi7q91WUJFGpheMmM19LbV0XhYKz0ohodVFSMUFiIbF-AmAM3BJuwn25RL28hOy6F1bVUmmnqz6ftCardLJS4-r7DDX53F56Ef5Os3XR2yBS7uNiiwir-jXjQtcNs9nA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+					<!--모바일 이미지-->
+					<img alt="THIS IS THE HEAVEN 배우 이민정과 함께한 럭셔리하고 여유로운 여름 골프 여행" src="https://cdn1-originals.webdamdb.com/12212_162785059?cache=1745239191&response-content-disposition=inline;filename=img01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyNzg1MDU5P2NhY2hlPTE3NDUyMzkxOTEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDFfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=GE7qEnMu~~lI3pDoSfVd1Zj50LExV6WJMnh-82d-whLU8nmqJ9iy968nlDsjIc-5oi~BKL~Axr5l3MvuyScgIP26Gq0otcuOmzuo~-qT4jdcz5tTeHUDCTUz9GqoVwKiESexhGPz9NGWY5XLIqUsa5JXPywzb8D3reEgkl-EnGuZFTwpMJKmvjFGMMEsiIZ6g74wa0q-KK4qHA7a4hSOorDEwl9hKXZ98C58EUUbUX9oR-YKMDRUvKOID3yE98fLHi3W4jKsHnWwxf42euB5buarty9p0mLZJMGlnxFKeMlms5ijKWwcLq2IQEs3Er~QjqcC0-CgwMz8feW8Z~mbhg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+					<!--피시 이미지-->
+			</picture> 
+		</div>
+
+    <div class="contents ss25lmj_02_1">
+			<picture>
+          <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162796271?cache=1745322985&response-content-disposition=inline;filename=img02_coupon_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyNzk2MjcxP2NhY2hlPTE3NDUzMjI5ODUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfY291cG9uX21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=ijv0Nf2TTac-LDHmwNSgjoj0lu4xncvoPhha4qymy6dtd4eCASbYpnl1iFBPGo6zrnk6Jefamze1wq-XOoM2lAkBzlLYK79gwI3u1CVCsI6Rlk1BRWWYVPXasPrShK3ORMMeDX2U9qvUHy9Dn6MbbHBUfnDmML-HhgYtizug4M9m~YHhGhbqyTel1uV4ki3wJ~sm2Psyj6S7u2rGyYFchqCphY2lcux0RE0AcNUmTJwMqCCYLmEq-3pfCv~CXfVgGq3yATeuKYiGEn5I3XuSRVa~q6PEmbEycrKVk2S8Y2gBZrXaX4jPsW~s9jyJPbzA9cRWwdCpMQRgde6L4HeGyQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+          <!--모바일 이미지-->
+          <img alt="SPECIAL PROMOTION #1 이민정's PICK! SPECIAL 20% OFF 화보 기획전 내 이민정 착용 의류 20% 할인" src="https://cdn1-originals.webdamdb.com/12212_162796272?cache=1745322986&response-content-disposition=inline;filename=img02_coupon_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyNzk2MjcyP2NhY2hlPTE3NDUzMjI5ODYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfY291cG9uX3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=PKvD6fxO0mfvy-t-1D54d-fzTWp2rHjDWHC2Nd-c8aAu4lj0gdCdP9TjdGLRDK5zixC819uZsA-fNoTSSIE-vx-vEIBhC9PF-~ZlsGkx3XadzVRkdRb1cOjhfE3e~WELQupbbYjufQFipqW55RJWBLTeQObePPF-NxPASripSworOZvIZ9gCCofM~-pLpqbptAZWu8y7Kp-q6nu7dPQN2UgS62BXHVw2BkMqLpeCjndKDnzGGQBCjfrWqy7EuH~b9Cuq7FkMW2LWWm2DB6858b2VyHCkYDBLjCJyiZIl8nvemHl2OtZMtdGgCIgMPrEc1Gbxhq79EUhp2sb91XJAyg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+          <!--피시 이미지-->
+			</picture> 
+		</div>
+
+		<div class="contents ss25lmj_02">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162808131?cache=1745397096&response-content-disposition=inline;filename=img02_1_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyODA4MTMxP2NhY2hlPTE3NDUzOTcwOTYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfMV9tby5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=MHSGbB-ryGGhI3KOpvRKT~rSUrWZVOY-Cps-hngBcMIhRx32CzPVzL8qcS8oafnHDNkRCZQXUtmwVab-ldK0vLLlrG3RoOKz5gbsVY2W-T7UE5yPTBNjOcZiRyNryjKII3qzIp8PZsy5FWvh9AibG3aahk58G12v1oftnCuqNzAjff7aH7AYCgiGkEDnZjtDOCPaIQKm~SKbnKEjfR9t6l5hGLuFkX8aWv3262LPdWfCf2CUNufRTZpTESlta4Ydy9QRKNOgMnIx6I7hQ2mneUroVcabLkzX-2lkbPr6nq2CkOuWxWqXsRu2NJKsivTYJsvIKuk-46LY~LMa0tPivA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--모바일 이미지-->
+				<img alt="SPECIAL PROMOTION #2 캘러웨이 어패럴 25SS 20만원 이상 구매 시 캘러웨이 우드 티 SET 2개 + 볼마커 증정 (소진 시 종료, 한 주문번호당 1개 증정). 캘러웨이 우드 티 + 파우치 SET, 우드 티 + 볼마커 SET" src="https://cdn1-originals.webdamdb.com/12212_162808130?cache=-62169955622&response-content-disposition=inline;filename=img02_1_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyODA4MTMwP2NhY2hlPS02MjE2OTk1NTYyMiZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZTtmaWxlbmFtZT1pbWcwMl8xX3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=OkF9~qmOXVWGdboa3yZgULAeYfmVnzbACpKSBGAkcV3YXWBm7FpfgFdlI6kB4qBkiNN2QM6vpuxUtlioccvYxuehMnlkdzQ~tkMHOtV76AUYSOcl3eCiHFNARYgUAMbghyhAjRbGJcOWeb1SqaXY2gE6nD7kpajiTvcDtsrO3tpAWM9uedU4EqF3c1H5GpfSyqWU~iDgrwWL6WmsDCkMMsJIghpoyLKMLqXQaEidkbbpb3-WkYVJObCiZyWeVeNGG7pjnTE4a0hMVoNbNiO6CwQxaNctpKJYCGNzcVH14I6ltmH1WPAAUOxfWPq96O4ZMioI7QpjKJD-9JNekPDx3A__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--피시 이미지-->
+			</picture>
+      <a class="link link01" href="https://kr.callawaygolf.com/Callaway/c/045">SPECIAL PROMOTION #3 봄 더하기 프로모션 25 SPRING 제품 2개 이상 구매 시 10% 할인! *일부 상품 제외. 프로모션 제품 보러 가기</a>
+		</div>
+
+		<div class="contents ss25lmj_03">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_163010866?cache=1747042733&response-content-disposition=inline;filename=img03_2_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYzMDEwODY2P2NhY2hlPTE3NDcwNDI3MzMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDNfMl9tby5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=lMCoZqrgL~Wa9Q2xCPJMJrf81RzbuQgyGkT~rLhEQxqQ3DJm0SWWdHFgfi~McBO2zVG-bkNQ~YuI64BSxXvDKiQCajiNf6LXA~0~GfgPo64JgDOWG-3I3QXudrrw5jzVzOjjcpi~MM1Ibfv9LrINqMd55Lb4gpFcL6H84-n2SRih2~1rxmKZzgE4Dtm4clli4wZ2b78JDa8motRkYUBTUK9SNo7ZYiXKQNrrVGcTsZ4OxC-moc1Wmmx6GfWRkYhQXLMprA~Aeb6CiQhSCbOmkMUgLGEW91U-~wfOYGEIGEF6IViIMJyKoSWExY~tBdWNuZvZQ4aoJrJxMoVHozpTBg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--모바일 이미지-->
+				<img alt="" src="https://cdn1-originals.webdamdb.com/12212_163010867?cache=1747042744&response-content-disposition=inline;filename=img03_2_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYzMDEwODY3P2NhY2hlPTE3NDcwNDI3NDQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDNfMl9wYy5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=lYU~Gt7QfIcJEOEnGsEfJLnIQI9Q2QpZwLW8G5Isiq5RvOLLhrmAKpaGTy9ESm0aB89dFPcaVnG4qarDqypys0Axt2dD7lRsGoTHcvOtHQi9jSKTT-W8qcdJig3Lsz-7JlvNbkvd6lzDD7iey33OXxlz9ZcoJBQsz82M9F7HnUwwW7paqIG4NKNlF3Tj5m0ihv9HvzopNiw-jymuYEnZKqv3cbEsebIoXig~qELYAd1lx6K8nltCf7vtIxIbrBLG~yRyvlwC4-CH-FQy76hqkpsGKoFgeHsVKrT~UnIDBax-XRXoc~EE5ljVXWs0Wu6Hsobhoj38zxzVd-FytsNj9Q__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--피시 이미지-->
+			</picture> 
+			<a class="link link01" href="https://kr.callawaygolf.com/kr/p/CWAC25M403_BE_">와이드 천연초 바이저</a>
+			<a class="link link02" href="https://kr.callawaygolf.com/kr/p/CWSO25M606_YE_">여름 Y에리 니트 슬리브리스</a>
+			<a class="link link03" href="https://kr.callawaygolf.com/kr/p/CWPS25M601_BE_">여름 큐롯 쇼츠</a>
+			<a class="link link04" href="https://kr.callawaygolf.com/kr/p/CWTY25M604_WH_">여름 볼륨소매 Y에리 티셔츠</a>
+      <a class="link link05" href="https://kr.callawaygolf.com/kr/p/CWPC25S402_PI_">봄 시그니처 플리츠 큐롯</a>
+			<a class="link link06" href="https://kr.callawaygolf.com/kr/p/CWTY25S407_BK_">봄 프리미엄 반팔 Y에리 티셔츠</a>
+			<a class="link link07" href="https://kr.callawaygolf.com/kr/p/CWAB25X202_BK_">미니 토트백</a>
+			<a class="link link08" href="https://kr.callawaygolf.com/kr/p/CWPC25S404_BK_">퍼포먼스 웰딩 플리츠 큐롯</a>
+			<a class="link link09" href="https://kr.callawaygolf.com/kr/p/CWSO25M605_NA_">여름 스카시 라운드 니트 베스트</a>
+      <a class="link link10" href="https://kr.callawaygolf.com/kr/Callaway/p/CWPS25M603_MT_">여름 프린트 카고 쇼츠</a>
+		</div>
+
+		<div class="contents ss25lmj_04">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_163010868?cache=1747042735&response-content-disposition=inline;filename=img04_2_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYzMDEwODY4P2NhY2hlPTE3NDcwNDI3MzUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDRfMl9tby5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=aHDlimaha--OX0mnAmUODGkZtDui6jp4Q9ljwK3pnjnU0jz4cOQ0ASk~erbNlxhz9d1CPPDYfBXWZuM~O8AILvNFNnngSb-Wn2mXhYLdjz4yJPA~7owTFnb0CWz4KyFK9SVY17lmLYgE0mm6PEJ6BW6PjQqf94vGIUedBMxXsvnfipNJngildQINMvVDEduwwyB-1kkPhKZsC-48O-BT4qpvEAu2c-kbRunxfg0jYWJCCqVzW5kxC66Xvz7~KxBGjFw3sPMuZzNqwE-oXUmZjtuNfFqpJbDDtHkWiXBGH67sX0B~JrsEnIVtbofv8Y4cIBmrRqRk0t~iDs4QFZI-mQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--모바일 이미지-->
+				<img alt="" src="https://cdn1-originals.webdamdb.com/12212_163011217?cache=-62169955622&response-content-disposition=inline;filename=img04_2_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYzMDExMjE3P2NhY2hlPS02MjE2OTk1NTYyMiZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZTtmaWxlbmFtZT1pbWcwNF8yX3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=l16FL3NCS6hif0lMyzzbenYdROTKaPRQNXy4HrjVjh4AiQriGMWb~tyP0DEghAODEm6Dg4AnccyFga1HHZ46WFetIbROSyCd0nN7nXdW3QSmbs5qSJ3i0poGpt9ylCYwSGE1I8HC0M1hnPAxF~2bK10KACp4a0O0RysNm4dfjMMFyy9Y9epjS3j3E3r9cbxdphXwxpbWxFGC7f4s5mMlQSI45YzVV8aufS26OYHz5eBCNAsDqjtqNLCdWctXUDfKys82QS7kqCxpyexUWGE18V2iPcm2n6g6YeDQxCWrdIO~F6hqajkbFn2cuqkH~dYetwTacfmfUr16vEaITrJKjQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<!--피시 이미지-->
+			</picture> 
+      <a class="link link01" href="https://kr.callawaygolf.com/Callaway/p/CWTY25M608_CP_">여름 등판 펀칭 티셔츠</a>
+			<a class="link link02" href="https://kr.callawaygolf.com/kr/p/CWPS25M604_WH_">여름 턱 변형 쇼츠</a>
+			<a class="link link03" href="https://kr.callawaygolf.com/kr/p/CWAC25X207_OW_">스냅 경량 버킷햇</a>
+			<a class="link link04" href="https://kr.callawaygolf.com/kr/Callaway/p/CWTU25M601_WH_">여름 라운드 반팔 티셔츠</a>
+			<a class="link link05" href="https://kr.callawaygolf.com/kr/p/CWJP25M601_PI_">여름 홑겹 프린트 점퍼</a>
+			<a class="link link06" href="https://kr.callawaygolf.com/kr/p/CWPC25M602_BE_">여름 카고 A라인 큐롯</a>
+			<a class="link link07" href="https://kr.callawaygolf.com/kr/p/CWAB25X201_WH_">고딕 레터링 큐브백</a>
+			<a class="link link08" href="https://kr.callawaygolf.com/kr/p/CWAF25X202_OR_">JASMINE 4.0 (스파이크리스)</a>
+			<a class="link link09" href="https://kr.callawaygolf.com/kr/p/CWAC25M405_WH_">와이드 라피아 바이저</a>
+			<a class="link link10" href="https://kr.callawaygolf.com/kr/p/CWTO25M601_BK_">여름 슬리브리스 원피스</a>
+			<a class="link link11" href="https://kr.callawaygolf.com/kr/p/CWAC25X202_OW_">쉐브런 리본 볼캡</a>
+			<a class="link link12" href="https://kr.callawaygolf.com/kr/p/CWTY25M612_WH_">여름 골지 Y에리 티셔츠</a>
+			<a class="link link13" href="https://kr.callawaygolf.com/kr/p/CWPC25M601_LB_">여름 변형플리츠 큐롯</a>
+      <a class="link link14" href="https://kr.callawaygolf.com/kr/p/CWAC25M401_MT_">고주파 엠보 리본 바이저</a>
+			<a class="link link15" href="https://kr.callawaygolf.com/kr/p/CWSO25M602_MT_">여름 언발란스 Y에리 반팔 풀오버</a>
+			<a class="link link16" href="https://kr.callawaygolf.com/kr/p/CWPS25M601_WH_">여름 큐롯 쇼츠</a>
+		</div>      
+        
+    <div id="ss25lmj_video" class="video_wrap pc">
+        <video autoplay="" loop="" muted="">
+            <source src="https://cdn1-originals.webdamdb.com/12212_162796361?cache=1745331499&response-content-disposition=inline;filename=25ss_lmj_pc.mp4&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyNzk2MzYxP2NhY2hlPTE3NDUzMzE0OTkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MjVzc19sbWpfcGMubXA0IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=WnjLoSOc6wlH2SCegHt1KP5dw4uxYtHQI9Fv-Dm~UtrN1mIfiig7TSkty1eYbYN1jTpJuYuniZEyoBTThSsR2SjSFWvD-r2rD2243TXSpU1EXaOqJ8znjRe39RFJYbffeu23QaI8WRBCnXcSoi129nwhrvAPn-YWS5BFrO-UfIYfHBAyv~5UyVCHu~heEyloOOLNdIUIJO6b49AfCQSAn8qhe6UKsv8HVM-Sbpcv30nG03v~V-yeiMEVG5Sfn1-zBQyxHln0nyHy8hIcWzuErdYSzKkWvq7lTLD75ZzvJwtpLEokuseLTLUsctbQKxpY-9ElOD4oTW68j1xlvMgzfw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="ss25lmj_video" class="video_wrap mo">
+        <video autoplay="" loop="" muted="">
+            <source src="https://cdn1-originals.webdamdb.com/12212_162796362?cache=1745331512&response-content-disposition=inline;filename=25ss_lmj_mo.mp4&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyNzk2MzYyP2NhY2hlPTE3NDUzMzE1MTImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MjVzc19sbWpfbW8ubXA0IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=EMm7flg7KFnYzAxFBIi5cBNWmPUYGDODwHAP4gAKZzRuvBhshIPj5bEaHXqkxYKjMiX6DluG8B8sQfWN8~EEa0cPrKP7r6qoN4U8VrEQMG6udVITZSglfCYLjgHvwi2ZkEoEGJAT1CNVc7IQbhlpzIIadFl3CFbrXs-wBc97MO--5GkBKa0eP1WYzk64oyXoQSnQQWNlDeg2NXeZwW1soaVYJ2oBEIk8Na5m7mx5xNgi6hV4P833K4yiwRwwKdZ-3k1Gh7XqakP3h~mociE8zpcpP9HLXPh-S2-EiZmLlWvIfU43QPqIFEyuUcbTqh4zZaJzxeThWMpf6vlB2sXUZA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" type="video/mp4">
+        </video>
+    </div>
+
+		<div class="model_wrap">
+			<div class="model_list">
+				<div class="list_box">
+					<a href="https://kr.callawaygolf.com/kr/Callaway/c/0459">
+						<picture>
+							<source media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_162785066?cache=1745239240&response-content-disposition=inline;filename=img05_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyNzg1MDY2P2NhY2hlPTE3NDUyMzkyNDAmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDVfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=gVO4tWAmE9O-zEq2XXzO3z5~hGrGef9gwGLbrwLqEPuDlpOyrMFKy1XiNwbk~oH6aUlWOyeFOizeHcnzsQw4u98TJC~ZFDjam4JyE~8jOooXTUcMFygIbJFzMvmIghmy6qAIPJ-~MdDr~AJtdEhMpnOJPvAEbG9uNL~p2bLG6BnzBk5JzoZ389NZGCWLjW0e1dZjHuLi3rzf-oPPnWzse2wzwYPR1~wR97bRPuwdtUCiqD9IYCkgul5~Ime7H36WFGA-kNTp-W9qcCjfS6QAAXCqC2IFsDmHpTpeCbCc4~hionfJPUfCc2ApBZSmaL5neMeMARfSM6SzVwNNF5V7zA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+							<img alt="" src="https://cdn1-originals.webdamdb.com/12212_162785065?cache=1745239186&response-content-disposition=inline;filename=img05_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTYyNzg1MDY1P2NhY2hlPTE3NDUyMzkxODYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDVfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=EpoeQxHWUwpb3JyPUBjeu34zsbJ8yV5HVXXqZlHQFFmz8wHzfZKgTGUEeMZY6vCvNzniqPfu48RKaTDEhsgeI-qn4ocjO-iC4GgVlRXpu11eA8tpNbpWXpl0CGR-gPe-qa02y9bTaP750hGVMzZja9XboCJ2eEz4DvfwR0-nIDGKMZmRsrWTxk3JCbRZdANgSd6JOjeAyAQyhx7vS6ScAnxRvfoLGzCTAG3Jqi7huhpjjn6WMOEcOlSzFLhpH-6gfeMEfj~WQ8ZWTCu6a89rOMVNWwkQ2B7rtq5~Bu2g4t2tKQk864korzdLDkMH0EvcMzO6WrHf5MbBZh1QpDtfCA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+						</picture> 
+					</a>
+					<div class="model_txt">
+							<a href="https://kr.callawaygolf.com/kr/Callaway/c/0459">
+							<span>25SS 신상품 더보기</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
