@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>callawaykorea.com/m</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+.contentpage_title {
+    margin: 0 !important;
+    letter-spacing: 0 !important;
+    padding: 0;
+    font-size: 0;
+}        
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+@font-face {
+    font-family: 'Pretendard Variable';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+
+/* html{overflow: inherit !important;}
+body{overflow: inherit !important;} */
+/* body::-webkit-scrollbar{display:none !important;} */
+
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width:100%; 
+  vertical-align: middle;
+}
+
+.Container {
+    font-family: 'Pretendard', sans-serif; 
+    position: relative;
+    word-break: keep-all;
+    text-align: center;
+    font-size:0.39vw !important;
+}
+
+.Container img{width:100%; border: 0;}
+
+.mo{display:none;}
+.pc{display:block;}
+
+/* main_top */
+.mnd_main_top {
+  position: relative;
+}
+.mnd_main_top .link {
+  position: absolute;
+  display: block;
+  text-indent: -9999px;
+}
+.mnd_main_top .link01 {
+  left: 38.02%;
+  top: 33.79%;
+  width: 13.59%;
+  height: 0.97%;
+}
+.mnd_main_top .link02 {
+  left: 30.31%;
+  top: 51.87%;
+  width: 15.83%;
+  height: 2.39%;
+}
+
+/* coupon */
+.mnd_main_top :is(.code01, .code02, .code03, .code04) {
+  width: 9.95%;
+  height: 3.11%;
+  cursor: pointer;
+}
+.mnd_main_top .code01 {
+  left: 4.17%;
+  top: 47.58%;
+}
+.mnd_main_top .code02 {
+  left: 14.9%;
+  top: 47.58%;
+}
+.mnd_main_top .code03 {
+  left: 4.17%;
+  top: 51.15%;
+}
+.mnd_main_top .code04 {
+  left: 14.9%;
+  top: 51.15%;
+}
+
+/* product */
+.mnd_main_top :is(.prdLink01, .prdLink02, .prdLink03, .prdLink04) {
+  width: 9.95%;
+  height: 3.44%;
+}
+.mnd_main_top .prdLink01 {
+  left: 51.41%;
+  top: 48.19%;
+}
+.mnd_main_top .prdLink02 {
+  left: 62.24%;
+  top: 48.19%;
+}
+.mnd_main_top .prdLink03 {
+  left: 51.41%;
+  top: 52.08%;
+}
+.mnd_main_top .prdLink04 {
+  left: 62.24%;
+  top: 52.08%;
+}
+
+.mnd_main_top :is(.prdBtn01, .prdBtn02, .prdBtn03, .prdBtn04) {
+  width: 14.48%;
+  height: 2.23%;
+  bottom: 6.19%;
+}
+.mnd_main_top .prdBtn01 {
+  left: 6.2%;
+}
+.mnd_main_top .prdBtn02 {
+  left: 30.57%;
+}
+.mnd_main_top .prdBtn03 {
+  left: 55%;
+}
+.mnd_main_top .prdBtn04 {
+  left: 79.43%;
+}   
+
+/* gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  width: 100%;
+}
+.gallery_image {
+  overflow: hidden;
+}
+.gallery_image:hover img {
+  transform: scale(1.2);
+}
+.gallery_image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.contents02_wrap {
+  position: relative;
+}
+.contents02_wrap .notice {
+  position: absolute;
+  left: 24.53%;
+  top: 12.29%;
+  display: flex;
+  flex-direction: column;
+  width: 50.93%;
+  padding: 2.38% 4%;
+  background-color: rgb(255, 255, 255, 0.64);
+}
+.contents02_wrap .notice .notice_tit,
+.contents02_wrap .notice .notice_desc {
+  text-align: left;
+}
+.notice_tit {
+  font-weight: 700;
+  font-size:calc(23em / 7.5);
+  margin: 0 0 calc(6em / 7.5);
+  color: #000000;
+}
+.notice_desc {
+  font-size: calc(18em / 7.5);
+  line-height: calc(12em / 7.5);
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-indent: -0.4em; 
+  padding-left: calc(2em / 7.5);
+  margin: 0;
+}
+.notice_desc::before {
+  display: inline-block;
+  content: '-';
+  width: 0.4em;
+  color: #000000;
+}
+
+/* contents03_wrap */
+.contents03_wrap {
+  position: relative;
+}
+.contents03_wrap .opus_main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 37.03%;
+  left: 5.26%;
+  top: 27.33%;
+}
+.contents03_wrap .opus_main .title {
+  margin-bottom: 4.5%;
+}
+.contents03_wrap .opus_main .title img {
+  width: 45.29%;
+}
+.contents03_wrap .opus_main .sub_title {
+  font-size: calc(28em / 7.5);
+  line-height: calc(10.8em / 7.5);
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 7% 0;
+}
+.contents03_wrap .opus_main .prdBtn {
+  position: relative;
+  bottom: 0;
+  left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(4.9em / 7.5) calc(24.3em / 7.5);
+  font-size: calc(24em / 7.5);
+  font-weight: 500;
+  line-height: calc(10em / 7.5);
+  color: #000000;
+  background-color: rgba(255, 255, 255, .71);
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  margin: 0 auto 9%;
+}
+.contents03_wrap .opus_main .prdBtn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.contents03_wrap .opus_main .desc {
+  line-height: calc(16em / 7.5);
+  font-size: calc(22em / 7.5);
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, .71);
+  margin: 0;
+}
+
+
+@media(max-width:720px){
+  .Container{font-size:1vw;}
+  .pc{display:none;}
+  .mo{display:block;}
+
+  .mnd_main_top .link01 {
+    left: 24.58%;
+    top: 22.13%;
+    width: 41.11%;
+    height: 0.57%;
+  }
+  .mnd_main_top .link02 {
+    left: 26.11%;
+    top: 46.61%;
+    width: 47.78%;
+    height: 1.34%;
+  }
+
+  /* coupon */
+  .mnd_main_top :is(.code01, .code02, .code03, .code04) {
+    width: 39.72%;
+    height: 2.45%;
+  }
+  .mnd_main_top .code01 {
+    left: 8.75%;
+    top: 33.47%;
+  }
+  .mnd_main_top .code02 {
+    left: 51.39%;
+    top: 33.47%;
+  }
+  .mnd_main_top .code03 {
+    left: 8.75%;
+    top: 36.28%;
+  }
+  .mnd_main_top .code04 {
+    left: 51.39%;
+    top: 36.28%;
+  }
+
+  /* product */
+  .mnd_main_top :is(.prdLink01, .prdLink02, .prdLink03, .prdLink04) {
+    width: 40.42%;
+    height: 2.74%;
+  }
+  .mnd_main_top .prdLink01 {
+    left: 8.06%;
+    top: 52.45%;
+  }
+  .mnd_main_top .prdLink02 {
+    left: 51.81%;
+    top: 52.45%;
+  }
+  .mnd_main_top .prdLink03 {
+    left: 8.06%;
+    top: 55.54%;
+  }
+  .mnd_main_top .prdLink04 {
+    left: 51.81%;
+    top: 55.54%;
+  }
+
+  .mnd_main_top :is(.prdBtn01, .prdBtn02, .prdBtn03, .prdBtn04) {
+    width: 35.28%;
+    height: 1.31%;
+  }
+  .mnd_main_top .prdBtn01 {
+    left: 8.06%;
+    bottom: 18.61%;
+  }
+  .mnd_main_top .prdBtn02 {
+    left: 56.67%;
+    bottom: 18.61%;
+  }
+  .mnd_main_top .prdBtn03 {
+    left: 8.06%;
+    bottom: 3.04%;
+  }
+  .mnd_main_top .prdBtn04 {
+    left: 56.67%;
+    bottom: 3.04%;
+  }          
+
+  /* gallery */
+  .gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery .item02 {
+    grid-column: span 2;
+  }
+  .gallery .item03 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .gallery .item04 {
+    grid-row: 3 / 5;
+    grid-column: 2;
+  }
+  .gallery .item05 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .gallery .item06 {
+    grid-row: 5;
+    grid-column: 2;
+  }
+  .gallery .item07 {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .gallery .item08 {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .gallery .item09 {
+    grid-column: span 2;
+  }
+
+  .contents02_wrap .notice {
+    left: 4.17%;
+    top: 12.99%;
+    width: 84.03%;
+    padding: 7% 2.72% 7% 4.92%;
+  }
+  .notice_tit {
+    font-size:calc(62em / 7.5);
+    margin: 0 0 calc(5em / 7.5);
+  }
+  .notice_desc {
+    font-size: calc(53em / 7.5);
+    line-height: calc(13.5em / 7.5);
+    letter-spacing: 0.030em;
+  }
+
+  /* contents03_wrap */
+  .contents03_wrap .opus_main {
+    width: 100%;
+    left: auto;
+    top: 53.94%;
+    margin: 0 auto;
+  }
+  .contents03_wrap .opus_main .title {
+    margin-bottom: 5%;
+  }
+  .contents03_wrap .opus_main .title img {
+    width: 51.39%;
+  }
+  .contents03_wrap .opus_main .sub_title {
+    font-size: calc(90.8em / 7.5);
+    line-height: calc(9.6em / 7.5);
+    margin: 0 0 7% 0;
+  }
+  .contents03_wrap .opus_main .prdBtn {
+    padding: calc(7.8em / 7.5) calc(24.85em / 7.5);
+    font-size: calc(64.2em / 7.5);
+    line-height: calc(10em / 7.5);
+    border-radius: 50px;
+    margin: 0 auto 10.2%;
+  }
+  .contents03_wrap .opus_main .desc {
+    line-height: calc(13em / 7.5);
+    font-size: calc(64em / 7.5);
+    padding: 0;
+    background-color: transparent;
+  }
+}
+</style>
+
+<div class="mnd" id="mnd">
+  <div class="Container">
+      <div class="mnd_main_top">
+        <picture>
+          <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290970?cache=1758284867&response-content-disposition=inline;filename=img01_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwOTcwP2NhY2hlPTE3NTgyODQ4NjcmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDFfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=Gd6jTCvcrHzQCeQIN5GUJOygWhHJADU8FnDHrxHN9gpVAS4JIhEOOX~5JGISPuOU7HWKDig2k5AGN3IPug4KkGuu9N2-ls~GHIuDOcdD9gpmYgSKxyEiJDOnSq655~fkBV0P9PqdtVl8TatgyGjXEKd-BIlU4-OmeSN1WNageacfYhj1X-hknj~6rCEURFENXjNV0R8OtGV8-OTbmHpyPTuNp~zjKsNdsLhgyObVEi8fjsbBCF0wyT-PKrVjOlScVhgOoTgNHoLZHDBu8KiDGOSkdS0JIfWet6cg4exyOgVhgT9zfCYDCoGhCI6nMZjN5rsfMVhq0KAA0Jn02lG65A__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+          <img alt="건군 77주년 국군의 날 캘러웨이 볼&퍼터 최초 특가 프로모션. 10월 1일 국군의 날 및 건군 77주년 기념 국가를 위해 헌신하신 모든 분들께 감사의 마음을 담아, 캘러웨이 볼&퍼터를 한정 수량 특별가로 제공합니다. 이벤트 기간 : 2025년 9월 22일 ~ 10월 31일까지, 대상 : 대한민국 국군 장병과 군무원 및 그 가족, 혜택 1 : 캘러웨이 인기 볼, 퍼터 한정 수량 특별 공급. 혜택 2 : 제품별 1,000 EA 한정, 최대 55% 인하 특가. 이벤트 최대 55% 할인 + 최대 12개월 카드 무이자. 참여방법 : ① callawaykorea.com/m  링크 접속 > 회원 가입 > 특가 쿠폰 번호 확인 ② 특가 대상 제품 구매 페이지에서 쿠폰 번호 입력 시 할인 적용. STEP1 : 제품별 쿠폰 코드 확인. 쿠폰 1 : 43% 쿠폰 할인코드(BL43), 쿠폰 2 : 55% 쿠폰 할인코드(PT55), 쿠폰 3 : 52% 쿠폰 할인코드(PT52), 쿠폰 4 : 45% 쿠폰 할인코드(PT45). STEP2 : 버튼 눌러서 회원 가입. STEP3 : 원하는 제품 클릭 후 장바구니 담기. STEP4 : 결제 단계에서 쿠폰 코드 입력 후 적용하기. 특가 대상 제품 안내 - 1. 크롬소프트 코리아 트루트랙. 혜택 : 정상가 70,000원, 할인가 40,000원 (43% 할인). 쿠폰코드 : BL43. 2. 툴룽 디자인. 혜택 : 정상가 605,000원, 할인가 270,000원 (55% 할인). 쿠폰코드 : PT55. 3. 오디세이 화이트 핫 버사 #12. 혜택 : 정상가 330,000원, 할인가 159,000원 (52% 할인). 쿠폰코드 : PT52. 4. 오디세이 화이트 핫 버사 혜택 : 정상가 330,000원, 할인가 169,000원 (45% 할인). 쿠폰코드 : PT45." src="https://cdn1-originals.webdamdb.com/12212_164290971?cache=1758284882&response-content-disposition=inline;filename=img01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwOTcxP2NhY2hlPTE3NTgyODQ4ODImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDFfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=l5IXZ9bqU-FfYY5XJZOakv6rDMSnaIwhb4VZIqgtYvcZfnFuWR03Z2P5Ixz7ZfcV6DZ362X~VUI3kZIO3ASVmwm9NO2QzlplzcZ8hk~gt6JpcJOuGnafL4kP0eol7LmjPXxJm~82XsMs1siY2KZTHQDw778H-SVrer9sfw37u0o2gb3d3q6C3uamxryp5nXtdlqZGHZjxbUE22qysL~qUvkUpuMwUcG6f90kJthrtGArEzAPnNV0zSoFW4MFrUFARCj4QJzV1jaxK10Btqx01kSXR2HCsX5nG~xaz4PW0XJRhxqR4~oioiZWDDR83Ru7~2vqXJHu~VNw2beIbDpDww__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+        </picture> 
+        <a class="link link01" href="https://callawaykorea.com/m">건군 77주년 국군의 날 캘러웨이 볼&퍼터 최초 특가 프로모션 페이지로 이동</a>
+        <a class="link link02" target="_blank" href="https://kr.callawaygolf.com/kr/login">캘러웨이 회원가입 페이지로 이동</a>        
+      
+        <a class="link code01" onclick="copyCouponCode('BL43')" title="BL43"></a>
+        <a class="link code02" onclick="copyCouponCode('PT55')" title="PT55"></a>
+        <a class="link code03" onclick="copyCouponCode('PT52')" title="PT52"></a>
+        <a class="link code04" onclick="copyCouponCode('PT45')" title="PT45"></a>
+
+        <a class="link prdLink01" href="https://kr.callawaygolf.com/kr/p/BP_020332/configuratorPage/CPQCONFIGURATOR">크롬소프트 코리아 트루트랙 제품 링크로 이동</a>
+        <a class="link prdLink02" href="https://kr.callawaygolf.com/kr/c/TOULONPUTTERS">툴롱 디자인 제품 링크로 이동</a>
+        <a class="link prdLink03" href="https://kr.callawaygolf.com/kr/c/WHITEHOTVERSA12">오디세이 화이트 핫 버사 #12 제품 링크로 이동</a>
+        <a class="link prdLink04" href="https://kr.callawaygolf.com/kr/c/WHITEHOTVERSA">오디세이 화이트 핫 버사 제품 링크로 이동</a>
+
+        <a class="link prdBtn01" href="https://kr.callawaygolf.com/kr/p/BP_020332/configuratorPage/CPQCONFIGURATOR">제품 보기</a>
+        <a class="link prdBtn02" href="https://kr.callawaygolf.com/kr/c/TOULONPUTTERS">제품 보기</a>
+        <a class="link prdBtn03" href="https://kr.callawaygolf.com/kr/c/WHITEHOTVERSA12">제품 보기</a>
+        <a class="link prdBtn04" href="https://kr.callawaygolf.com/kr/c/WHITEHOTVERSA">제품 보기</a>
+      </div>
+
+      <div class="contents01_wrap">
+          <div class="gallery_wrap">
+              <div class="gallery">
+                  <div class="gallery_image item01">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290771?cache=1758272901&response-content-disposition=inline;filename=img02_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzcxP2NhY2hlPTE3NTgyNzI5MDEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=oU3aCYqM7b8VTXefeIiuzt62AWI0z~IhEJuisBSdf-t5d4HBK4rFsaVsijdbxl7fQDC7YYSoPl4x8IWMR7THtJBKkESs-guVdGGoG6TNewDSDXq~j131ypxjQar0RO83xKK~4kRC-OBxNSDO-6YoZvO9SjEKg7qWYCILwVLD5lt7xCNMkFiZNf09w2eX5b9lIEcd6XkwmpMveb8Knk7LUQtmz9QVE-RlYXWFs3lzPVKz-zHVy9uDODx4RNg71zKPpnhHTqjtnIV9SCEd4Maw6Eei0CUHyLOHtKErJnHbTvTumyjL-14ie9R7OLRDGLrUliYkv1IwgoAJn-DENZSf2A__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290774?cache=1758272907&response-content-disposition=inline;filename=img02_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzc0P2NhY2hlPTE3NTgyNzI5MDcmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=g3lgzxc9pPaRqB4ZImBV169alecCU2aRSSAVLQ6Y4r1hJd95v7sK7Di4hcbbpSTHNUtAP8E1GImRFLM9uxR0XMDXgWH8PugWHjQxULHjZ0FX-FlP7ZmzlG8637fN798Jgi~4clEwSpvo6acRqJmRzhn4zSfzJ26U-bkduq7cs7TuyDKNjPUqiRF9-z1izOrVd8pUhOQXlQlByPJWDze9gNMAsvfZjH8wjwOUL-DhL1FMX8fCZCRY46NpQcyGQon1NUKv7DdM4LYloVmdcozCb~Pj4GLWdyF5fHrgkopFuIrDM2vW7WlPVIaysGg2fhcbCyrIo7nC8oeUnRz0z2jmBQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>
+                  <div class="gallery_image item02">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290842?cache=1758275135&response-content-disposition=inline;filename=img03_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwODQyP2NhY2hlPTE3NTgyNzUxMzUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDNfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=NwOYip57UQXSJOSy5CLikTvBcna1bboSBM4ncYq167T-U9wcyGP-eT70okTExgjVIRt7JI~NTVRhaW3M5eJWVbj-XCyko3W7FSZgB5mWO~01aIrLl9QczVLOrmInqUSQorEBIP6Dxd-2Z6hKixjAMliT7lDUgo9mY7vHsaFgFnJHorWhshtvCrdutGJliL45bZlK0ciDtQFBwBGWHhvmYvDzAG9oVnB6msAaMdUalxU2sjNxvj5kec4muC2m-9vX5jm2LCzJyqjQ2f83M2iQLDpYSCwvAdlle00XD3mGuw7OTfjn8a01lOpWf40Uh8aYjdIsCUtF0rQe1yKRFLGBBA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290843?cache=1758275136&response-content-disposition=inline;filename=img03_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwODQzP2NhY2hlPTE3NTgyNzUxMzYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDNfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=Hn4ND4WBKEM9okMvTorayyCz-4BrLN9K11pQN2kOx9iYWO8IW7Ka4k5lMYKpnvDTiGyqsQwlFY7VTCaCcDoxi6gAvHV6ljYuoWT1gW-L0Wa84CpazQXD04YNwZN5DykFbLae7UkbUxdiNkDYCutHE0yI~uV-wu041rOy4iOr-METY1fLHeR0twPpUooolLw0X2nmed6dusPYmUyGdmujgn88f58-fJnzMyNza4DzQ-AbpaaI4xPacAkEHS0H2qEsKcIjSGG~ZzF2OpKS17HGTiEc2s2tGccBhOxbkWHRN7uxj7cDZ31lhW4MTevJB7RGN2h-TN8bKrnoSwDSSvV4nQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>
+                  <div class="gallery_image item03">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290845?cache=1758275140&response-content-disposition=inline;filename=img04_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwODQ1P2NhY2hlPTE3NTgyNzUxNDAmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDRfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=cO6blgXOK7Ntv1G2wk9~P67O0z-lvD5bGl1ShwmdCp9eGtr9JyxczPTO1RO~GFABAGTDbTIywz5dEKt0RTsxABjRnZH3r5sOunVlw47bWjBUtX6t7-9ssoKDQD6~EVkpC5KNsNlvdeFLqCzhqy43n3iUh7zgOZdSCACPnJgZNF1K42yjvZBw3a8lObK37gXjxHc7JAAyRVAbmuP0sjeW6JnZD~AkmkDgbsQsJH7t7D~82P34PrinOBOFY9A7xAA-3lM2qL6RWAFTvhB~bmgdJJwnpKfjXLywVKUzpIeUiCWiFedgzyOyN~9jsnqFL5NP5ccQm83BQLpGA5RwbsafPQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290844?cache=1758275141&response-content-disposition=inline;filename=img04_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwODQ0P2NhY2hlPTE3NTgyNzUxNDEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDRfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=AP6rRQ~EzEstefmo0Y1Th17ojbz5YCILKHKsblyoBgOO0rjY5JyP8LMUxlWzMIo45GQqKD0PbBaWYtjw25gNU7Arf-bNTqTgMxcuTqi0IrapTF1OEsiU6KvpTz~nKyZfxRK9HYVX5eDlVqhH52kn0Gbfrjg8HxukP0iUinseEv2hnwvtmzqXf1MASmN-qzT-BL-gfyMCRq2lybpY6kaw3y06VT7xRVH4eRLw48zy2wfgbnKhptLE-WOoRBJusqLwXcDICndau1lW6BGFWIcoxGiMqq6TkM-RE0p4I53DyZjtGl0PnPmNvyJEAOWw9aBs5R-SRMH4E~~YsyyCmcF-RA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>
+                  <div class="gallery_image item04">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290780?cache=1758272917&response-content-disposition=inline;filename=img05_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzgwP2NhY2hlPTE3NTgyNzI5MTcmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDVfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=hLUGieHypKkktLg91H6gjIDUzkd71Pl5KvV9zrW2R5SBpdhTEdxYW3eazxxgNq2oy~FyjJQRgeLY~I7x4YVOw~AoU5KkUsBGxj6NnUNHxcNy4H6pIowfLJ9tC7RsAJbSS1s0djhmKhk56XNfDkGua0hHIaWN5torYPAAqT8jc3G87~zAEumz1mFzxf3qYhgMR2gpZPF8EQhI5D4YAYZsyyPAhjklc6ezQohyBK0ar54H5ntMbKLPtjaZsgwi6btaHHCiTg8EvVCmChC9oZbhzV~a~uLTqH1uhHuw5W59bzag469x6IpxfCIr~rPvMiky5yciBlE7NVP6W6556VbHYQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290779?cache=1758272917&response-content-disposition=inline;filename=img05_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzc5P2NhY2hlPTE3NTgyNzI5MTcmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDVfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=Kc-hHZeSan8itBt2TQonBTol4pNq28EcP2fXwa-Rvj7vEp6dPfne3HnwLT96lWIFoLON83mWd9ZMJoID7actExuw20l~7xrUFIN-wlJQ56EGzmNgS6cqUbj~GXKZjXUoyYY7LWUy9v7meGXlwSTOGykvmOhNs4YeWFE3y3-6CHjfsLB2-GYzbFtkWjVN2Lf5amux6EdW8jp7C91u7~5DVQdn0RGI83ObqDWKFvFDiqPWJGzjpwmCU7OeorjCOPaK0B2p~GWya640vdQRx7jXRt91P~WT2XL7Kp9p9JjqNT9IAeby~~X3HIPCkGpiMndlcTKCT~vxEnyKZrC8loDbCw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>  
+                  <div class="gallery_image item05">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290781?cache=1758272915&response-content-disposition=inline;filename=img06_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzgxP2NhY2hlPTE3NTgyNzI5MTUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDZfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=oKHLR3D0Xibf9j84HB8kYFJi5HpWHTU8k6wEBDLQz~02oihJwE-dTaiQTPDe3np9-m-UFUImJarTo7KD6PlUTg3XrvnFOxa5tr6BXipDdti576GBcAVCPnMG4Wa9LXaOLUR2S727aYYUahz~4QMRCs2Y6Avx8L8Vr0xYt05S04uv-MJLB20PiZ1Lt44DTWhIpbn-rt8qpTkl3DDzZgOAiYUX6uQj3jXOD6VJnu757fp13NbuQzw5IsSrgnZD6L~unZvdXkLtnj89IoMlVOehlR3MKw3x01IE16tNdbv9ux~61Sre~tKEMAqM3jA992ZruNPumlKopPzVQt20PBxdcA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290782?cache=1758272918&response-content-disposition=inline;filename=img06_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzgyP2NhY2hlPTE3NTgyNzI5MTgmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDZfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=VZGoxJBhN1Y7zy1P6Nc6mi7rdTI42xMuZj0ZERLM6AEkJtm5WcCAW9L45amON3XyVc2jI7eWyRNnHMTaj5lJU2riJfQ2L7N23Cocn7Rqdkf7BTDW6yFjPvhG3R7sQTKf9paAW4viCGfgpMEESuyTiTQcxVikzNaYKQDTZnH0f01bnuVVICW0nf6-8ooHcvUGVSxQ2ky8QmSTi8MQLCAUs~4-azAou5~iaNhjpVskEBCUkmg2IeB1F8hgZ7ypYP65nM-GFpoBK1NYWxMQg2C~t9Q4Uzj526w9s-DUU2pvnY6kmWrbulof2BenyayaWfKClTQr4h4x0SUduyC54ieu6w__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>
+                  <div class="gallery_image item06">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290783?cache=1758272916&response-content-disposition=inline;filename=img07_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzgzP2NhY2hlPTE3NTgyNzI5MTYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDdfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=ageQ7-jWjmZw6-O3-EYS3MLkrm-XBvZYoRxeYl7bQVkKQ~CSaq70wnA~dxPfE~QKwr-s4HpymcasGavGoNO9gi1xn9M1GxLvM2ZkbXi56JoSdymgnvflAlYppByGQvKLWLKfNVQIXttHYY0NCmUmk2S2QjwZLbU0dIvSXd3UNxoxTcymIj1cKvGJhnF-sd8l7UzADOVUf7ojUGHuuiAM2x44BMlhkHq4X0xIdXsYXpIYLePD5tLaCLNayz8JCujj7GrC7rh3f2dBsQixTnC3fdlYl5bFr2bHyEVOmD-h7K8HD51wnI0VwEvuir6wWSSBOHoOcpp1Sbh8EgSfHgDf6Q__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290784?cache=1758272922&response-content-disposition=inline;filename=img07_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzg0P2NhY2hlPTE3NTgyNzI5MjImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDdfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=msxO53OCuMctxocjrRDfvXdwnaM38lB0m3ImKDLL9c9wcbIhG3rr4ZHOpMo0FNmuDBNG4vGLUC9qg8e0-~CW~uRgslKJHOxq4nKVQBXrwGxSpqM5U7puJbCO0hRpMQ6y50cbypXrwkYl2hbks2q9~fsQDcTHLPPjHl2lFPyYAyw7oAvupS3octXzeUAQ-s1qYrMaAULH2SMptJzTkd9whhJ3HFQPrzWBE1vCOyvbGdJCnOS5l73YUHFjanyAOywrxgTArw2KeGl86QMBqOqT7F1melvE1ziy6o4VruRKzD4xPfS7E-Og5riFj~KbYfTisi1unoBwXTs37IJoPnKNyA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>
+                  <div class="gallery_image item07">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290785?cache=1758272922&response-content-disposition=inline;filename=img08_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzg1P2NhY2hlPTE3NTgyNzI5MjImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDhfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=kcHVP41edUixe0Wpv4n52jzPeKVmf3amyQ-1pn7YOQF~-MhFmF4DdwCRY0~fFWcFGUzBlwd7NxXeKB8KKKOpBDbv7Xlc7kOXOLjVJOzFxNJLgMPLeYN-8uxVPgPKX78swNzjJmT~coLNAp7o~yTpXHK2g3LnuTTJyiCHPLAXlSF06KZOwlxeApSsEvk42F3N7GN~KYYNbMdhcGc0U~WkMp~LXHgI5izjoJc2TU-H-C9UuOn94vZedg7Hp78Jm76GTbqH8f~EFU3Bkiu6UQZn~6mc-vhMgjNkj~cPlVLUID6xnfycwdoiLgP-35QAso3LW2VzEqUeJIQzvWA3KI-ZzQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290786?cache=1758272924&response-content-disposition=inline;filename=img08_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzg2P2NhY2hlPTE3NTgyNzI5MjQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDhfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=CFWZf7HxQ3-k7kA50I4QOEvMjIAlkLU3tnxbr3lCgnOZltk2bBL99De9wGaIGFooJIe16gxHL4NxCBfOc81vpo71mSQKfUCsPPVZJdPVyHJOGoXHTeZ4M3yBzy7x0tPDj17gHSdaYOaPX5DHWX4xe6x4o9rG-pOvLCNXQTr~-fxf785RXIauMrAV6haCt~JOQtO3iwNEnfGe-z1jev3A-XS7nqxPakOGWqATvEbKRXGMG-GQ2T5HiYfO-~QwoggR6iKbVJHD0NJlH0ucLfiKfE-OwR8v49HIz7L4r0pghQ4I6~Ow-n7pfKtJsBLuJYYaH~Bp9bIEe7n~vv0lE8IDUg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>
+                  <div class="gallery_image item08">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290788?cache=1758272920&response-content-disposition=inline;filename=img09_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzg4P2NhY2hlPTE3NTgyNzI5MjAmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDlfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=L2~mH8Y8x3EtB3NFEtbbX4-Kq2EF0MMOHfiJskNS26knNny~op7UiTHdA15Ar~1FhER5bWngGOGhbNO3DtoQGn8agaokh6w-DCbcS9fdJugoS6Fpib75yPfZVsPKate09Hkv4JnVjHucO32kbM08IXRpnrPVq3w0nVrMsZnBMJ95eOdMrZlU-3SAyXfStqY5ikPy5FZBHf2gkhRyq1EAgaqLpp4E6dpoD2MQiy5LfLMl2Mc3~6fppfZYoyr-P-JzRsUoCiBRCh3DgQJ69G~KD4rmXrFbeBVEN1jadN2yDMjms9Igoyi9c43FBYI8N7UASk5a5EMtCciw6jdc9Mc3AA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290787?cache=1758272923&response-content-disposition=inline;filename=img09_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzg3P2NhY2hlPTE3NTgyNzI5MjMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDlfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=L9Mx0N0NzVs2xOvEWul8NGtviPK~a37gvEMmRl37DBmDtYg0DqQH66MFbf67GcoAE0GK6beuVpL1OTFPsW31-r8Ou2y90M8d-RDh~OgOu1CNlQPm5CeHgomxgd6eOt5BWWr1Muo9EZCja-PYH2Bm5gExifQqMm29QJQlEjwqxqmzJqxAYm88biZRs4bRPFOuYM8W3xm6c9LjBeQyj5dJVz-iqHKC7Nf-k63KZ7PgdJJD93NxGWp8aCx2WbioQkPilAc7V9g5MU9Umn2NsRjXs4dz9eTGlZppaaZK8OwrNV7l6DTtWPz~NVGjnG2O6tWRFs9OuNteYUDpnGFWU11ywg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>
+                  <div class="gallery_image item09">
+                    <picture>
+                      <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290789?cache=1758272924&response-content-disposition=inline;filename=img10_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzg5P2NhY2hlPTE3NTgyNzI5MjQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMTBfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=RpXfF9qBbMu3yHDyu4Dbtj44aRYEpb2YoDtPdnVcX29UPP3RPWbWF3CdzV4Xfr5QhP-6yIIxGWtQDvCi7K3BLgpxE5GjJEHtfHa63sG1RaOHp1wJcGxkXf00Bsc422-NP2pPVcdI9UEIYQBdDqjCNfppm24SiYXk0sex9x4jsEEGaMbbrH0BuCmRhRSzWBn91B7rJ3-L08ytdQ5DiuTGIOx8J0Zh1DKZcFsrQTnHlVb6QO0hY97kqBDfbKHPpKzg6krqCl6RjALOYpzkrNkqWcCG-JzvlDEYCx8ocQ1SEfrvfT1mOYl1o2Vz4iT7noemSSc-q9vlrU4KYpz0AulaOw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+                      <img src="https://cdn1-originals.webdamdb.com/12212_164290790?cache=1758272926&response-content-disposition=inline;filename=img10_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzkwP2NhY2hlPTE3NTgyNzI5MjYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMTBfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=e0J52iM6BcmztUPijBZU6jznvAB5s9TShRzShPpGk8XroFXvXRzR8EnMeAhNR1U2ijssS~syTLFkrR6IfJpwproCgpbhhlQIeAZnYCTv6h08XVR-5qdD2icG1J-htk1Cnp3hP95r6ETBanfh~rzX78NoElqz9XDC7jOBV7C43gjFsFBCidAtNmcsEs2R0xy0WbhUkKEFBZeSmrKeIwvBt5qutBra~xhyBDhaqcn1w9HBT5MZ6-AziROTpD3e~PhYYUJ5CNvxd43CGtYPVQZKFrfVhAGn6oxReTBb-6pbzf3RfwITxUmg~YuHtphASGvnHc9FnOLbn7SEBwR~drwo2w__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt=""/>
+                    </picture>
+                  </div>     
+              </div>
+          </div>  
+      </div>
+      
+      <div class="contents02_wrap">
+        <picture>
+          <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290791?cache=1758289464&response-content-disposition=inline;filename=img11_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzkxP2NhY2hlPTE3NTgyODk0NjQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMTFfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=OHi07n-OVdEmxN922Vr8SrxBeQ73dvXZlNRTB41t1ya7vKWR1vrkkMKIIxEbuxou9MZX2VTiSandbbO3qWUVBEGMqmS0orFDSmyUxRdg4~m6FHWFWQWMsWdoVoVK4DOI1dYzVNlWzlIUqpF3lQeSFoVxjdQQNMIdHwncDaborRNcs32FPWmCGpwwE-pY7Da3dOwVUza3JMl1IRHgJjDPDLKUz1NOBd1pzcy4uTJq4hBXt5mj2vCpdmRY3hMSGS7iMqE69IAAL4zV4XafcfFp4vNtLTZORCajZYQ3cew~qNeNSWMdK7GhU6tTPM8Omi7Av9gQMZriTj2rDrHn057Ptg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+          <img alt="" src="https://cdn1-originals.webdamdb.com/12212_164290792?cache=1758289463&response-content-disposition=inline;filename=img11_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzkyP2NhY2hlPTE3NTgyODk0NjMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMTFfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=O~26dZBs-qlMZAe7YnD8TbWnqlFhUaTas3j0liYXZn8ovUwr8uR3DFnjL7TBMGWGj0psO5oxlePhxVEBqy1tNfrN03-aU59XrweQQ5mflOLYWOpesxKAH8v~9~MRzYREXlP19uq-8EVVddllshdv1IUEtLmqQ4pUmuFt2vD9dYZZsF0cZpaJr4HFtb59iuqhu0CH2-vWJD4JR7KqbgvAXeC41e9eUUyRu6aTswmOLc1XHaRsofu8eR5RuryDVu108GpD92ci5kDc70HYk~y2p4W1ht2HydRVbJWlqUsMAbL9nITy466p0hU5j4ZUy1KeArrw8ItNyHwGduSyrFT-HQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+        </picture> 
+        <div class="notice">
+          <p class="notice_tit">유의사항</p>
+          <p class="notice_desc">본 이벤트의 쿠폰은 로그인 한 고객에 한하여 사용 가능합니다.</p>
+          <p class="notice_desc">할인 쿠폰은 지정된 제품에만 사용 가능합니다.</p>
+          <p class="notice_desc">커스텀 클럽은 본 이벤트에 포함되지 않습니다.</p>
+          <p class="notice_desc">쿠폰은 계정당 1회만 사용 가능합니다.</p>
+          <p class="notice_desc">신규가입쿠폰은 이미 가입한 이력이 있거나 구매이력이 있으면 <br class="mo"> 쿠폰코드 확인 및 사용이 불가합니다.</p>
+          <p class="notice_desc">쿠폰 적용가는 주문서 작성 단계에서 확인하실 수 있습니다.</p>
+          <p class="notice_desc">제품 보증 및 A/S 관련 정책은 캘러웨이골프 공식 홈페이지를 <br class="mo"> 참고해 주세요.</p>
+          <p class="notice_desc">재고 소진 시 조기 종료될 수 있으며, 동일 조건의 재진행은 <br class="mo"> 보장되지 않습니다.</p>
+          <p class="notice_desc">환불/교환 시에는 쿠폰 할인 금액을 제외한 실 결제 금액 기준으로 <br class="mo"> 처리됩니다.</p>
+          <p class="notice_desc">중복 등록, 타인 정보 도용, 부정한 방법으로 참여한 사실이 <br class="mo"> 확인될 경우, 쿠폰 및 구매가 취소될 수 있습니다.</p>
+          <p class="notice_desc">이벤트 관련 문의는 고객센터를 이용해 주세요.</p>
+          <p class="notice_desc">타 상품과 함께 장바구니 주문 가능하나 할인은 <br class="mo"> 위 해당 제품에만 적용됩니다.</p>
+          <p class="notice_desc">이벤트 기간 중 추석 연휴 10월3일-10/9일간은 <br class="mo"> 전사 휴무로 인해 CS 응대가 불가합니다.</p>
+          <p class="notice_desc">추석 연휴 기간 주문건은 10월 13일부터 순차 배송됩니다.</p>
+        </div>
+      </div>
+
+      <div class="contents03_wrap">
+        <picture>
+          <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290793?cache=1758272930&response-content-disposition=inline;filename=img12_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzkzP2NhY2hlPTE3NTgyNzI5MzAmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMTJfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=gVcnbHibgee0gOLJ-E0FCSc4YIwSloMDMOWjEZlLvBjxTt1FKLZcJB3Xqa0D-4WZsp39g4kz8neSe1njVXk0QKhjwUm3dehHI3LDPnFQUM3NOEG0z-rlZ8SzoVmgNGwzQefNGT4BzlERUqQifYS5kaKPM2Gq0sY1GqMr7spsVXmuBQGTOWgxoAuWDgEgwWreKESCoGxkXw8QqTTJodjOWs100cbmww7o76HrK4~eI5Q6fbfhK6fnBkJzmDBNoDU9AneApD0~y04qSku8DadZG0hgZJpYdKdbTYzJXh56s76b3Q9OD3bL3jRjoej9NqCLR5ZNqcIcnhmoSs7IHDvolg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+          <img alt="" src="https://cdn1-originals.webdamdb.com/12212_164290794?cache=1758272935&response-content-disposition=inline;filename=img12_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwNzk0P2NhY2hlPTE3NTgyNzI5MzUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMTJfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=YpVk1IxSjMBh~8D7lVjxoKN5s6mWefUiR4zYJGiPLeYtPU3DXLXnfAQSvlMBv8aMzaYFBFlaE~5rvgDcxkmCA5AQ7hVaUz-A4ug-qovkQcS38hSxQh12d3kl8IgiN8j3ji~-DZkVJw5jNPU8SZN6PVuvOFKSNOBTcJ8Q2CXdDoCgRfnSr350CZiC-mi2iNKvs5nh5Wrt97UuxQ~m0Zpn5gDLEWyx19i6Qj2WMR-z3h39eY-yYRQOznpTFipNaTkmQSz23fXYLIV~ijXdhPjhsjBayntpulaxXY25~teSuE0LQtRjoqPO9gpDh01NXKFcEphAfQSSPfiAGajKyeCyUg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+        </picture>
+        <div class="opus_main">
+          <div class="title">
+            <picture>
+              <source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164290968?cache=1758281656&response-content-disposition=inline;filename=img13_mo.png&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwOTY4P2NhY2hlPTE3NTgyODE2NTYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMTNfbW8ucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=o1dGjUcl-s7KqNK6gleWPeGpxzTSvKkoClGdMxiW-hmvM4yHf6nx~UvmQCA3f9QV5TXuj7WTOGfROD3kldPMIyu34U2k0ugyRzTIFqCEVzrID94ROdxMwZNrGoYjUG1L7koHmcU0A1QPl4WgBY41sm3SSI0j6yqyGx9fvWO65RlkDd3unb0PqdUW-y0YqPndIUMPZkQ-AAfe4jlA7~qUMhsVrvocLi2htgDdBA9QFqBOBDxV6cnE0wZprNn1-vL76z-U~cDDRpQYPSAITA~ZjRgv04o4VVW-xWve2FDXTNFNlwb7d1kbwQ-lr5e~qjqGdqKB3tPGJQDXatAVJTAsTQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+              <img alt="" src="https://cdn1-originals.webdamdb.com/12212_164290969?cache=1758281654&response-content-disposition=inline;filename=img13_pc.png&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0MjkwOTY5P2NhY2hlPTE3NTgyODE2NTQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMTNfcGMucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=fMJJS4mcyh60lzGVsvCGcRE~AuO2L3ICAWQaOkSlQUNd3cAykjkAzEPz6K82NcXCItwJIu-2Ymw5uMet8XWzDPY5Km68PFIkjfNzMzX3gY-1NnauDVpyAFMAG2fffIyLHzjYDteWi5AtHrrVkO9WtCBriPvsg5ygyz9GK2gDmVD6eq8i5gjI2iwX5v8ZwTYnwNv2BSyj8Mmh7JhqAOiqiiLIJgZGiN9MPzLoRVS~cQQbptdeXKSQ6R83YeVzjj29IYejlcncLXQizJtLLBbgGGnkvb68n3zEutD-v9A~nBA47aEJGda-h1iaqCYsEznZQC3-Elr~qmmSMUFdGloMXg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+            </picture>
+          </div>
+          <h3 class="sub_title">클래식한 장인의 품격, 현대적 세련미 <br> 오퍼스 플래티넘 크래프츠맨 컬렉션 웨지 출시</h3>
+          <a href="https://kr.callawaygolf.com/craftsmanWG" target="_blank" class="prdBtn">제품 보기</a>
+          <p class="desc">이번 컬렉션은 구매 고객에게 선착순으로 <br class="mo"> 이니셜 각인 서비스를 제공합니다.</p>
+        </div>
+      </div>
+</div>
+<script>
+  function copyCouponCode(code) {
+    navigator.clipboard.writeText(code)
+      .then(() => alert(`쿠폰 코드가 복사되었습니다: ${code}`))
+      .catch(err => alert("복사 실패: " + err));
+  }  
+</script>
+</body>
+</html>
