@@ -1,0 +1,367 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css">
+        .contentpage_txt_title {
+            margin: 0 !important;
+            letter-spacing: 0 !important;
+            padding: 0;
+            font-size: 0;
+        }        
+				ul, ol {
+					padding:0;
+					list-style: none;
+				}
+				h1, h2, h3, h4, h5, h6, p, span {
+					margin: 0;
+					padding: 0;
+				}
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        @font-face {
+            font-family: 'Pretendard Variable';
+            font-weight: 45 920;
+            font-style: normal;
+            font-display: swap;
+            src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Thin.woff') format('woff');
+            font-weight: 100;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+            font-weight: 200;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Light.woff') format('woff');
+            font-weight: 300;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Medium.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Bold.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+            font-weight: 800;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Black.woff') format('woff');
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        /* html{overflow: inherit !important;}
+        body{overflow: inherit !important;} */
+
+        .Container {
+            font-family: 'Pretendard', sans-serif; 
+            width: 100%;
+            position: relative;
+            word-break: keep-all;
+            text-align: center;
+            font-size:1vw !important;
+        }
+        .Container img{width:100%;}
+        .contents{position: relative;}
+        .contents a{display: block; position: absolute; font-size:0;}
+
+        .mo{display:none;}
+        .pc{display:block;}
+
+        .video_wrap.pc{position:relative;padding-top:56.25%; width:100%; height:0;}
+        .video_wrap.mo{position:relative;padding-top:177.77%; width:100%; height:0;}
+        .video_wrap video{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+        /* contents */
+				.shaft .main_top {
+					position: relative;
+				}
+				.shaft .main_top .main_txt {
+					position: absolute;
+					top: 34.78%;
+					right: 2.84%;
+				}
+				.shaft .main_top .main_txt .txt_title {
+					font-size: calc(36em / 7.5);
+					line-height: calc(8.5em / 7.5);
+					color: #fff;
+					margin-bottom: 2.8%;
+				}
+				.shaft .main_top .main_txt .sub_txt_title {
+					font-size: calc(15em / 7.5);
+					color: #fff;
+					font-weight: 500;
+					line-height: calc(10em / 7.5);
+				}
+				.shaft .contents_01 .cont_wrap {
+					padding: 3.67% 0;
+				}
+				.shaft .contents_01 .cont_wrap ul {
+					width: 27%;
+					margin: 0 auto;
+				}
+				.shaft .contents_01 .cont_wrap ul li {
+					display: flex;
+					align-items: center;
+					margin-bottom: 2.9%;
+				}
+				.shaft .contents_01 .cont_wrap ul li:last-child {
+					margin-bottom: 0;
+				}
+				.shaft .contents_01 .cont_wrap ul span {
+					display: block;
+					padding: 2% 9%;
+					font-size: calc(8em / 7.5);
+					line-height: calc(8em / 7.5);
+					color: #fff;
+					background-color: #163A46;
+					border-radius: 22px;
+					font-weight: 700;
+					letter-spacing: 0.2em;
+				}
+				.shaft .contents_01 .cont_wrap ul p {
+					padding-left: 4%;
+					font-size: calc(9.4em / 7.5);
+					line-height: calc(10em / 7.5);
+					color: #000;
+					font-weight: 700;
+				}
+				.shaft .contents_01 .cont_wrap .desc {
+					font-size: calc(7.8em / 7.5);
+					line-height: calc(10em / 7.5);
+					font-weight: 400;
+					color: #6f6f6f;
+					margin-top: 1.73%;
+				}
+				.shaft .contents_02 .cont_wrap {
+					padding: 3.78% 0 3.47%;
+					background-color: #bcd2d9;
+				}
+				.shaft .contents_02 .cont_wrap .txt_title {
+					font-size: calc(19em / 7.5);
+					color: #000;
+					margin-bottom: 3.05%;
+					font-weight: 500;
+				}
+				.shaft .contents_02 .cont_wrap ul {
+					display: flex;
+					justify-content: space-evenly;
+				}
+				.shaft .contents_02 .cont_wrap ul li {
+					width: 15%;
+				} 
+				.shaft .contents_02 .cont_wrap .txt {
+					font-size: calc(9.8em / 7.5);
+					line-height: calc(10em / 7.5);
+					font-weight: 700;
+					color: #000;
+					padding: 7.6% 0 0 0;
+				}
+				.shaft .contents_02 .cont_wrap .deco {
+					display: inline-block;
+					width: calc(10.5em / 7.5);
+					line-height: calc(10em / 7.5);
+			    font-size: calc(7em / 7.5);
+					color: #fff;
+					padding-top: 1px;
+					margin-right: 4%;
+					border-radius: 50%;
+					background-color: #000;
+				}
+
+
+        /* 미디어쿼리 */
+        /* @media(min-width:1200px){
+          .Container{margin-top: -8px;}
+        } */
+
+        @media(max-width:720px){
+          .Container{font-size:1vw;}
+          .pc{display:none;}
+          .mo{display:block;}
+
+          /* contents */
+					.shaft .main_top .main_txt {
+						width: 100%;
+						top: 58.7%;
+						left: 0;
+						right: 0;
+						margin: 0 auto;
+					}
+					.shaft .main_top .main_txt .txt_title {
+						font-size: calc(94em / 7.5);
+						margin-bottom: 4.2%;
+					}
+					.shaft .main_top .main_txt .sub_txt_title {
+						font-size: calc(32.3em / 7.5);
+					}
+					.shaft .contents_01 .cont_wrap {
+						padding: 13.89% 0;
+					}
+					.shaft .contents_01 .cont_wrap ul {
+						width: 90%;
+						margin: 0 auto;
+					}
+					.shaft .contents_01 .cont_wrap ul li {
+						margin-bottom: 2.4%;
+					}
+					.shaft .contents_01 .cont_wrap ul span {
+						padding: 2.5% 9.5%;
+						font-size: calc(27em / 7.5);
+						border-radius: 27px;
+					}
+					.shaft .contents_01 .cont_wrap ul p {
+						flex: 1;
+						text-align: left;
+						white-space: nowrap;
+						padding-left: 3.5%;
+						font-size: calc(31em / 7.5);
+					}
+					.shaft .contents_01 .cont_wrap .desc {
+						font-size: calc(26em / 7.5);
+						margin-top: 4.8%;
+					}
+					.shaft .contents_02 .cont_wrap {
+						padding: 10% 0 11%;
+					}
+					.shaft .contents_02 .cont_wrap .txt_title {
+						font-size: calc(60.4em / 7.5);
+						margin-bottom: 8.2%;
+					}
+					.shaft .contents_02 .cont_wrap ul {
+						display: flex;
+						flex-direction: column;
+						padding-left: 7.78%;
+						margin: 0;
+					}
+					.shaft .contents_02 .cont_wrap ul li {
+						display: flex;
+						align-items: center;
+						width: 100%;
+						margin-bottom: 7.22%;
+					} 
+					.shaft .contents_02 .cont_wrap ul li:last-child {
+						margin-bottom: 0;
+					}
+					.shaft .contents_02 .cont_wrap ul li img {
+						width: 39.17%;
+					}
+					.shaft .contents_02 .cont_wrap .txt {
+						flex: 1;
+						font-size: calc(31em / 7.5);
+						font-weight: 700;
+						color: #000;
+						padding: 0 0 0 5%;
+						text-align: left;
+					}
+					.shaft .contents_02 .cont_wrap .deco {
+						display: inline-block;
+						text-align: center;
+						width: calc(10.5em / 7.5);
+						line-height: calc(10em / 7.5);
+						font-size: calc(7em / 7.5);
+						color: #fff;
+						padding-top: 1px;
+						margin-right: 4%;
+						border-radius: 50%;
+						background-color: #000;
+					}
+        }
+</style>
+
+<div class="shaft" id="shaft">
+  <div class="Container">
+    <div class="main_top">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164632732?cache=1761300271&response-content-disposition=inline;filename=mo_01.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NjMyNzMyP2NhY2hlPTE3NjEzMDAyNzEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bW9fMDEuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=MZdmcIK33AIZpg9en2lczR66OdXB1TRQMGvU7NBPXqBnhd~03YPSlUSBWbfikEgS86tcZfAR0S25-pw5lgcM95NYZBKett4MF2FGU8LhcXno85LZ1UUaOOgDPdzw--w69TBmzXn4M-mxAz9Lxu~kOFGoI9S271HiynheC1~azJZSX4sI75QWVRKKmRE15i0ksw6d15lbur07-Gwk5-JF1lDc9OgwV5ZIYrVvMkpS2YfMFYoRDZBycP88aN0ofDkNSCDrGaCaStLDBNWvKPpSaAooCAll9PS1jopzmImeIoUuzQlfaXmefwbbXeorgGvkS975yzdOJnj33wNX8B2u4w__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164632728?cache=1761299791&response-content-disposition=inline;filename=pc_01.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NjMyNzI4P2NhY2hlPTE3NjEyOTk3OTEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cGNfMDEuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=OlUhPSqflfKNqNxf4NywJJXBt5ftgnwcMRx4dONGH3thXzl0Eo-qnDl3Ehrms3J8vh4jX10cjsLyoVSSa-aIkaVPdXbURn3vBTDqbH-8QGuP1VTNw29BNqT1xJiitCzQNY~~nwxzBv0au3-0tH1TJ-xz9uLlrvOtwVgfNpdEE9frzvCu1130WyJeNqAj-zs9f0KoMLL~NKc8QhQu0pSKQN8391eIMRco0FpQlecBSWDOdUcyfOoSL8i1EyWa4G7-8z0yKDoZkDxl2GjUVtbXG4lrdxuM6~PXjsj0wPmXzsoYo3NytVr06dBW~pHjkQYKWMhA5xRoXhFmBH4LfdsqNg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+			</picture>
+			<div class="main_txt">
+				<h1 class="txt_title">샤프트 교체로 <br>달라진 스윙을 <br class="mo"> 느껴보세요</h1>
+				<p class="sub_txt_title">한정 기간, 커스텀 샤프트 업차지 ₩0 (VAT 포함)</p>
+			</div>
+    </div>
+    <div class="contents contents_01">
+			<div class="cont_wrap">
+				<ul>
+					<li>
+						<span>기간</span>
+						<p>10/27 ~ 12/12</p>
+					</li>
+					<li>
+						<span>대상</span>
+						<p>드라이버 커스텀 오더 한정</p>
+					</li>
+					<li>
+						<span>혜택</span>
+						<p>대상 샤프트 업차지 ₩0 (VAT 포함)</p>
+					</li>
+				</ul>
+				<p class="desc">*한정 수량으로, 별도 고지 없이 조기 종료 될 수 있습니다.</p>
+			</div>
+    </div>
+		<div class="contents contents_02">
+			<div class="cont_wrap">
+				<h2 class="txt_title">3단계로 완성되는 <br class="mo"> 나만의 커스텀 클럽</h2>
+				<ul>
+					<li>
+						<img src="https://cdn1-originals.webdamdb.com/12212_164632731?cache=1761300243&response-content-disposition=inline;filename=02_1.png&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NjMyNzMxP2NhY2hlPTE3NjEzMDAyNDMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MDJfMS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=QjZo1OzK3245fT3yMY0O4nVTyS8xjw29sB49rVDWlczoNxQVrmJPpymO51fedjxY1iEj58Yy~RsuWPLRzXeHmJ9rucK5B1gG29lKuC7xiTS8YdcXeEx2lcURP7sPbpMhvppTT2Rz4YZVSYL1s42omSJ2YaUIboa98CWtCUMG7UH2EVdilZhmcVx1uW539Rijn1qBt3TjhVkbZBy0tjbNmyCWkrpXRK-j50Lkqxk9mIKIRZcb-YDOcBN5M74Kt14VtSxrTGN~by8ldLzwW4NjxUWkZFrhPYUY8FyBw3xC~rIarhNrzf9h5R6vxFlwgp2Ww3EowmrywH1mHXjrGzZ9qg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="">
+						<p class="txt"><span class="deco">1</span>제품 선택</p>
+					</li>
+					<li>
+						<img src="https://cdn1-originals.webdamdb.com/12212_164632729?cache=1761299989&response-content-disposition=inline;filename=02_2.png&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NjMyNzI5P2NhY2hlPTE3NjEyOTk5ODkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MDJfMi5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=aU6N6GzGpp2e5r9Lr3NsqQbZ5YbFPEWU3kSUvlLN0DJlFLHxyvVNBTXBHsuk35lgvZJA1h~EU9qIA2lqMItiAUkuxth9CFZrUEFoK90hbXjPk6asjtapDD2IqV6OgU-0Hw~Ml6f-Y54ay03E0bIxfHHs8-3h7iXqZye0qNdbTVH1ufGCVfyIEl1ET-pPgHQjgAkejPwJlSQQYQlTtlHmw5PfB-OlojmQ8pClXTR7Wo2keDcRbytSARF--If9RvVeaQRX-5NyCN5OCle9~cThb1VS6Y5iWHTDYrpNsy7k66OmDQH0ar6GIyO1IcYOVQec2lnsb6XQPUqFAAPQj5uQqA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="">
+						<p class="txt"><span class="deco">2</span>샤프트 옵션 선택</p>
+					</li>
+					<li>
+						<img src="https://cdn1-originals.webdamdb.com/12212_164632730?cache=1761300214&response-content-disposition=inline;filename=02_3.png&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NjMyNzMwP2NhY2hlPTE3NjEzMDAyMTQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MDJfMy5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=fxuCyUxPcw6--A0O17T7gw1tFFUEg5FshvujC6twIlYNlZknw4RkN~Ippzd18TT1mvomKyipgMA1huDqTuLKv8DCMNyifm94v5FHfji1cvOrtnYDezXeSyaK48QnEg2YpvxHeS2ivl~95i0dFvjX3RDHPgcftgi-E--sWI5gj5RDc3WTtf5Puj2K6sly6-7v19x5Tsan5K5iP5Y1C9rCotrz2WJPYMVJz-km4M5OBEsBX3mRqOvwVtH2aC3xysjk-JVwNZIcF~3v8l9Js9Q9g1Mi5jCfOOIIDlyp2He6lydUDX0NNR~izIgghC4m5djgWKfaTh9RehXW7UWyC29gzg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="">
+						<p class="txt"><span class="deco">3</span>무료 업차지 자동 적용</p>
+					</li>
+				</ul>
+			</div>
+    </div>
+    <div class="contents contents_03">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164632737?cache=1761298483&response-content-disposition=inline;filename=mo_03.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NjMyNzM3P2NhY2hlPTE3NjEyOTg0ODMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bW9fMDMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=oEyZLev1m6xQieNgywyHIl7x0Qoj85~xGNpfuMCpA58hQGBfAjYAHXk7XhgCLyLGfKEgn9pOWfKx7328OgFu2GBbS9cc1TgIM2~qvA5v5zYFyU8Ovldv7O~WEDZaPKgiuxxFNPA9cn50Jh~QQQE73VOTmyuZ6pcjgs6-MEW-PBpuPPbFpAzW~DHu6BVpYgXbg599JAjrgPCqOWeOIX3JOuWOAeLF2hpu0KBAMbuYa9IaJqoH7Rqfv1gGAOndG4xKLgmfinUAR10Y4s3LRJhHdTBPH4p9WZwnWyLzx1fQoTnbouEeZEXYxb5hSEZyv8YavEvC1U9u9iBqtlC0j7yWXQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164632830?cache=-62169955622&response-content-disposition=inline;filename=pc_03.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NjMyODMwP2NhY2hlPS02MjE2OTk1NTYyMiZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZTtmaWxlbmFtZT1wY18wMy5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=iz9vg06GsY3FjssRxWK8JplMRMoRZQlOomxejcYQHCoKoEXtEcSDSLNAzREQD0f~-Vu~FjTbe7I0or5kciuh7I9Kperg9LRvaETjVJtP6I-3ndX6Rvx6XOOis~Drc1aj4TzmB9LOQZ73eLtWUmZeu8iujQH4K7jKpiurs0gCN-LzO9lQ2T1eEsJetYnatKO7dsaZLXwL-chs~J8I-VwygLOdPXrT4rF9E43g97qzOzJ2l-k5oUH44o329voWiRbKSD6J0Ppkr7~3rpyyf4wZcKVYnOw43ZMZmQcluf~du2WdkKIHSFQ9-0BYHsQDepNVr3bABkSjRISRLi4FlHAC8w__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+			</picture>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
