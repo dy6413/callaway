@@ -1,0 +1,559 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css">
+        .contentpage_txt_title {
+            margin: 0 !important;
+            letter-spacing: 0 !important;
+            padding: 0;
+            font-size: 0;
+        }        
+				ul, ol {
+					padding:0;
+					list-style: none;
+				}
+				h1, h2, h3, h4, h5, h6, p, span {
+					margin: 0;
+					padding: 0;
+				}
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        @font-face {
+            font-family: 'Pretendard Variable';
+            font-weight: 45 920;
+            font-style: normal;
+            font-display: swap;
+            src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Thin.woff') format('woff');
+            font-weight: 100;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+            font-weight: 200;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Light.woff') format('woff');
+            font-weight: 300;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Medium.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Bold.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+            font-weight: 800;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('./images/Pretendard-Black.woff') format('woff');
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        /* html{overflow: inherit !important;}
+        body{overflow: inherit !important;} */
+
+        .Container {
+            font-family: 'Pretendard', sans-serif; 
+            width: 100%;
+            position: relative;
+            word-break: keep-all;
+            text-align: center;
+            font-size:1vw !important;
+        }
+        .Container img{width:100%;}
+        .contents{position: relative;}
+        .contents a{display: block; position: absolute; font-size:0;}
+
+        .mo{display:none;}
+        .pc{display:block;}
+
+        .video_wrap.pc{position:relative;padding-top:31.58%; width:100%; height:0;}
+        .video_wrap.mo{position:relative;padding-top:100%; width:100%; height:0;}
+        .video_wrap video{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+        /* contents */
+				/* top */
+        .triHot .s2s_main_top {
+            position: relative;
+        }
+        .triHot .contents_01 .main_txt .logo {
+            width: 15.66%;
+						padding-top: 7.88%;
+						margin: 0 auto;
+        }
+        .triHot .contents_01 .sub_txt_title {
+            display: block;
+            font-size: calc(12.9em / 7.5);
+            line-height: calc(11em / 7.5);
+            font-weight: 700;
+            letter-spacing: 0;
+            color: #000;
+            padding: 1.4% 0 0 0;
+            margin: 0;
+        }
+
+        /* prd */
+        .triHot .s2s_prd {
+            padding: 6.41% 0 5.3%;
+        }
+        .triHot .s2s_prd .s2s_list {
+            display: flex;
+            width: 89.33%;
+            gap: 0.64%;
+            padding: 0 0 3.15% 0;
+            margin: 0 auto;
+        }
+        .triHot .s2s_prd .s2s_item {
+            width: 24.53%;
+            flex: 0 0 auto;
+        }
+        .triHot .s2s_prd .item_txt {
+            text-align: left;
+            padding-left: 2.5%;
+            margin-top: 5%;
+        }
+        .triHot .s2s_prd .item_txt h2 {
+            font-size: calc(8.2em / 7.5);
+            line-height: calc(9.4em / 7.5);
+            font-weight: 700;
+						padding-bottom: 1%;
+            margin: 0;
+        }
+        .triHot .s2s_prd .item_price {
+            font-size: calc(7.8em / 7.5);
+            line-height: calc(9.4em / 7.5);
+            font-weight: 500;
+						color: #555555;
+            margin: 0 0 8.17% 0;
+        }
+        .triHot .s2s_prd .item_price span {
+            padding-left: 1%;
+            font-size: calc(6.6em / 7.5);
+            line-height: calc(9em / 7.5);
+            font-weight: 500;
+						margin-bottom: 1.79%;
+        }
+				.triHot .s2s_prd .prd_btn {
+						position: relative;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 46.75%;
+						height: 9.77%;
+						margin: 0 auto;
+						font-weight: 500;
+						font-size: calc(7em / 7.5);
+            line-height: calc(22.6em / 7.5);
+						border-radius: calc((100vw / 1903) * 30);
+						color: #fff;
+						background-color: #000;
+						text-decoration: none;
+				}
+
+				.triHot .contents_02 {
+					padding: 0 5.35%;
+				}
+
+				/* feat */
+				.triHot .contents_03 {
+					padding: 0 5.35%;
+				}
+				.triHot .feat_list {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					padding: 7.88% 0 0 0;
+					margin: 0;
+				}
+				.triHot .feat_list .feat_item {
+					display: flex;
+					align-items: center;
+					margin-bottom: 2.9%;
+				}
+				.triHot .feat_list .feat_item:nth-of-type(2n) {
+					flex-direction: row-reverse;
+					justify-content: space-between;
+				}
+				.triHot .feat_list .feat_img {
+					width: 50%;
+				}
+				.triHot .feat_list .feat_txt {
+					text-align: left;
+					padding-left: 8%;
+				}
+				.triHot .feat_list .feat_txt .head {
+					font-size: calc(15.7em / 7.5);
+					line-height: calc(7em / 7.5);
+					font-weight: 700;
+					margin-bottom: 6.6%;
+					letter-spacing: 0.025em;
+				}
+				.triHot .feat_list .feat_txt .desc {
+					font-size: calc(9.4em / 7.5);
+					line-height: calc(12em / 7.5);
+					font-weight: 400;
+				}
+
+        /* gallery */
+        .triHot .s2s_gallery .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            justify-content: center;
+            width: 100%;
+						padding-top: 7.88%;
+            margin-bottom: 7.88%;
+        }
+        .triHot .s2s_gallery .gallery_image {
+            overflow: hidden;
+        }
+        .triHot .s2s_gallery .gallery_image:hover img {
+            transform: scale(1.07);
+            transition: all 0.5s 0s cubic-bezier(.25,1,.5,1);
+        }
+        .triHot .s2s_gallery .gallery_image img {
+            transition: all 0.5s 0s cubic-bezier(.25,1,.5,1);
+        }
+
+
+        /* 미디어쿼리 */
+        /* @media(min-width:1200px){
+          .Container{margin-top: -8px;}
+        } */
+
+        @media(max-width:720px){
+          .Container{font-size:1vw;}
+          .pc{display:none;}
+          .mo{display:block;}
+
+          /* contents */
+					/* top */
+					.triHot .contents_01 .main_txt .logo {
+							width: 41.67%;
+							padding-top: 16%;
+					}
+					.triHot .contents_01 .sub_txt_title {
+							font-size: calc(36.4em / 7.5);
+							padding: 4.4% 0 0 0;
+					}
+
+					/* prd */
+					.triHot .s2s_prd {
+							padding: 15.27% 0 0;
+					}
+					.triHot .s2s_prd .s2s_list {
+							flex-direction: column;
+							width: 94.4%;
+							gap: 0;
+					}
+					.triHot .s2s_prd .s2s_item {
+							width: 100%;
+							margin-bottom: 16%;
+					}
+					.triHot .s2s_prd .item_txt {
+							width: 100%;
+							text-align: center;
+							padding-left: 0;
+							margin: 4% 0 auto;
+					}
+					.triHot .s2s_prd .item_txt h2 {
+							font-size: calc(31em / 7.5);
+							line-height: calc(11em / 7.5);
+							padding-bottom: 0.8%;
+					}
+					.triHot .s2s_prd .item_price {
+							font-size: calc(36em / 7.5);
+							line-height: calc(11em / 7.5);
+							margin: 0 0 6.8% 0;
+					}
+					.triHot .s2s_prd .item_price span {
+							font-size: calc(6.4em / 7.5);
+					}
+					.triHot .s2s_prd .prd_btn {
+							width: 41.67%;
+							height: 11%;
+							font-size: calc(22em / 7.5);
+							line-height: calc(26em / 7.5);
+							border-radius: calc((100vw / 720) * 40);
+					}
+
+					.triHot .contents_02 {
+							padding: 0 2.78%;
+					}
+					.triHot .contents_03 {
+							padding: 0 2.78%;
+					}
+
+					/* feat */
+					.triHot .feat_list {
+						padding-top: 17%;
+					}
+					.triHot .feat_list .feat_item {
+						flex-direction: column;
+						margin-bottom: 14%;
+					}
+					.triHot .feat_list .feat_item:nth-of-type(2n) {
+						flex-direction: column;
+					}
+					.triHot .feat_list .feat_img {
+						width: 100%;
+					}
+					.triHot .feat_list .feat_txt {
+						text-align: center;
+						padding-top: 5.56%;
+						padding-left: 0;
+					}
+					.triHot .feat_list .feat_txt .head {
+						font-size: calc(41em / 7.5);
+						line-height: calc(10em / 7.5);
+						margin-bottom: 3.8%;
+					}
+					.triHot .feat_list .feat_txt .desc {
+						font-size: calc(26em / 7.5);
+						line-height: calc(12.5em / 7.5);
+					}
+
+					/* gallery */
+					.triHot .s2s_gallery .gallery {
+							grid-template-columns: repeat(2, auto);
+							padding-top: 4%;
+							margin-bottom: 15.13%;
+					}
+        }
+</style>
+
+<div class="triHot" id="triHot">
+  <div class="Container">
+    <div class="main_top">
+			<div class="video_wrap pc">
+				<video autoplay muted loop playsinline webkit-playsinline aria-label="S2S TRI HOT 영상">
+					<source src="https://cdn1-originals.webdamdb.com/12212_164717735?cache=1762249173&response-content-disposition=inline;filename=2025-S2S-Tri-Hot-PLP_1903x600.mp4&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzE3NzM1P2NhY2hlPTE3NjIyNDkxNzMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MjAyNS1TMlMtVHJpLUhvdC1QTFBfMTkwM3g2MDAubXA0IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=XKnwW6kaWSkV4e1sFStwu0bgmYn37RCd3nXSYbHw-pzBvv~1M94RtbYJQWL80zX0csammYSIMcFSIUrYna1XkQXVj0-T7b4QcAAdDkrVq04HeuFupx1~CbS8r6BLOPskffk6IOLqdKbXb3XpR64PAgx2EOV8-1HHEOfdUe9JDQdDK4WduHvsnsqtbUfXZODaQXr-Wl4lbUy8DU4C-Yqe7m5BdXGnXcVxGBhfivKPHUWj3wYmyQNWILtX7lWNOo2mO0ey88OskXRGlGZeyExi7PPCdqFKfWmE5Xo1x-YbcYBmC3TnytVgdpGDbDxPhwtnRbT9OKTxRi92D7IKLA4i6g__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" type="video/mp4">
+				</video>
+			</div>
+			<div class="video_wrap mo">
+				<video autoplay muted loop playsinline webkit-playsinline aria-label="S2S TRI HOT 영상">
+					<source src="https://cdn1-originals.webdamdb.com/12212_164717736?cache=1762249213&response-content-disposition=inline;filename=2025-S2S-Tri-Hot-PLP-Banner_1080x1080.mp4&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzE3NzM2P2NhY2hlPTE3NjIyNDkyMTMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MjAyNS1TMlMtVHJpLUhvdC1QTFAtQmFubmVyXzEwODB4MTA4MC5tcDQiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=JwlQlY1DadVCk7EwxMB-bScYch7bQi8sBg4UVIctzQ0IZPyIQOohLTseL5L-wcrADge10zKtcBMqkKnCJzTOsNhGh1OOtxpWtL3afmQ0w7WMgzV2J6QxwUy2BRiVONFD59dPKxnT7LIZ8wOz79vTRDRYz0cpeUh2TlJKgzkOalNzmpdkVbfYjR3ysZ-ejqMYdgwRqFglVnT1Dx943fgSIL2f8uk3uFuUSzcukf-O0zotNA-ITEp7qDlCCBTqSENK37JFWs0icw22nKuzQW-BWsxQ52UwdJwicHzY8o9lsI4FCfI~uZj~fJdTT9Xp7lLAG~YkdigvSD2ywyZm4whYxw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" type="video/mp4">
+				</video>
+			</div>
+    </div>
+    <div class="contents contents_01">
+			<div class="main_txt">
+				<h1 class="logo">
+					<img src="https://cdn1-originals.webdamdb.com/12212_164704496?cache=1762181598&response-content-disposition=inline;filename=txt01.png&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NDk2P2NhY2hlPTE3NjIxODE1OTgmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9dHh0MDEucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=WGw9dAZ9b4QIe31eTi-ptIewtICaqMu4YlHnSoWs3hbyKXmRTX9scFCOtUIBa1YYcs79jQXLzNeD6UdhCrF-GjxUEDLuEwkJ019NepBKdIZ4PcQc5D7wRkKq8hUXiRzeM822l7xNo7HjzM~eQGMTUggdTM49xIj2Tn1-58dUKSWYmfcjSkk9M5hPzwOMs8iICb4id6buQK5En4RWCUm-r9dvoqIYCSsz2tmhQEJOxjkwmK3NVUsuKWwXn1GTvfW9t0vrlx1r1mYaKFP6Inuw-RaF2zMNbUGAf6iSWZKtqXxoyEZUWgQi4Q7AJQns1HjcEsswduR0shyhmoAu-Q7sfA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" alt="TRI-HOT Square 3 Square">
+				</h1>
+				<p class="sub_txt_title">더 편안한 스트로크, 더 진보된 제로토크</p>
+			</div>
+			<div class="s2s_prd">
+				<div class="s2s_list">
+					<div class="s2s_item">
+						<div class="item_img">
+							<picture>
+								<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704523?cache=1762181628&response-content-disposition=inline;filename=prd01_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTIzP2NhY2hlPTE3NjIxODE2MjgmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cHJkMDFfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=oSrRNaBzWt2PxdtbFoZ9~N7mrUrPA20X6~4wF88NSCHovIjgBavTtT-ekT~W3RKPEn6Dt-TnaQrTLVFLwJQgxAnFsiGVbP5Q9rF9xKxvtWupE9a7IBg9RLwQagGklL7pXxmSqNoXwazATXv~~WXbLa6KeuXDfQ4ruLdY6GY~YCGAsLUdxpdeSYj6ahvSDsQh-GopCYM40bM0a0q4GEXTedh6NVfGED2qHWReD3Y385HHG9pWGM~mPjI1HG3jFFxWsF4oIMlgRtuBLMnQ2MLQrH1~6QBpKq9rDW4JkaWacDD9jQn9Z6zmkasaSa06X8uehTFKoMXoOo1nt91O6S-smw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+								<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704525?cache=1762181634&response-content-disposition=inline;filename=prd01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTI1P2NhY2hlPTE3NjIxODE2MzQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cHJkMDFfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=m7aw2cCZznq23hjVi~VgFKhEe9JPQCp0r7SJIyZT24rSWlORgFV9eTo4xTNwCwR013wEyUIqzxYeYYbfNPf~MKa6PxqwzOjLP6rrwkGRfQX8cLOZqnELH1CYeP3lIF~HD9ao5U~jx8q25vBQpyOf3iEtmY~DxesNIwYOc9Dt7lgLiSXpJ0iAxvbwhKQRl1dYYwFza~q-zmYWsKpJ6ipwg2Pzv-j0T4DAdUri6hy~IKn2WmXki2WB4NKviHecsVLkRlyfRdHajouNM5xORnioTj7zFNicFwXwUPXS6fuc8wwqDvtd-sN8ahoAZWgDtY5XM8op2~ZxSXILcpEAHKbQ~w__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+							</picture>
+						</div>
+						<div class="item_txt">
+							<h2>S2S(스퀘어2스퀘어) 트라이 핫 제일버드 퍼터</h2>
+							<p class="item_price">693,000<span>원</span></p>
+							<a href="https://kr.callawaygolf.com/kr/p/BP_011933/configuratorPage/CPQCONFIGURATOR" class="prd_btn">구매하기</a>
+						</div>
+					</div>
+					<div class="s2s_item">
+						<div class="item_img">
+							<picture>
+								<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704524?cache=1762181629&response-content-disposition=inline;filename=prd02_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTI0P2NhY2hlPTE3NjIxODE2MjkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cHJkMDJfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=UsoE1WK6y-tPhhjJaAX3h4tcbDcOmjODqQgvIgAAEoPltIPSlvovkW1-K9qJjte0O2f-nn5A~BcCzr9xmT0pl8R5B9j25A96ODgSDzeCK3NUd-ZAvBWMMKSYT5EByF24fE3yxxKNZYt~p3RRSHxnZiM5gPnTrJ2s2AnJnEkITub1KenARzoU1sIYu7VNHGrK3OOicbSg1tt~HNsUI2GaxxRhtuaPciGSp7ubf8D4rlKWDYfJ3wcspRb9h13fIneJuyS3lmn68FiMTAF4JhokXcNR4EqlUVsXb3s4Ujsq~yBL87WffWGhHBianAXtKVtudwcltOBfUbhvS72OpSG~Hw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+								<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704526?cache=1762181631&response-content-disposition=inline;filename=prd02_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTI2P2NhY2hlPTE3NjIxODE2MzEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cHJkMDJfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=eHUaFW0fpUjGjKAD2ajJPhV8IgahKZ3GbkdT0fooeRda3ymUiCT63Z-OvQ9zD8TLR1xs7OCsFNAdz3gckHLHXDfCxsK7Tadwn-FMHj61gynr~6IRiYhRyC5QBu3Jl-r6IvsizPOdTOGPlm-ofbzzcFer3sZ~svWvgLQsYoATTBd6X-q98eniJ7pwXXxAqm9w21Vs3XWYjVk7Dio6JuYOLr~fh0Q~GN14Lyr3fQnE8OixRHZPhvnFXbeN~zwG~2JvTk6-onFVY4BB-6oJgi6sfNBsLFDj5s6x2LrzlI4GMMvd5wYTq3PfqUjjO4g2GQBeyH~jvpHHhuRASYYW3zMiQQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+							</picture>
+						</div>
+						<div class="item_txt">
+								<h2>S2S(스퀘어2스퀘어) 트라이 핫 #7 퍼터</h2>
+								<p class="item_price">693,000<span>원</span></p>
+								<a href="https://kr.callawaygolf.com/kr/p/BP_011930/configuratorPage/CPQCONFIGURATOR" class="prd_btn">구매하기</a>
+						</div>
+					</div>
+					<div class="s2s_item">
+						<div class="item_img">
+							<picture>
+								<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704527?cache=1762181635&response-content-disposition=inline;filename=prd03_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTI3P2NhY2hlPTE3NjIxODE2MzUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cHJkMDNfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=ebKB-ablq3eC7eGvhmPlWiZAi1ZRqlkcxDJgEOONNmBQCFKywSHzFZ~-~i7jLvxh8DxHGNmui7vU2blaN0aC6ZOZ~SYRkeq-WAbziXazOg9gayjWriHDW85mKuFqGnqj7xKky6BEgP8MCsIrpIjEprOYiqLMZxHV9~US6HC7tEmpaCaUSHrsdiZa4eyQP7OFSjPLgQf-AyfF22J~ECJWCyXgZ9-yx8Nuzr~2J4HhP3yw8VR-wlj30LiLSnGLtrw6t-rqH~Y6mjVwjhce6--d~qJTeBkApFmC2bkF02aUXorHcurJUMPcyuwCxJ9-wGlShwQBvSQD94waMnhgKyoSEw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+								<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704493?cache=1762181596&response-content-disposition=inline;filename=prd03_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NDkzP2NhY2hlPTE3NjIxODE1OTYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cHJkMDNfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=QJF1EG9TklbHVFtmsMuGwHgnzcWTP8MWzOPPZ9was88dX2iBA7kJwLPSpbe2n9sCrYblO-2TS6WI86LphD2~RD-3O0ggUM1CPGs844CNzfNBVsCfEXDO4F-p-kcY~M2Bmt9kA~smFOFxs2uCqY170PpQDsNFplXWTZrFwvowr7Ea5p7kQj7QhoN0ydJcKGANDvHEmYYXXLGRaWPVUGEyDysR1NEHh~Cx24AdMNrwPJCwquFNuT7MqzbLDvZcTANnzmS8BHMfNju74mz5sFv0fd79WnhaRLCRq5ffHcz1Sd~Aim4YazbFpa1DSaK76weQjpSFjv4wROjIu3lbg6vMpw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+							</picture>
+						</div>
+						<div class="item_txt">
+								<h2>S2S(스퀘어2스퀘어) 트라이 핫 ROSSIE 퍼터</h2>
+								<p class="item_price">693,000<span>원</span></p>
+								<a href="https://kr.callawaygolf.com/kr/p/BP_011927/configuratorPage/CPQCONFIGURATOR" class="prd_btn">구매하기</a>
+						</div>
+					</div>
+					<div class="s2s_item">
+						<div class="item_img">
+							<picture>
+								<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704495?cache=1762181602&response-content-disposition=inline;filename=prd04_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NDk1P2NhY2hlPTE3NjIxODE2MDImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cHJkMDRfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=GccimieYy2nXpL2N4NQs-15NQ~lk8EPuCJoM62LTZKRWe96Cm8Gwnild3jzZDNrv-3Om1Xrdv2UlEgFwuQMpAnF~eJ1JMMdeS3J6OTXxilZfCPl2tEOM0BMs3yoQr0DZEKmCLCIyqVNzEhAv4cXEfqnAZJ-A-xEmZl8deD3YdnNkM71raw2OzkjvQVmspHXZGmCAiEGJ-C02K-DCSEc0gOrmPapS0giqQyD0SN7bAJbg5PBds5pDSihgXd0coz7jfV8xF8dk41tmcve6K7MrnncadFk1cabjKHkoXpdU5ngDz3aEH~Hdc7Zck5PeP5RRpCh8CEt5-wH-EQhJgn60cQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+								<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704494?cache=1762181599&response-content-disposition=inline;filename=prd04_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NDk0P2NhY2hlPTE3NjIxODE1OTkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9cHJkMDRfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=UxrIl5qHc67Duk9bFQMad0Bv9drVtySwp-oYRkutD0zpP3rS4ImNZBa22hHu6043IHymaQDMP~U~no8KyOn51d2JciASQr56JzVEWdGOR9xja-T9CnzmbkNmsE5Peal~ZCh4vqubJPiK7fW0fmw~tr-nNKZZLfAza3zBNv7wPF8mbELQme87OihJzRD2Do20WJwJL5uoDiRJoY3KWZnOX868gYh3mtN1oaUm44bzHHSzaq7zrKk3sUSr~1tf7jrXIkQFRlPK5dZc5g0qgDGjub9vAq5uXmTn83J-hHj2NhluBH5abejPTeLDke0sVW~YDGIMQt3mAatL5hQIsXFl5A__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+							</picture>
+						</div>
+						<div class="item_txt">
+								<h2>S2S(스퀘어2스퀘어) 트라이 핫 제일버드 퍼터</h2>
+								<p class="item_price">820,000<span>원</span></p>
+								<a href="https://kr.callawaygolf.com/kr/p/BP_011936/configuratorPage/CPQCONFIGURATOR" class="prd_btn">구매하기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+
+    <div class="contents contents_02">
+			<picture>
+				<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704498?cache=1762181603&response-content-disposition=inline;filename=img01_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NDk4P2NhY2hlPTE3NjIxODE2MDMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDFfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=g8B3sHpQC1g-Pm-Ni9-ZHCVIoT3p6xk8WoBobAn30JcET9vNLgcQV8oda6yQFRJyQORWmmtnPEzT4p29K5WUAPHMTT9OdRfNLdB697DhoQoxpLLEWnQV3i52ceHKSCNnTJsZB3PIV94yHRdECgFUFu~4-ELE9LaIjhFzISc3AUHUZqs42P00veVPwhhKy0bRQCpOp6lR44d3TuE1v~K8vaHQAzDtcWnheFcuVTz8-1byIaut-lCenSksMcgdumBEVNK5cM1VDJSzuX2tITk94ACpHuGVmE9uovuSlaODcuKgiAbmpufhBohCofN2FUle5njuKyQ3EI1rtYq-q4B5sA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+				<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704497?cache=1762181605&response-content-disposition=inline;filename=img01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NDk3P2NhY2hlPTE3NjIxODE2MDUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDFfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=OVk77Xe3MyrmDK1nIjpHWBpKNhNjLKQfmhT8-T77SyEqCTNKxM-tfufeTEpv8eebBDbW4eQEWs6kae5SQmDnapeNMr4veCqAJX1uDjbnWuvclRxDqbMXrrfkWSNaorYRpykr9TDdfSbpEviEFJxevj~VHI-ORWlxZ4RLeeCpLStkbqibMmZ6mp6ZgI0G9Yz-KvaNnsU-zVlj0nroIycAhXiEizU9xK3jupMNG5aJQy78woAfsSVBZkFTJMjFGInQztJJb04pinaPBPe6sCjkCNyE88f2Z2FycYJ8lLRAJaxv3Z01sWiqjvppgCRxKI~qkULxrjRWAKUAk7i5y5fqcA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+			</picture>
+    </div>
+
+		<div class="contents contents_03">
+			<ul class="feat_list">
+				<li class="feat_item">
+					<div class="feat_img">
+						<picture>
+							<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704500?cache=1762181607&response-content-disposition=inline;filename=img02_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTAwP2NhY2hlPTE3NjIxODE2MDcmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=k6dMn1BvHyY5t5qRluOkhuD0Yhz7TInh4~IYWwEePA0AYeL5T6NbuLaEPFM1p9gfOCL~N8cxIQJ4AgU~qLg9YVjWsZHoo5-d0BRajfhcpBVhvWCXtMC8C~yqIdpvu-J4Tv5T5arPQ2lO0540y4Q8CMwqC3Vt1kukOBo-z5kUAimB-bnoswjL1snstJI-U8FEcbuUpLmf44Gu061fYLhReevjnNBLDjFUFjt6S5uKsWKEAQbz--5VZ7MjT11aWwtw1-ncqFHcNaFgk~F3ZnFmZyF0s2yEMymvACYu0IbRtbH~3Sgtsz~x2RkUleomYlVvxuDH7LuLKKjtTcdRej3yvA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+							<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704499?cache=1762181607&response-content-disposition=inline;filename=img02_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NDk5P2NhY2hlPTE3NjIxODE2MDcmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDJfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=Bhh9T0iYIY273~X8JbWtinwS2w1KXPSPLA7n~IClNIvnSIg4Z1S0UW2D4Sxc5F6XUvwBOmxmEAZEqO-NqJeHQpRHKEkzgccA4cCRmp2MdFMNpdT9ldaZMU4gtW-xn~uUFPDumWLDipNFGzgxLr9F3tb7apwcCTXGtxOfkjI0dzHP8Jy-EGx87jFQrczTVlGvY8Qvq98tR3prau5p1Wiu84j3Tu3t56LcVh03rQXng5gTHhfCPQ8iC2Tmx0QKPwaca~XUlM7jwbIRsVD8FIl4FWi9FfyFpj87UzuAJhVk09D-nTPAZ~ofi2EVx4i~fJVCk3fFNKnR3uUhxB7W53JHaQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+						</picture>
+					</div>
+					<div class="feat_txt">
+						<h2 class="head">TRI-HOT S2S 구조</h2>
+						<p class="desc">141g 텅스텐을 퍼터 전면부에 배치해<br>무게중심을 앞으로 이동시킴으로써 제로토크 퍼터를 완성</p>
+					</div>
+				</li>
+				<li class="feat_item">
+					<div class="feat_img">
+						<picture>
+							<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704501?cache=1762181609&response-content-disposition=inline;filename=img03_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTAxP2NhY2hlPTE3NjIxODE2MDkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDNfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=OKY9I6yo7wwdwfwUkDZZIHmS-Q-l7-6r9oJUpqvufhC4ozy25BPszXywYLKCrzLG5ZLMgGs5PLeFaTk9ueSKGuktu2n6~pBD7fiMyiWpRksS2AoAoJgYl-NTrDEmrdWO~NYA8MHlTw0-yQg2R7RMwxsQWorZedQDh48a80TQoi45lE0hFJqhg5KjM4bT3IPBzc4yAVGLwL5MsI58C4a4ZDlo3Y6-jlsxZvPEITiIcLmhriEkeNZnziP5T~lN7-u-k-EHAow8WVz~JMNSkcUIWdgMyaGyUyCyHhzXDMrFFdSxy6EnOlkz~gvwfRBSnfahnK7CHG6x1bTpG58xX0T3Sg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+							<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704503?cache=1762181610&response-content-disposition=inline;filename=img03_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTAzP2NhY2hlPTE3NjIxODE2MTAmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDNfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=Z2rv-ekqKiPN9BpVrOSNRHuAxuVRml1oyy-VLYrkoi~cSqCjB7lzcxgCpoG0p9fzfOX1iiPJuKN5tLyjmD6lJe3MQ8tyUjqjyV40SibfNsfamRyUhKQoZKH2V6GSJ0WoTx2VQlbA3G90yH0OTZruPkkLuTiB8NalHqPDGj-hMfpMjvskB-qttqpwzWQam1DGSsXQKBR0A4eCkq9cJm9gFYLQ3PFGoDBUkAt2nERhXNkoglMpWBLWZjgWmAAIrEg8L6zHQBugYmoJ6DL~Lq-1z0UNJBiy8a9ZEep1EerDyIzszFTSw46bgkISy4tcJut~1H9i2pkyPefwz4xwFOfzVg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+						</picture>
+					</div>
+					<div class="feat_txt">
+						<h2 class="head">AI-DUAL 인서트 탑재</h2>
+						<p class="desc">듀얼 레이어 우레탄 인서트 일관된 볼 스피드와<br>뛰어난 터치감 제공<br>단단한 내부, 부드러운 외부</p>
+					</div>
+				</li>
+				<li class="feat_item">
+					<div class="feat_img">
+						<picture>
+							<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704502?cache=1762181606&response-content-disposition=inline;filename=img04_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTAyP2NhY2hlPTE3NjIxODE2MDYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDRfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=odHC0Y8GR~lelknHVL4JMgQTtYK-AjVOxVl8SEo0Kzrvogd6viVf0f3wAFhT1yHW4jKgQMjM4C75YgJmdk-paWX1TOrUhTN4yuXCIF7JTJOEXAqgrXy6U0haSUa1oaaxwpnnf9dduYdSK6J9Nna2Efg7ThobB9~dl4h39KWg22V0t9YW555bIEp7bB14D9CL~Gz~g-XOB3dyd2LPUxhvClr~G28Eo6~F7f4B9RsZRFcLqS02GonB0cWs~Hmco7gpLLChZfT58SiMd3FSGdC7ZQwRt9WHS4gbZoBwDkqb8cysVsOpSYIQJlZP-RoSEmARBlhLgpAP1MVYoLdRBCJeRQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+							<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704504?cache=1762181614&response-content-disposition=inline;filename=img04_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTA0P2NhY2hlPTE3NjIxODE2MTQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDRfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=KD9Mrz8lQUJoZKXRcR~wy~jkLl6re~jjaZvtBwaejvfDugTTzoGhM0xk9R~4uyYiDiJgyaIXBn7uoMglOR8U191HrGqmn-13S4oEcMukvxetcrSL1-~Kw3kPEyLGz7zzStqFkAUu~BwthhzJwk3cMBItW92qUQapkg-zwjxkjLE9BcWA2krkwN3xuNOD3pINXLYETMIeCCIcEsBHp58gfI0SCHVvQdjCvJwGiZRubYzIMw4Ed7NxhVyRHTyueZ7n~2ldXww09zhSUXy6kku2MEE-Em9H9MyOUn1PI2GkkOEKukny-khb25Z9MnEPnqigVQqYgaBQvo95GnB3PiLhpw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+						</picture>
+					</div>
+					<div class="feat_txt">
+						<h2 class="head">새로운 얼라인먼트 라인</h2>
+						<p class="desc">센터 샤프트의 디자인을 보완하도록 십자가 형태로 특별히 설계<br>십자 형태의 라인은 중심 에이밍 시<br>더욱 직관적이고 효과적인 기준점을 제공</p>
+					</div>
+				</li>
+				<li class="feat_item">
+					<div class="feat_img">
+						<picture>
+							<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704505?cache=1762181612&response-content-disposition=inline;filename=img05_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTA1P2NhY2hlPTE3NjIxODE2MTImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDVfbW8uanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=m8u-Suw2YCkuNcev27VpSTEZwvmeRI8d11Dtt-6dygUHcgWvH8yvL8dMVhvEny1RktbnsxIVbdbwyC9eendmlTxCOhjWXxxL44b5F5W14Tsd-bViwrG2ppf00kcJF5Fk1Scm6~Rz~zw-R1ACkHzrVsHg1-gPnDgGQzHdSKt31L5DxmOrNTwHZ3RU1sCamfSDaWMdbeq1YcpiBxrg~vXjNOE-lq96dSPI~O7kxVdcEtb2rw82VPGG2h9aTeqj9n9sIIlvK83iUFBplXZCHKCwlz3fdmOOHXsM~SpAOhbhU62JcMAXp1YlSfPW95bLRacdNUTuIEWXAQCoCjRrG2hoPw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+							<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704507?cache=1762181615&response-content-disposition=inline;filename=img05_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTA3P2NhY2hlPTE3NjIxODE2MTUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9aW1nMDVfcGMuanBnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=Sz86PPu0utfF6aqLaJM2TjMRMrpsiDq3U7TQEpK2Ur7OGMWTu3Bos~8HG6PV-2wQZfBIPsW7HtcSf3jUB8xc37bPovN8RWNO577PAx7-S19Vr~bTvQYQn8Ce8QxPYqNgF1AB4LyzfgIfu0cfnfL8JU9oeWlSYw-aO3Q4cApIB904mZi0INt3saO8LFtjGdjoSUWxXZ2UVRJhRnqd-EEFQKXNR6poeQR2LaxLf25iHY6~GoTqgfFrMUZY~TPQk5WMVFwc23G6YRlu~7L~HXVAtRs5MklDJEl~C8PZJSxFaKDmRj2GFj-rqUTSogcervGb3C4oMmYEDPh6I~XborHBoA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+						</picture>
+					</div>
+					<div class="feat_txt">
+						<h2 class="head">새로운 피스톨 플러스 그립 장착</h2>
+						<p class="desc">투어에서 많이 사용되는 그립을 분석하고<br>기존 그립의 개선점을 반영하여, 엣지를 더욱 날카롭고<br>편안하게 설계한 미드 사이즈 피스톨 그립을 완성해 장착</p>
+					</div>
+				</li>
+			</ul>
+    </div>
+
+		<div class="contents contents_04">
+			<div id="s2s_gallery" class="s2s_gallery">
+					<div class="gallery_wrap">
+							<div class="gallery">
+									<div class="gallery_image">
+										<picture>
+											<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704506?cache=1762181612&response-content-disposition=inline;filename=look01_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTA2P2NhY2hlPTE3NjIxODE2MTImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazAxX21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=m3Gcc7lvqx~qm-L7gR890evaym8PhERkI7GC~GfHCgJp1jar8zSXH5zcnGhmhL83v8rftR8cgWnvAt5K5Ex0CCWjXMGoEC~PCpcW6tF83wBeZS38cbvHE4ef7I9vPXGBgqIAwC68nuvj-RIbvH0LJ31hflRLWqb2-0qvAxaWjJIxiIWRc0OOkhXlipcs0nCIFFwVBAcLNZmyn8bYpcviKawPLPV0P232-GLqAmm853wdcb6i4Ipx206dR0MSjXiADu7uX3MtBC5rUqT6biMDhNGCo5ve3sgfC-E7VEZyThQSFsDZtYfMdohFJYSgtjSobEgQp9ouK5iCRTJ2ezUsoA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+											<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704508?cache=1762181618&response-content-disposition=inline;filename=look01_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTA4P2NhY2hlPTE3NjIxODE2MTgmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazAxX3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=n4D5LLkWVBkRfcaHGKYpUTDocgSgdk1Upj8EycMIVusNzvFMBuaXxgj18GN3HH9rqrGfzl2RLJZ0ZHIBY5K-U86ku5iGS2r7D8FvqCwn0Zq9fSvPhMGZfnRq5-TJgRUJuVbFDnXzgYUZHcC8iKyHk1sn59HDa63qRBW4c5Qw6O-BXAWTO9K3MyfbrH78atOAOpyPE-c3Bl0MXvaK9T7zxy8sC~JQJqAMtguMcpIJ233HaMPZ3iSEBuEXpRsogUGMy1X6yTPaNB6r~HwxvybnlSZL4niMlXspj-KooF-mBgm9VP3-hJIclTrqlWmTJ1YFQmKiOpZYt6tfX4-gQNNBTA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+										</picture>
+									</div>
+									<div class="gallery_image">
+										<picture>
+											<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704510?cache=1762181620&response-content-disposition=inline;filename=look02_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTEwP2NhY2hlPTE3NjIxODE2MjAmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazAyX21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=Er9gJ53JjtAAQRYsqfPglYyr4zWHNW5Yhlr0ZU4dfA3pQPZqCgLOar7LE7wThcdK~~tZSd3yHUdccLOcnM1u8b8O8huHB8O5rPjdCCGjbxuzky8uSG7jQH34PxbbKWXIOBGSp2FPc5Sj622S34NrheSHPrqW7H5~ZDeI8HDDtJGZ5I46MetE9uw5rY0rR2fngqmW62UXbMU0Av~x0QpOrLhPJ52X1BjQXOL2H0PhagAmh7y~Aa4XL0iHktH02~ONhYbNVE55BbT8Yu7Wkukj6bMlNcJ8kE91~ZjqddLeVsPL2HdQ8j4f-VOXihIY7KlLYdPh8vGS9aEA22dnDiMowg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+											<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704509?cache=1762181619&response-content-disposition=inline;filename=look02_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTA5P2NhY2hlPTE3NjIxODE2MTkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazAyX3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=APieLx3GD-FjjaB5zdXIUF9xjX~Agxd8tdhgKtufviAunBgoYb9gf1sDYROoQWbRJF2IyLm-VZfIlAvcom70mbSyHNABBTvxVDIbtXgUM6ZlqwOMVDK2H0T~6meIGtM-2I0-WGYxDM4esy8V~6oDn385my3dM6o-qviDxzz3VO6ackUdPznaQVImllTaytWGv76kFL8DANgFHVFlhAe9NvYGpyUHDU-r3fLl~txtxFb4coKXuqSBA1TxPFkqfLHW1YamFPcyW6Flcwdqqxe5a70hQPgTgO5yuy7Ji2oNJ4UI4mcHTZrg2qDcIbA6wgoSLsv6W9540qW0AhShQRGZgA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+										</picture>
+									</div>
+									<div class="gallery_image">
+										<picture>
+											<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704511?cache=1762181615&response-content-disposition=inline;filename=look03_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTExP2NhY2hlPTE3NjIxODE2MTUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazAzX21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=DSS20fyLd7MSlsjar-kmkVGHqgfeBFSuEmnMwtT~R7dsTliUgi1ghxkDV4M03eveM3xzsrJLJZBi0JEliPkDp5YZx-yxPeZ2hFxlAiued7~-EkFCDRwfj7Rj1rXQcerLddKUEAddhchH67TRCiWxd0M2g6luhjeYAXhIlOrm2RSjyfV2fyqtNF9LkEC-f9U2Gj5SN1mlh5nCr2hQpoSgVeBi5qvJKGbB8Kc3lMCIw4IgKFsTmngzBNxmc2soexDbit4uE4BXXKUcIWRmh7bw9KXKFhfB7nchgJgqdE9d4sIlGxskvh66OsUG2ygA~bh73g7r7yyqkqPMQOjz3-FYuQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+											<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704512?cache=1762181623&response-content-disposition=inline;filename=look03_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTEyP2NhY2hlPTE3NjIxODE2MjMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazAzX3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=RmmTeSqmOJNL9Hq4bXK3KGdU~ZwUDs3-kTmV27~K2NaZ-Sd5JhxhxRlWUPB0CHss~l6wX-wt9JZEUbFI2FhsIJBR3i8td~k3dfkGyb~D-mRq0XfQVZURed~xHHUwQhiCFujJDd8Q3oCFdIEOvVNvcDr8EFF0CEsJyH5ZGv39Tpfs0NrgPHvleBz1TJXhX6LmkHct-R5Gtxzrm6FC5UoG-AI8Qnr8XtBgWpPIBEceXmoAZUbv4F6a33PI8i2XtqKRCKEj2xOpRJn4GI6TK8AItiWyeJgQRiVqwluSt5h3O4KzUXZJl~lWzvPReY1-eEnbgCr0gLmxNra4pnPWofHuCQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+										</picture>
+									</div>  
+									<div class="gallery_image">
+										<picture>
+											<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704513?cache=1762181624&response-content-disposition=inline;filename=look04_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTEzP2NhY2hlPTE3NjIxODE2MjQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA0X21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=oilBGznLh85wF-hE4Atd0RZS83dAzvIG9QN2fPuhrJwHTUQRWlFtD1KJQfm0mr6UGOYQmMeO-dZNmM0Hizf7v4HL1oRLIXgXSZIdBeu0VvGaKfss8G~eyPSfnS7r~vC5L-uJc5gP57wXcCWTPgGFFkRh~PU3JGUOhwLMTUUwJD1H2wL8aiU4XehEPElObD5iy92R5lZkFOuEF3Xtmla4eItUcGDC6DRJPNQKpPR7Busx0soviyZ4aifQAilNskb5-pU-6C05hCXSptlB0pDtbPFQrM3I8Omy1XbTOqnWdvMgqeKgBgYgJqq6tLPygcX58XaLUcWPxPK0YMXWXdPPrg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+											<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704514?cache=1762181621&response-content-disposition=inline;filename=look04_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTE0P2NhY2hlPTE3NjIxODE2MjEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA0X3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=cJ14140Y776MaUJiVmH4nh6Zv2d8P1YQj6uyh95LSDOonIOHnJKuHQ8zKci7uwn6FV96g35OPJhIdazVyavqevn9ftb5947AV6uNvQ7O5gMeN7sfSW1swTfzg14cxkzOGK9REhCBSE6P8rdOi22ISwB8emBOYytHoFtvgT6RJvCUsJKOP2C2BN~VX3GwdBcYlpzp~2yBGwGY7R-k8LJIp93p6hLAb3U1MBF5yeOhzmA1CDWQZ22gLrYh8v3wxdUHmXsAMo~M3QvzUSvvMvGBn49gezW-moC9baFEYiKGf1y8oRYnKrOJC8bghJ~ba7FeOKQS8KNjZgtXCqdudDJoIA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+										</picture>
+									</div>
+									<div class="gallery_image">
+										<picture>
+											<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704516?cache=1762181624&response-content-disposition=inline;filename=look05_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTE2P2NhY2hlPTE3NjIxODE2MjQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA1X21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=X~A2wnKj0mOysd1FxuFeFDO9hrgX-rqm3ugIT1ZvHP-Ak4MDfj38pDIiNtu5z7h40XpTZ0lb37Z1rkVUqBMMJkVZVIYutBASrIzo0h7kVAY5j2pLEvCrpEnZWMBoZmFKmM-2HFbJ-pPVC1VXSabouhiPo--djR0Ztc8LcOzK34fRSidkhb-hz7wDzS~NYj7q2SvuHHqkIvLf2YQJVWWwlFUVdLENt9DYI2qNrI3du7wCAfmzJbVUnSv4zJCcc-LbvNpVbkmXzB4jp6YgFE0e5VadjUfLgNRnB4ikfli6M9efgmqMBosq9-WH9t5u6725O0VFuERB67wA5QdwTpWeDg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+											<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704515?cache=1762181624&response-content-disposition=inline;filename=look05_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTE1P2NhY2hlPTE3NjIxODE2MjQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA1X3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=RHLsa398x19gZuFkB7eg4x64hdVjNK5XLe04z43YH4rkVb7ACdUGihPao~YjDrK2odWgY83PgNCtTk4MvliJJYABTYXoilqnD2Wcd9mttOMxY-Hqdi6h8xIX6aCj8nqzl-p9A5sgDr77qV7WbwJrU36hASraHM42wn1t9I1Z5Q5k29rdIZAAVjI3jubHK7~lP2e4iRdUJmKUUkrq7wTQ3YGv5Nwl9KAHX9OBwQ4ZHK82wgOh7U7eltqVvc8ppbyMkK1ZRAMthuWgELyk5qQInROSr2v7gyHIrNYUUdjrcmGA3hO-6P-ss-q2kgvEiDX69kGV1Ayw3dqRPjYi8BfUrg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+										</picture>
+									</div>
+									<div class="gallery_image">
+										<picture>
+											<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704518?cache=1762181626&response-content-disposition=inline;filename=look06_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTE4P2NhY2hlPTE3NjIxODE2MjYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA2X21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=bHHJ87yYIlboKT9dAkCALmt9G-zwqKqEJx7bK3yWxcz3X5Yk7r2-3OIHmW1AA6yrEtMie7PJE1xYeo3nASWV975oDBEJfZ7utKr~5~uh~KdJI4ZBuropq6TPe5rds0~og72vmLFI4pH2zPJqyiX9mjJvs9~0UNemmxIS-rAgF22rLFD8ZGxa2ZYzuEyHgMN4IsJJGKQNT4IAzHt1tHLoY1Oejt6-FYR0Bvwar~FUMiqYCjBeUA2SbRwl1KhjEwFNR-VA2TVL1G4fF1J4XiwNMALORHgEFPz2pvNkqRsv1QUh4BQA0OiBZUCQI7s5l3~n8B1qT9e8MGZg~VMYDJzlZA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+											<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704519?cache=1762181626&response-content-disposition=inline;filename=look06_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTE5P2NhY2hlPTE3NjIxODE2MjYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA2X3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=oAOja7MUUpMr1tNgECPgdhDklZL-XtMi7EbPgmenA9kmRyhDhNQk58Z5C1Iw6JzIPWnEMB4bmYml3k2ELVCozuplwx8Joe2oRos9GF7RpuPpsPb36bmZDs3SeoZP~aShzeUQuHj7K7pJC5Ac5N1u6zttZgpO8t4hcoSQog7zL31MH8pmuk2wU7Q6tGbShXpZHEgJl4WoW34uMpmSZ1~v~~znHKK3KwTmx07dPtSrVHqU-CrWFpqRFHGYCTSxG6WE0dYHAtA9GiYmUq2zUZ3ALj1bn2LbIDxO-pyhz8UwLU8I~VYd1N7I6mqRmrB~ifTTFYUH3j81IlFpJvgene2TyA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+										</picture>
+									</div>
+									<div class="gallery_image">
+										<picture>
+											<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704517?cache=1762181624&response-content-disposition=inline;filename=look07_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTE3P2NhY2hlPTE3NjIxODE2MjQmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA3X21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=LU4f2~Z6WiuysTNA7xUjxsji5NQeak9Le1v1Ez4BrfQh2hYVada3l~WfENHYDWD1isYXb4rygCAZfo5AO-hp7IkWoiUYhm~702-Yxxc56kEIQtWA6oht9DiQBP-w74eil277G6nReQv9sgEXjYgo5NJlYI4XSasCR1dlOFESUPCiaHqHlTUCou9x~bGKB~M5p0QkAymEj1xqZJFGsXnO0lp6cHD1gVZOR0PbfkF-9AWq5Iu-jz3Qi50rG4QLwM8Xx5ZWBD5QjL6qPDAR-hJD544uaEraf83YAZrgIKXZiE-6Bm22qHxHz0nGQG4cDB~F2K3X0uuLRGegUcpb2iHudw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+											<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704522?cache=1762181629&response-content-disposition=inline;filename=look07_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTIyP2NhY2hlPTE3NjIxODE2MjkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA3X3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=lLPIQJOD1khKJB2wEdeXFxT9040rtbhOk7DiCwmr3U0KxbN56wgEhoNzhL5KWxSulxfonwoaiRfiOQxCywiiNWH4Ny3EPYgylC0vhDIyAMWJ4TXW1exIqZ1SX9fvUL02FCney1T1hb3Wi10i044CGWx1fMi~VhU7BAl5zJJLtU~uCU3Ex7y3QufE~veJ3AGnXVbJOxs5oxlKcjRYhP86G0cXzNZwvJehnkSViFA5GoT~BPlef9fupNDYNFVaLUzgo3QoX6BZhqNhHLdlt8iVRUtpvwIbi5MFqYMXYHf~7hyAnpbFSQ0g8p37zxcSIcuXBvp0Iai81jiNZuKIoIhprw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+										</picture>
+									</div>
+									<div class="gallery_image">
+										<picture>
+											<source data-device="mobile" media="(max-width: 720px)" srcset="https://cdn1-originals.webdamdb.com/12212_164704520?cache=1762181627&response-content-disposition=inline;filename=look08_mo.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTIwP2NhY2hlPTE3NjIxODE2MjcmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA4X21vLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=OHIaj8OWwqFVIgTO4ZYfyjfFw66tZIps1Jk17b-2lhBZlEPB85Jyq8IkRiXkpnbFBZ-eikJQLRB5LRqGQrAQB1uUMfxdV6hKmWLUCXstJsMpJMJeXcxM5OwsfDs7xSOvCIoctUAkK3~61vw9Mk8GgGNhhNUfyT1Ha0KlwCgrnxm~wZJntzPvdSWTfwqwWb6klJIG3U0m4c53bM-BnGYBRomjKrwN4GRZT9Izu37KrAt0O-9zDNWeT5UMMGvoY-0-kQeeleV5TMTWVjjTYe-sqd8w9aDdcEvUINPKJNr3cZCWdmmu-TUw9DkSr6rw0NizB3DS0oS~kFkR-UypYWI~sQ__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" />
+											<img alt="" src="https://cdn1-originals.webdamdb.com/12212_164704521?cache=1762181629&response-content-disposition=inline;filename=look08_pc.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTIyMTJfMTY0NzA0NTIxP2NhY2hlPTE3NjIxODE2MjkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9bG9vazA4X3BjLmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=i7fGzqlMKJ-KkWaIi6tPRmMSuxr710sd0qEnbOGeVxMywrNbZ1jhgYvEKJBkdiDQ2UR~1yU5wrjP6-TI8K-d8f0DgNheGpHJAqiBzJgyx-7LG0KsujjyKGfJeylpvGmmJNvVlyjGMcPdpKm9CrqIJ5mFNGeMIsreXr84JT2y4ms-fXz7IZq-WeuxPD00Vr-X8iEF8OCX3ptl4Uk56AdfzZckFTo1Ph12C2U3X6bDyP8~SYFYwnAYDgnR3VviHvXuoPl0lwXsR2AfnrHrLOuzMp67A59~FR640ntIHdFt~EVrrzoZj0GGOlBjyLbjcWmZVh01Pr-qYYg2v8fy~Y2ofg__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA" /> 
+										</picture>
+									</div>
+							</div>
+					</div>                                                 
+			</div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
