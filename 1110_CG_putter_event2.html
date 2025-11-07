@@ -1,0 +1,3370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:url" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="하키 스틱 퍼터 이벤트">
+  <meta property="og:description" content="하키 스틱 퍼터 이벤트">
+  
+  
+
+  <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> 
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+</head>
+
+<body>
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+      @font-face {
+          font-family: 'Pretendard Variable';
+          font-weight: 45 920;
+          font-style: normal;
+          font-display: swap;
+          src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-Thin.woff') format('woff');
+          font-weight: 100;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+          font-weight: 200;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-Light.woff') format('woff');
+          font-weight: 300;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-Regular.woff') format('woff');
+          font-weight: 400;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-Medium.woff') format('woff');
+          font-weight: 500;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-SemiBold.woff') format('woff');
+          font-weight: 600;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-Bold.woff') format('woff');
+          font-weight: 700;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+          font-weight: 800;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('./images/Pretendard-Black.woff') format('woff');
+          font-weight: 900;
+          font-display: swap;
+      }
+      .Container {
+            font-family: 'Pretendard', sans-serif; 
+            width: 100%;
+            position: relative;
+            word-break: keep-all;
+            text-align: center;
+            font-size:0.39vw;
+        }      
+        html{
+            display:block;
+            padding:0;
+            margin:0;
+        }
+
+        body{
+            margin:0;
+        }
+
+        img{width:100%; max-width:100%;}
+        .contents_rel{position: relative;}
+
+        .contents01{position: relative;}
+        .eventForm_box{
+            text-align: left;
+            box-sizing: border-box;
+            padding: 0.3% 2%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .eventForm_box2{
+            text-align: left;
+            box-sizing: border-box;
+            padding: 1.5% 2%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .eventForm_box3_3{
+            padding:0.769% 2%;
+        }
+
+        .eventForm_box5{
+            padding: 2.5% 2% 0 2%;
+        }        
+
+        
+        .eventForm_box label{
+            font-size:calc(27em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:500;
+            vertical-align:middle;
+            margin-left:2%;
+        }
+
+        .eventForm_box .form_label{
+            display: inline-block;
+            width: 20%;
+            font-size: calc(24em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 400;
+            margin: 0;
+            vertical-align: middle;
+            color: #fff;
+            text-align: left;
+            padding-top:1%;
+        }
+
+        .eventForm_box3_3 .form_label{
+            width:34.2%;
+        }        
+
+        .eventForm_box .form_label22{
+            color:#111;
+        }
+
+        .eventForm_box .form_label > span{
+            color: #ff5151;
+            font-size: calc(6em / 7.5);
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+
+        .eventForm_box .form_label h1{
+            font-size:calc(8em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:700;
+            margin:0;
+            vertical-align:middle;
+            margin-right:5%;
+        }
+
+        .eventForm_box .st{
+            vertical-align: top;
+            color: #ef0000;
+            display: inline-block;
+            margin: -7px 0px 0 -4px;
+            font-size: 20px;
+        }
+
+        .eventForm_box .col{
+            display:inline-block; width:62%; margin-bottom:2%; text-align: left;
+        }
+
+        .eventForm_box .col2{
+            display:inline-block; width:47.5%; margin-bottom:2%; text-align: left;
+        }        
+
+        .eventForm_box .col222{
+            margin-bottom:1%;
+        }
+
+        .eventForm_box .col3{
+            display:inline-block; width:63.5%; margin-top:1%; text-align: left;
+        }
+
+        .eventForm_box .col4{
+            display:inline-block; width:56%; margin-bottom:2%; text-align: left;
+        }        
+
+        .eventForm_box4 .col2{
+            display:inline-block; width:61.3%; margin-bottom:1%; text-align: left;
+        }        
+
+        .eventForm_box .col5{
+            display:inline-block; width:13.65%; margin-bottom:2%; margin-right:1.5% ; text-align: left;
+        }                
+
+        .eventForm_box .col6{
+            display:inline-block; width:48.9%; margin-bottom:2%; text-align: left;
+        }                
+
+        .eventForm_box4_2 .col2{
+            width:80%;
+        }
+
+
+
+        .eventForm_box4_2:nth-child(3) { 
+            display: none; 
+        }        
+
+
+        .eventForm_box .col3 .check_box{
+            display:flex;
+            gap:0 0;
+        }
+
+        .eventForm_box .col3 input{
+            margin:0 5% 0 0;
+            vertical-align: middle;
+            width: calc(11em / 7.5);
+            height: calc(11em / 7.5);            
+        }                
+
+        .eventForm_box .col3 label{
+            font-size:calc(22em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:500;
+            vertical-align:middle;
+            margin-left:0;
+            white-space: nowrap;
+            width:30%;
+            cursor: pointer;
+            color:#fff;
+        }        
+
+        .eventForm_box .col3 label.wit{
+            width:57%;
+        }
+
+        .eventForm_box .col input{
+            width: 95%;
+            height: calc(21em / 7.5);
+            border-radius: 50px;
+            border: none;
+            vertical-align: middle;
+            font-size: calc(20em / 7.5);
+            color: #8e8e8e;
+            padding-left: 4%;
+        }
+
+        .eventForm_box .col2 input{
+            width: 97%;
+            padding-left:3%;
+        }        
+
+        .eventForm_box4 .col2 input{
+            width: 100%;
+        }     
+
+        .eventForm_box .col4 .left-aligned{
+            width: 100% ;
+            height: calc(21em / 7.5);
+            border-radius: 50px;
+            border: none;
+            vertical-align: middle;
+            font-size: calc(20em / 7.5);
+            color: #8e8e8e;
+            padding-left: 4%;
+            text-align: left;
+        }        
+
+        .eventForm_box .col5 input{
+            width: 80%;
+            height: calc(21em / 7.5);
+            border-radius: 5px;
+            border: none;
+            vertical-align: middle;
+            font-size: calc(20em / 7.5);
+            color: #111;
+            background:#fff;
+            padding-left: 20%;
+            font-weight:600;
+        }        
+
+
+        .eventForm_box .col6 input{
+            width: 100%;
+            height: calc(21em / 7.5);
+            border-radius: 5px;
+            border: none;
+            vertical-align: middle;
+            font-size: calc(20em / 7.5);
+            color: #8e8e8e;
+            padding-left: 4%;
+        }                
+        
+        .modal_pop_join{
+            margin:2% 0 0 0;
+        }
+
+        .modal_pop_join .col{
+            width:70%;
+        }
+        
+        .modal_pop_join .col input{
+            border:2px solid #111;
+            width: 95%;
+            height: calc(21em / 7.5);
+            border-radius: 5px;
+            vertical-align: middle;
+            font-size: calc(20em / 7.5);
+            color: #8e8e8e;
+            padding-left: 4%;
+        }
+
+        .modal_pop_join_btn{
+            text-align: center;
+            margin:10% 0 6% 0;
+        }
+
+        .modal_pop_join_btn a{
+            border: 0;
+            outline: none;
+            background: #111;
+            border-radius: 10px;
+            font-size: calc(24em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 500;
+            vertical-align: middle;
+            width: 70%;
+            padding: 4% 0;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            margin: 0 auto;
+        }
+
+        .num_btns{
+            width: 16.8%;
+            position: relative;
+            display: inline-block;
+            margin-left: 1%;
+            height: 100%;
+        }
+
+        .num_btns button{
+            border: 0;
+            outline: none;
+            background: #ead701;
+            border-radius: 50px;
+            font-size: calc(20em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 600;
+            vertical-align: middle;
+            width: 100%;
+            padding: 12.3% 0;         
+            cursor: pointer;
+        }
+
+        .num_data{
+            width: 10.5%;
+            position: relative;
+            display: inline-block;
+            margin-left: 3.5%;
+            height: 100%;            
+        }
+
+        .num_data button{
+            cursor: pointer;
+            border: 0;
+            outline: none;
+            background: #ead701;
+            border-radius: 10px;
+            font-size: calc(20em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 500;
+            vertical-align: middle;
+            width: 60%;
+            padding: 10.46% 0;         
+        }        
+
+        .num_data button img{
+            width:45%;
+            vertical-align: middle;
+        }
+
+        .num_btns button a{
+            color: #111;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .num_btns2{
+            width: 30%;
+            position: relative;
+            display: inline-block;
+            margin-left: 2%;
+            height: 100%;
+        }
+        
+        .num_btns2 button{
+            border: 0;
+            outline: none;
+            background: #007d12;
+            color:#fff;
+            border-radius: 10px;
+            font-size: calc(20em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 500;
+            vertical-align: middle;
+            width: 100%;
+            padding: 4.81% 0;         
+            cursor: pointer;
+        }
+        
+        .contents{margin-top:-2px;}
+
+        .gall .list{
+            display:flex;
+        }
+        .gall img{
+            display:block;
+        }
+        .contents_01{
+            padding:calc(90em / 7.5) 0 calc(60em / 7.5) 0;
+        }
+
+        .contents_01 h1{
+            font-size:calc(60em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:800;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;
+        }
+
+        .contents_01 p{
+            font-size:calc(22em / 7.5);
+            line-height:calc(11em / 7.5);
+            font-weight:300;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;
+            word-break: keep-all;
+            padding:calc(10em / 7.5) 0 0 0;
+        }        
+        .contents_01 p >em{
+            display:block;
+            padding:1% 0;
+        }
+        .contents_01 p>span{
+            display:block;
+        }
+        .contents_02{
+            position: relative;
+        }
+        .contents_02 .txt{
+            position:absolute;
+            left:75%;
+            top:48%;
+            transform: translate(-50%,-50%);
+            width:50%;
+            color:#fff;
+            text-align: center;
+        }
+
+        .contents_02 .txt h2{
+            font-size:calc(22em / 7.5);
+            line-height:calc(12em / 7.5);
+            font-weight:500;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;            
+        }
+        .contents_02 .txt h2 > span{
+            display:block;
+            opacity:0.4;
+            font-size:calc(22em / 7.5);
+            padding:0 0 calc(1em / 7.5) 0;
+        }
+        /* .contents_02 .txt h2 > span img{
+            width:2.3%;
+        }         */
+        .contents_02 .txt p{
+            font-size:calc(20em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:400;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;                
+            opacity:0.6;
+            padding:calc(10em / 7.5) 0 calc(21em / 7.5) 0;
+        }
+        .contents_02 .txt img{
+            width:41.7%;
+        }        
+        .contents_02 .txt strong{
+            font-size:calc(20em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:600;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;               
+            display:block;
+            padding:calc(7em / 7.5) 0 0 0;
+        }
+        .contents_02 .txt em{
+            font-size:calc(16em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:400;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;               
+            display:block;
+            opacity:0.6;
+            font-style: normal;
+            padding:calc(3em / 7.5) 0 calc(6em / 7.5) 0;
+        }
+        .contents_02 .txt > span{
+            font-size:calc(22em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:500;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;               
+            display:block;            
+        }
+
+        .contents_04{
+            position: relative;
+            background:#0a1225;
+        }
+
+        .contents_04 .date{
+            background:url('image/image_04_bg1pc.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:100%;
+            padding:3.5% 0 2.5% 0; 
+        }
+
+        .contents_04 .date h1{
+            font-size:calc(68em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:700;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;            
+            padding: 0 0 calc(1em / 7.5) 0;
+        }
+        .contents_04 .date strong{
+            font-size:calc(30em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:400;
+            margin:0;
+            display:block;
+            color:#fff;
+            letter-spacing:0;          
+            text-align: center;    
+            padding:calc(3em / 7.5) 0 calc(1em / 7.5) 0;
+        }        
+        .contents_04 .date p{
+            font-size:calc(18em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:300;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;          
+            text-align: center;    
+            padding:0 0 0 0;
+        }
+        .contents_04 .date p span{
+            display:inline-block;
+            padding:0 calc(2em / 7.5) 0 0;
+            color:#ea4646;
+        }
+
+        .font_list{
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding:5% 0 2% 0;
+        }
+
+        .check_wrap{
+            position: relative;
+            padding: 0 0 0 29%;
+            margin: 0 auto;    
+            text-align: left;        
+        }
+
+        .check_wrap .form_title{
+            display:inline-block;
+            width:19%;
+        }
+        .check_wrap .form_title h3{
+            font-size:calc(20em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:500;      
+            margin:0;
+            color:#fff;
+            letter-spacing:0;          
+            text-align: left;             
+            vertical-align: top;
+        }
+
+        .form_check{
+            text-align: left;
+            display:block;
+            margin-bottom:1.5%;
+        }
+
+        .form_check input{
+            vertical-align:middle;
+            width: calc(11em / 7.5);
+            height: calc(11em / 7.5);
+        }
+
+        .form_check label{
+            margin-left:0.5%;
+            font-size:calc(18em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:300;
+            vertical-align:top;
+            color:rgba(255, 255, 255, 0.8);
+            letter-spacing: 0;
+            display:inline-block;
+            width:85%;
+        }
+
+        .form_check label span{
+            color:#9c222c;
+        }
+        .form_check label p{
+            display:inline-block;
+            margin:0;
+            padding:0;
+            vertical-align: top;
+            margin-top:-3px;
+        }
+
+        .pc_space{
+            display:block;
+        }
+
+        .form_check2 .mo_space{
+            display:inline-block;
+        }        
+
+        .form_send{
+            position: relative;
+            padding: 4% 13% 6% 13%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:0 2%;
+        } 
+
+        .form_send .modal_send input{
+            background:#ead701;
+            color:#111;
+            transition:all 0.3s;
+        }
+        .form_send .modal_send input:hover{
+            background:rgba(255,255,255,0.8);
+        }
+
+        .form_send .modal_inquiry input{
+            border:2px solid #fff;
+            color:#fff;
+            padding: calc(7.4em / 7.5) calc(46.1em / 7.5);            
+            transition:all 0.3s;
+        }
+
+        .form_send .modal_inquiry input:hover{
+            opacity: 0.7;
+        }
+
+        .form_send input{
+            font-size: calc(24em / 7.5);
+            line-height: calc(10em / 7.5);
+            padding: calc(7.4em / 7.5) calc(35.5em / 7.5);
+            background: none;
+            color: #fff;
+            border-radius: 100px;
+            outline: none;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .pc{display:block;}
+        .mo{display:none;}
+
+
+        .tabs {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .tab-button {
+            padding: 0;
+            width:50%;
+            cursor: pointer;
+            background-color: #bfbfbf;
+            color:#8b8b8b;
+            border: none;
+            transition: background-color 0.3s ease;
+            font-size:calc(30em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:600;      
+            letter-spacing:0;            
+            padding: 1.34% 0;            
+        }
+
+        .tab-button:hover {
+            background-color: #ccc;
+        }
+
+        .tab-button.active {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+            background-color: #000;
+            border: none;
+            width: 100%;
+            text-align: center;
+            color:#fff;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .before_join_wrap{position: relative;}
+        .before_join_wrap h3{
+            font-size: calc(20em / 7.5);
+            line-height: calc(10em / 7.5); 
+            color:#666666;
+            letter-spacing: 0;
+            font-weight:400;
+            padding-left:31%;
+            margin:0;
+            text-align: left;
+        }
+        .before_join_wrap h3 a{
+            font-size: calc(7.5em / 7.5);            
+            line-height: calc(10em / 7.5); 
+            letter-spacing: 0;
+            font-weight:600;
+            color:#fff;
+            display:inline-block;
+            padding-left:1%;
+        }
+
+        .form_etc_txt{
+            position: relative;
+            padding:8% 13% 2% 13%;
+            margin: 0 auto;            
+
+        }
+        .form_etc_txt::before{
+            content:'';
+            display:block;
+            position:absolute;
+            left:50%;
+            bottom:0;
+            transform:translateX(-50%);
+            width:74%;
+            margin:0 auto;
+            border:1px solid rgba(136,136,136,0.5);
+        }
+        .bottom_wrap{
+            background:#0a1225;
+
+        }
+        .form_etc_txt table{width:100%;}
+        .form_etc_txt table th{
+            color:#fff;
+            font-size: calc(22em / 7.5);            
+            line-height: calc(10em / 7.5); 
+            letter-spacing: 0;
+            font-weight:500;           
+            text-align: left; 
+            width:19%;
+        }
+        .form_etc_txt table td{
+            color:#989898;
+            font-size: calc(18em / 7.5);            
+            line-height: calc(13em / 7.5); 
+            letter-spacing: -0.5px;
+            font-weight:300;           
+            text-align: left; 
+        }
+        .form_etc_txt table td.td_title{
+            font-weight:600;
+            color:#dadada;
+        }
+
+        .form_etc_txt table td span{font-size:0; text-indent: -9999px; height:0; display:none;}
+
+
+
+
+        .add_etc_txt{
+            position: relative;
+            padding:0 13% 5% 29%;
+            margin: 0 auto;            
+        }
+
+        .add_etc_txt table{width:100%;}
+
+        .add_etc_txt table th{
+            color:#fff;
+            font-size: calc(17em / 7.5);            
+            line-height: calc(10em / 7.5); 
+            letter-spacing: 0;
+            font-weight:500;           
+            text-align: left; 
+            width:19%;
+        }
+        .add_etc_txt table td{
+            color:#878787;
+            font-size: calc(17em / 7.5);            
+            line-height: calc(14em / 7.5); 
+            letter-spacing: -0.5px;
+            font-weight:300;           
+            text-align: left; 
+            text-indent: 1%;
+        }
+        .add_etc_txt table td.ee_sp{
+            padding-left:1%;
+        }
+        .add_etc_txt table td.td_title{
+            font-weight:600;
+            color:#dadada;
+        }
+
+        .add_etc_txt table td span{font-size:0; text-indent: -9999px; height:0; display:none;}        
+
+
+
+
+        .modal {
+            display: none; /* 기본적으로 숨김 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+            z-index: 1000;
+        }
+
+        .modal_popup {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .modal_btn {
+            display: inline-block;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            background: none;
+            font-size: calc(7.5em / 7.5);
+            line-height: calc(10em / 7.5);
+            margin-left: 2%;
+            font-weight: 400;             
+            padding:0;
+            text-decoration: underline;
+        }
+
+        .modal {
+            display:none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal .modal_popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: #3c3c3c;
+            max-height: 500px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: 1px solid #fff;
+            max-width: 960px;
+            width: 48%;
+            font-size:0.39vw;
+        }
+
+        .modal .modal_popup .close_btn {
+            display: block;
+            /* width: calc(35em / 7.5);
+            height: calc(35em / 7.5); */
+            position: absolute;
+            right: -46%;
+            top: 3%;
+            /* text-indent: -99999px; */
+            background: none;
+            border: 0;
+            cursor: pointer;
+            width:100%;
+        }
+        .modal .modal_popup .close_btn img{
+            width:3.2%;
+        }
+
+        /* .modal .modal_popup .close_btn:before, .modal .modal_popup .close_btn:after {position: absolute;left: 15px;content:' ';height: calc(25em / 7.5);width: 2px;background-color: #fff;}
+        .modal .modal_popup .close_btn:before {transform: rotate(45deg);}
+        .modal .modal_popup .close_btn:after {transform: rotate(-45deg);} */
+        
+
+        .modal .modal_popup::-webkit-scrollbar {
+            width: 4px;  /* 스크롤바의 너비 */
+            background:rgba(255,255,255,0.65);
+        }
+
+        .modal .modal_popup::-webkit-scrollbar-thumb {
+            height: 40%; /* 스크롤바의 길이 */
+            background:rgba(255,255,255,0.65);
+        }
+
+        .modal .modal_popup::-webkit-scrollbar-track {
+            background:#3c3c3c;
+        }
+        .policy_txt{padding-top:5%;}
+        .modal .modal_popup ul{
+            list-style: none;
+            padding: 2%;
+            margin: 0;
+            display: block;                
+        }
+        
+        .modal .modal_popup ul li{
+            margin-bottom:3%;
+        }
+        .modal .modal_popup ul li h3{
+            font-size:calc(19em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:300;
+            color:#ffffff;
+            letter-spacing: 0;
+            word-break: keep-all;
+            margin:0;
+            padding:0;
+        }
+        .modal .modal_popup ul li p{
+            font-size:calc(19em / 7.5);
+            line-height:calc(12em / 7.5);
+            font-weight:300;
+            color:#ffffff;
+            letter-spacing: 0;
+            word-break: keep-all;
+            margin:0;
+            padding:calc(1em / 7.5) 0;
+        }
+        .modal .modal_popup ul li p a{
+            font-weight:300;
+            color:#ffffff;
+            letter-spacing: 0;
+            word-break: keep-all;
+            margin:0;
+            display:inline-block;
+            color:#fff;              
+            text-decoration: none;  
+        }    
+
+        .select-wrapper {
+            position: relative;
+            width: 80%;
+        }
+
+        /* select 스타일링 */
+        .eventForm_box3 select {
+            font-size: calc(20em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 500;
+            vertical-align: middle;
+            margin-left: 0;
+            white-space: nowrap;
+            width: 91%;
+            cursor: pointer;
+            border: none;
+            color: #666666;
+            padding: 1.94%;
+            border-radius: 10px;
+            appearance: none;
+            -webkit-appearance: none; /* Safari */
+            -moz-appearance: none; /* Firefox */
+            position: relative;
+            background-color:#fff;
+        }
+
+        /* ::before로 화살표 추가 */
+        .select-wrapper::before {
+            content: '▼'; /* 화살표 */
+            position: absolute;
+            right: 8%; /* 오른쪽에 배치 */
+            top: 50%;
+            transform: translateY(-50%); /* 세로 중앙 정렬 */
+            font-size: calc(22em / 7.5);
+            color: #333;
+            pointer-events: none; /* 화살표 클릭 방지 */
+            z-index: 1;
+            transition: transform 0.3s ease; /* 애니메이션을 통한 회전 효과 */
+        }
+
+        /* select 박스를 클릭했을 때 화살표 회전 */
+        .select-wrapper:focus-within::before {
+            transform: translateY(-50%) rotate(180deg); /* 화살표를 180도 회전 */
+        }
+
+        /* select 박스를 focus할 때 변화 */
+        .eventForm_box3 select:focus {
+            outline: none;
+        }
+
+        /* hover 시 select 박스 스타일 */
+        .eventForm_box3 select:hover {
+            border: none;
+        }
+
+        .modal_popup6{display:none;}
+
+        .file-input-text {
+            width: 29.6%;
+            border-radius: 10px;
+            border: none;
+            font-size: calc(20em / 7.5);
+            line-height: calc(10em / 7.5);
+            color: #666;
+            cursor: pointer;
+            background-color: #fff;
+            padding: 1.6% 0 1.6% 2%;
+            height: 100%;
+        }
+
+        .file-input-text:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .file-input-text[readonly] {
+            background-color: #f5f5f5;
+        }
+
+        .receipt_upload2{margin-bottom:2%;}
+
+        .image_etc{
+            position: relative;
+            display: flex;
+            gap:0 4%;
+            width: 61%;
+            padding: 1.5% 0 0 30.9%;            
+        }
+
+        .image_etc2{
+            position: relative;
+            display: flex;
+            gap:0 4%;
+            width: 61%;
+            padding: 0 0 0 30.9%;            
+        }        
+        
+        .image_etc .dr_image{width:49%;}
+        .image_etc .dr_image2{width:49%; margin-bottom:2%;}
+
+        .image_etc .etc_txt p{
+            color:#b7b7b7;
+            text-align:left;
+            font-size: calc(19em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 400;
+            margin:0;
+            padding:44% 0 0 0;
+            vertical-align: bottom;
+            letter-spacing: 1px;
+        }
+
+        .image_etc .etc_txt2 p{
+            padding:14% 0 0 0;
+        }
+
+
+        .etc_txt3 p{
+            color:#b7b7b7;
+            text-align:left;
+            font-size: calc(19em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 400;
+            margin:0;
+            padding:2% 0 0 31%;
+            vertical-align: bottom;
+            letter-spacing: 1px;
+        }        
+
+        .image_etc .etc_txt p>span{
+            display:block;
+            font-size:0;
+            text-indent: -9999px;
+            height:0;
+            line-height:0;
+        }
+
+        .flatpickr-wrapper{
+            cursor: auto;  /* ✅ 'none' 제거 */
+            width: 100%;  /* ✅ '100%' 대신 auto 설정 */
+            background: #fff;
+            border-radius: 10px;
+            /* display: flex; */
+            align-items: center; /* ✅ 입력 필드 정렬 */
+        }
+
+
+        .modal_popup2{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: #fff;
+            max-height: 700px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: 1px solid #fff;
+            max-width: 650px;
+            width: 50%;
+            height:100%;
+            box-sizing: border-box;
+            font-size: 0.39vw;
+        }
+
+        .modal_popup3{
+            max-height:350px;
+            max-width:650px;
+        }
+
+        .modal_popup4{
+            max-height:500px;
+            max-width:650px;            
+        }
+
+        .modal_popup5{
+            max-height:600px;
+            max-width:650px;            
+        }        
+
+
+        .modal_box{
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .modal_box h3{
+            font-size: calc(32em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: 5%;
+            text-align: center;
+            margin-top: 4%;
+        }
+
+        .modal_box2 h3{
+            margin-bottom:8%;
+        }
+
+        .eventForm_box_store{
+            font-size:0.39vw;
+        }
+
+        .eventForm_box_store >img{
+            position: absolute;
+            right: 2%;
+            top: 17%;
+            width: 6.5%;
+        }        
+
+        .modal_box label{
+            font-size:calc(25em / 7.5);
+            line-height:calc(10em / 7.5);            
+        }
+
+        .modal_box form{
+            padding:0;
+        }
+
+        .modal_box .modal_form {
+            display:inline-block;
+            width:100%;
+            font-size:calc(23em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:700;
+            margin:0;
+            vertical-align:middle;                
+            position: relative;
+        }
+
+        .modal_box input{
+            width: 94.5%;
+            height: calc(16em / 7.5);
+            border-radius: 10px;
+            border: 2px solid #111;
+            vertical-align: middle;
+            font-size: calc(25em / 7.5);
+            color: #8e8e8e;
+            padding-left:5%;
+        }
+
+        .modal_hidden{height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}     
+
+        .modal_view{
+            max-height:473px;
+            /* overflow-y: auto;
+            overflow: hidden; */
+            border-collapse: collapse; 
+            width:100%;            
+            margin-top:8%;
+        }
+
+        .modal_view::-webkit-scrollbar-thumb{
+            padding-left:10px;
+        }
+
+        .modal_store_list .modal_view .ov{
+            width: 100%;
+            font-size: 0.39vw;
+            padding-bottom:10%;
+        }
+
+        .modal_store_list .modal_view .ov h4{
+            font-size: calc(23em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight:600;
+            color:#111;
+            text-align: left;
+            margin:0;
+            word-break: keep-all;
+            max-width:85%;
+        }
+
+        .modal_store_list .modal_view .ov p{
+            font-size: calc(23em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight:400;
+            color:#111;
+            margin:1% 0 0 0;
+            text-align: left;
+            word-break: keep-all;
+            overflow: hidden;
+            max-width:85%;
+        }        
+
+        .modal_store_list .modal_view .ov p.max-w{
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .modal_store_list .modal_view .ov p a{
+            text-decoration: underline;
+            color:#111;
+            position: relative;
+            display:inline-block;
+        }
+        .modal_store_list .modal_view .ov .store_ch{
+            display:inline-block;
+            margin-right:2%;
+        }
+        .modal_store_list .modal_view .ov button{
+            font-size: calc(7em / 7.5);
+            background: #111;
+            color: #fff;
+            border-radius: 10px;
+            padding: 1.7% 3.7%;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            cursor: pointer;
+            line-height: calc(10em / 7.5);  
+        }        
+
+        .modal .modal_popup2 .modal_btn {
+            display: inline-block;
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            background: none;
+            border: 0;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+        }
+
+        .modal .modal_popup2 .modal_btn img{
+            width:100%;
+        }        
+
+
+
+
+        .open_mo_txt h3{
+            font-size:calc(21em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:500;      
+            margin:0;
+            color:#111;
+            letter-spacing:0;              
+            padding:7% 0 10% 0;
+        }
+
+        .open_mo_txt h4{
+            font-size:calc(32em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:600;      
+            margin:0;
+            color:#111;
+            letter-spacing:0;              
+            padding:7% 0 5% 0;
+            text-align: center;
+        }        
+
+            
+
+        .open_mo_btn{
+            display: block;
+            font-size: calc(24em / 7.5);
+            line-height: calc(10em / 7.5);
+            font-weight: 500;
+            background: #111;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 0;
+            border-radius: 10px;
+            width: 68%;
+            margin: 0 auto 6% auto;
+            padding: 3.7% 0;                        
+            text-align: center;
+        }        
+        .sample_wrap{padding:2% 0; display:flex; gap:0 1%;}
+        .sample_modal a{color:#111; outline:none; text-decoration: none;}
+
+        .open_mo_txt table{
+            width:100%;
+            margin:0 0 7% 0;
+        }
+
+        .open_mo_txt table th{
+            color:#111;
+            font-size: calc(21em / 7.5);            
+            line-height: calc(10em / 7.5); 
+            letter-spacing: 0;
+            font-weight:500;           
+            text-align: left; 
+            width:31%;
+            padding:1.5% 0;
+        }
+
+        .open_mo_txt table td{
+            color:#666666;
+            font-size: calc(21em / 7.5);            
+            line-height: calc(11em / 7.5); 
+            letter-spacing: 0;
+            font-weight:300;           
+            text-align: left; 
+            padding:1.5% 0;
+        }        
+
+
+        .video_wrap{position:relative;  padding-top:56.25%; width:100%; height:0;}
+        .video_wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;}        
+
+        .store_new{display:flex; gap:0 2%;}
+        .store_new .form_label{width:18%; text-align: left; padding-top:2%;}
+        .store_new select{padding:1.94% 8%;}
+        .store_new .select-wrapper{width:37.4%; border:2px solid #111; border-radius: 10px; padding:1.8% 0;}
+
+        .tab-checkbox {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .tab-checkbox input {
+            display: inline-block;
+        }
+
+        .tab-checkbox input:checked + span {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }        
+
+        .all_suow_box{
+            position:absolute;
+            left: 1.6%;
+            top: 84.4%;
+            display:none;
+            width:18.9%;
+        }
+
+        .suow_box2{
+            position:absolute;
+            left: 21%;
+            top: 84.4%;
+            width: 19%;         
+        }
+
+        .all_more_show_btn{
+            position: absolute;
+            left: 6%;
+            top: 84.6%;
+            width: 10%;
+            height: 1.5%;
+            cursor: pointer;
+        }        
+
+        .more_show_btn2{
+            position: absolute;
+            left: 25.5%;
+            top: 84.6%;
+            width: 10%;
+            height: 1.5%;
+            cursor: pointer;
+        }           
+
+        .all_more_show_btn button{
+            text-indent: -9999px;
+            background:transparent;
+            color:transparent;
+            border:0;
+            width:100%;
+            height:100%;
+            cursor: pointer;
+            
+        }
+
+        .all_suow_box.show{display:block;}
+
+        .all_more_box{
+            background:#fff;
+            border:1px solid #111;
+            box-sizing: border-box;
+            font-size:0.39vw;
+            text-align: left;
+            padding:10%;
+        }
+
+        .all_more_box p{
+            font-size:calc(18em / 7.5);
+            line-height:calc(12em / 7.5);
+            font-weight: 400;
+            color:#5b6059;
+            letter-spacing: -1px;
+            word-break: keep-all;
+            margin:0; 
+            padding:0;
+        }
+        .more_box2 p{
+            padding:2% 0;
+        }
+        .all_more_box p >span{
+            display:block;
+        }
+
+        .all_more_close_btn{
+            position: absolute;
+            left: 18.5%;
+            top: 84.6%;
+            cursor: pointer;
+            display:none;
+        }             
+
+        .more_close_btn2{
+            position: absolute;
+            left: 38%;
+            top: 84.6%;            
+        }
+
+        .all_more_close_btn button {
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }                
+
+        .eventForm_box select{
+            width: 100%;
+            height: calc(21em / 7.5);
+            border-radius: 5px;
+            border: none;
+            vertical-align: middle;
+            font-size: calc(20em / 7.5);
+            color: #8e8e8e;
+            padding-left: 4%;
+            text-align: left;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;       
+            background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="black" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 60px;
+            cursor: pointer;
+            transition: border 0.2s ease;                 
+        }
+
+        .eventForm_box select:focus {
+            border-color: #e4f8e7;
+            outline: none;
+        }
+
+        .eventForm_box select:disabled {
+            background-color: #f5f5f5;
+            color: #999;
+            cursor: not-allowed;
+        }        
+
+        .eventForm_box .col_item{
+            width:66.1%;
+        }
+
+        .eventForm_box .col_buy{
+            margin-top:1%;
+        }
+
+        .eventForm_box .col_buy label{
+            width:32%;
+            letter-spacing: 0;
+        }        
+
+        .item_wrap{
+            display:flex;
+            gap:0 0.3%;
+        }
+        .item_wrap .item_all{
+            text-align: left; font-size:0.39vw;
+            padding:0 0 6% 0;
+        }
+        .item_wrap .item_all h2{
+            font-size:calc(24em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:600;
+            margin:0;
+            padding:3% 0 1% 5%;
+            word-break: keep-all;
+            letter-spacing: -1px;
+        }
+        .item_wrap .item_all p{
+            font-size:calc(24em / 7.5);
+            line-height:calc(10em / 7.5);
+            font-weight:600;
+            margin:0;
+            padding:0 0 2% 5%;
+            word-break: keep-all;
+            letter-spacing: 0;
+        }
+        .item_wrap .item_all p > span{
+            font-size:calc(6.8em / 7.5);
+            font-weight:400;
+        }
+        .item_wrap .item_all a{
+            display:inline-block;
+            font-size:calc(20em / 7.5);
+            line-height:calc(10em / 7.5);            
+            background:rgba(0, 0, 0,0.8);
+            color:#fff;
+            text-decoration: none;
+            border-radius:50px;
+            padding:2.2% 9.5%;
+            margin: 0 0 0 5%;
+            transition: all 0.5s;
+        }
+
+        .item_wrap .item_all strong{
+            font-size:calc(20em / 7.5);
+            line-height:calc(10em / 7.5);
+            color:#d91515;
+            letter-spacing: 0;
+            display: block;
+            padding: 0 0 5% 5%;            
+        }
+
+        .item_wrap .item_all a:hover{
+            background:rgba(0, 0, 0,1);
+        }
+
+
+        /* contents */
+        .contents01 h1 {
+            position: absolute;
+            top: 26%;
+            left: 50%;
+            width: 100%;
+            font-size: calc(40em / 7.5);
+            font-weight:500;
+            color: #fff;
+            line-height: calc(11em / 7.5);
+            letter-spacing: 0.025em;
+            margin: 0;
+            transform: translate(-50%, -50%);
+        }
+        .contents01 .txt_wrap {
+            text-align: center;
+            color: #000;
+            padding: 5.9% 0 5.8%;
+            margin: 0 auto;
+        }
+        .contents01 .sub_txt {
+            font-size: calc(70em / 7.5);
+            font-weight: 700;
+            line-height: calc(10em / 7.5);
+            padding-bottom: 2.17%;
+            margin: 0;
+        }
+        .contents01 .desc {
+            font-size: calc(28em / 7.5);
+            font-weight: 400;
+            line-height: calc(11em / 7.5);
+            margin: 0;
+        }
+        .contents01 .desc:last-child {
+            margin-top: 0.3%;
+        }
+        .gallary img {
+            display: block;
+        }
+        .gallary .gallary_list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .gallary .gallary_item.last {
+            grid-column: 1 / 3;
+        }
+        .gallary .txt_wrap {
+            padding: 7.14% 0 7.8%;
+        }
+        .gallary .txt_wrap .desc {
+            font-size: calc(28em / 7.5);
+            font-weight: 400;
+            line-height: calc(12.5em / 7.5);
+            margin: 0;
+        }
+
+        .contents05{margin-top:0.5%;}
+
+        .contents05 .link00{
+            text-indent: -9999px;
+            position: absolute;
+        }
+
+        .contents05 .link01{
+            top: 65%;
+            left: 38%;
+            width: 24%;
+            height: 15%;
+        }
+
+        @media(max-width:720px){
+            .Container{font-size:1vw;}
+            .pc{display:none;}
+            .mo{display:block;}
+
+            .contents_wrap{
+                padding:0;
+            }
+
+            .contents_wrap2{
+                padding:0;
+            }
+
+            .contents_01 h1{
+                font-size:calc(52em / 7.5);
+                line-height:calc(9em / 7.5);
+            }
+
+            .contents_01 p{
+                font-size:calc(26em / 7.5);
+                line-height:calc(13em / 7.5);
+                padding:calc(10em / 7.5) 0 0 0;
+            }                    
+            .contents_01 p > span{
+                display:inline-block;
+            }
+            .contents_01 p >em{
+                padding:2% 0;
+            }           
+            
+            .contents_02 .txt{
+                left:50%;
+                top:68%;
+                width:100%;
+            }
+
+            .contents_02 .txt h2{
+                font-size:calc(26em / 7.5);
+                line-height:calc(12em / 7.5);            
+            }
+
+            .contents_02 .txt h2 > span{
+                font-style:italic;
+            }
+            .contents_02 .txt p{
+                font-size:calc(22em / 7.5);
+                padding:calc(17em / 7.5) 0 calc(21em / 7.5) 0;
+            }
+            .contents_02 .txt img{
+                width:65%;
+            }        
+            .contents_02 .txt strong{
+                font-size:calc(26em / 7.5);
+                padding:calc(7em / 7.5) 0 0 0;
+            }
+            .contents_02 .txt em{
+                font-size:calc(22em / 7.5);
+                padding:calc(3em / 7.5) 0 calc(6em / 7.5) 0;
+            }
+            .contents_02 .txt > span{
+                font-size:calc(26em / 7.5);         
+            }          
+            .contents_03 .gall_btn a p{
+                font-size:calc(30em / 7.5);
+                padding:calc(6.5em / 7.5) calc(25em / 7.5);
+            }   
+            
+            .video_wrap{padding-top:56.25%;}
+
+            .contents_04 .date{
+                background:url('image/image_04_bg1mo.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:100%;                
+                padding:13.5% 0 8.5% 0;
+            }
+
+            .contents_04 .date h1{
+                font-size:calc(80em / 7.5);
+                padding: 0 0 calc(1em / 7.5) 0;
+                letter-spacing: -1px;
+            }
+
+            .contents_04 .date p{
+                font-size: calc(24em / 7.5);
+                padding: calc(0em / 7.5) 2.5% calc(4em / 7.5);
+                color: #d2d2d2;
+            }
+
+            .contents_04 .date strong{
+                font-size:calc(40em / 7.5);
+                padding:calc(1em / 7.5) 0 calc(1em / 7.5) 0;
+            }               
+
+            .contents_04 .date p span{
+                font-size: calc(7em / 7.5);
+                padding: calc(0.7em / 7.5) calc(2em / 7.5);
+                margin-right: 0;
+                background: none;
+                vertical-align: text-bottom;
+            }
+            .contents_04 .date p.date_02 span{
+                padding:calc(0.7em / 7.5) calc(3.26em / 7.5);
+            }            
+
+            .image_etc{
+                display: block;
+                width: 100%;
+                padding: 4% 0 0 0;            
+            }
+
+            .image_etc2{
+                display: block;
+                width: 100%;
+                padding: 4% 0 0 0;            
+            }            
+
+            .image_etc .dr_image{width:100%; padding-bottom:0;}
+            .image_etc .dr_image2{width:100%; padding-bottom:0;}
+
+            .no-link {
+                text-decoration: none; 
+                color: inherit;  
+            }            
+
+            .image_etc .etc_txt p{
+                font-size: calc(28em / 7.5);
+                padding:0 0 3% 0;
+                letter-spacing: 1px;
+                color:#b7b7b7 !important;
+                text-decoration: none !important;
+                color: inherit;  
+            }            
+
+            .etc_txt3 p{
+                font-size: calc(28em / 7.5);
+                padding:2% 0 0 4%;
+            }                    
+
+            .image_etc .etc_txt p>span{
+                display:none;
+            }            
+
+            .tab-button {
+                font-size:calc(30em / 7.5);           
+                padding: 4.23% 0;            
+            }            
+
+            .eventForm_box{
+                padding: 1.5% 4%;
+                display: block;
+            }
+
+            .eventForm_box2{
+                padding: 1.5% 4%;
+                display: block;
+            }       
+
+            .eventForm_box4_3{
+                padding: 0 4% 0 4%;
+                display: block;
+            }            
+
+            .eventForm_box5{
+                padding: 1% 4% 2.5% 4%;
+            }                    
+
+            .eventForm_box .col3{
+                width:100%; margin-bottom:1%;
+            }
+
+            .eventForm_box .col4{
+                width:80% ;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                flex: 0 1 80%;
+            }                   
+            
+            .flatpickr-mobile .flatpickr-input {
+                width: 100%;  
+                box-sizing: border-box;  
+            }            
+
+            .num_data button img{
+                width:40%;
+            }
+            
+            .eventForm_box label{
+                font-size:calc(27em / 7.5);
+                line-height:calc(10em / 7.5);
+                font-weight:500;
+                vertical-align:middle;
+                margin-left:2%;
+            }
+
+            .eventForm_box .form_label{
+                display:block;
+                width:100%;
+                font-size:calc(32em / 7.5);
+                margin-bottom:2%;
+            }
+
+            .eventForm_box4_3 .form_label{
+                margin-bottom:1%;
+            }
+
+
+            .eventForm_box .form_label h1{
+                font-size:calc(8em / 7.5);
+                line-height:calc(10em / 7.5);
+                font-weight:700;
+                margin:0;
+                vertical-align:middle;
+                margin-right:5%;
+            }
+
+            .eventForm_box .col{
+                display:inline-block; 
+                width:69.5%; 
+                margin-bottom:1%; 
+                text-align: left;
+            }
+
+            .eventForm_box .col5{
+                width:28.3%; 
+                margin-right:3%;
+            }            
+
+            .col5 input[disabled] {
+                background-color: #fff ;
+                color: #000 !important;  
+                opacity: 1 !important;  
+                -webkit-text-fill-color: #000 !important; 
+            }            
+
+            .eventForm_box .col6{
+                width:67.4%; 
+            }            
+
+            .eventForm_box .col input{
+                width: 100%;
+                height: calc(24.5em / 7.5);
+                font-size: calc(25em / 7.5);
+                color: #8e8e8e;
+                padding-left: 4%;
+            }
+
+            .eventForm_box .col5 input{
+                padding-left: 20%;
+                background:#fff !important; 
+            }
+
+            .eventForm_box .col4 .left-aligned{
+                width: 100%;
+                height: calc(24.5em / 7.5);
+                font-size: calc(25em / 7.5);
+                color: #8e8e8e !important;
+                padding-left: 2%;
+            }            
+
+            .eventForm_box .col2{
+                width:100%;
+            }
+            .eventForm_box .col2 input{
+                width:100%;
+            }      
+
+            .eventForm_box .col3 .check_box{
+                padding: 0 0 0 0;
+                flex-wrap: wrap;
+            }
+
+            .eventForm_box .col3 input{
+                margin:0 5% 0 0;
+                width: calc(18em / 7.5);
+                height: calc(18em / 7.5);            
+            }                
+
+            .eventForm_box .col3 label{
+                font-size:calc(28em / 7.5);
+                width:40%;
+                margin-bottom:1%;
+            }        
+
+            .eventForm_box .col_buy label{
+                width:50%;
+                margin-bottom:5%;                
+            }
+            .eventForm_box .col_item{
+                display: inline-block;
+                width: 99%;
+                margin-bottom: 1%;
+                text-align: left;
+            }
+
+            .eventForm_box select{
+                width: 100%;
+                height: calc(24.5em / 7.5);
+                font-size: calc(25em / 7.5);
+                color: #8e8e8e;
+                padding-left: 4%;                
+            }
+
+            .num_btns{
+                width: 27%;
+                margin-left: 2.5%;
+            }
+
+            .num_btns button{
+                font-size: calc(26em / 7.5);
+                padding: 13.49% 0;         
+            }
+
+            .num_data{
+                width: 17%;
+                margin-left: 3%;
+            }
+
+            .num_data button{
+                font-size: calc(26em / 7.5);
+                padding: 17.48% 0;
+                width: 100%;     
+            }        
+            
+            .col4 input[readonly] {
+                pointer-events: auto;
+            }
+
+            .flatpickr-calendar{
+                z-index: 9999px;
+            }
+
+            .num_btns2{
+                width: 47.99%;
+                margin-left: 2%;
+                vertical-align: top;
+            }
+            
+            .num_btns2 button{
+                font-size: calc(25em / 7.5);
+                padding: 7.82% 0;    
+            }            
+
+            .before_join_wrap h3{
+                font-size: calc(28em / 7.5);
+                padding-left:4%;
+            }
+            
+            .before_join_wrap h3 a{
+                font-size: calc(7.5em / 7.5);            
+                padding-left:1%;
+            }            
+
+
+            .form_etc_txt{
+                padding:12% 4% 5% 4%;          
+            }
+
+            .form_etc_txt::before{
+                width:91%;
+            }
+
+            .form_etc_txt table{width:100%;}
+
+            table th[rowspan] {
+                display: block; 
+            }            
+
+            .form_etc_txt table th{
+                font-size: calc(30em / 7.5);            
+                width:100%;
+                padding-bottom:3%;
+            }
+            .form_etc_txt table td{
+                font-size: calc(20em / 7.5);            
+                line-height: calc(13em / 7.5); 
+            }
+
+            .form_etc_txt table td span{display:block;}
+
+            .font_list{
+                max-width: none;
+                padding:9% 0 0 0;
+            }
+
+            .form_check{
+                padding: 3% 0;            
+            }
+
+            .form_check input{
+                width: 6%;
+                height: calc(19em / 7.5);
+                margin:0;
+            }
+            .form_check label{
+                margin-left:1.5%;
+                font-size:calc(24em / 7.5);
+                line-height:calc(12em / 7.5);
+                font-weight:300;
+                vertical-align:top;
+                color:#fff;
+                opacity:0.8;
+                display:inline-block;
+                width:85%;                
+            }
+            .form_check label span{
+                color:#9c222c;
+            }
+            .form_check label p{
+                display:inline-block;
+                margin:0;
+                padding:0;
+                vertical-align: top;
+                margin-top:-3px;
+                width:79%;
+            }
+
+            .check_wrap{
+                padding: 4% 4% 2% 4%;
+                border:1px solid rgba(255,255,255,0.6);
+                margin: 8% 3%;
+            }
+
+            .pc_space{margin-left:0; display:inherit;}
+            .mo_space{display:block;}
+
+            .check_wrap .form_title{
+                display:block;
+                width:100%;
+            }
+            .check_wrap .form_title h3{
+                font-size:calc(30em / 7.5);
+            }
+
+
+            .form_send{
+                padding: 0 4% 14% 4%;
+                display: block;
+            } 
+
+            .form_send .modal_inquiry input{
+                padding: calc(6.99em / 7.5) calc(53.36em / 7.5);            
+            }
+
+            .form_send input{
+                margin:4% 0 0 0;
+                font-size: calc(32em / 7.5);
+                padding: calc(7.5em / 7.5) calc(42.6em / 7.5);
+            }
+
+            .select-wrapper{
+                width:99%;
+            }
+
+            /* select 스타일링 */
+            .eventForm_box3 select {
+                font-size: calc(25em / 7.5);
+                width: 100%;
+                padding: 3.8% 0 3.8% 4%;
+            }
+
+            /* ::before로 화살표 추가 */
+            .select-wrapper::before {
+                right: 7%; /* 오른쪽에 배치 */
+                font-size: calc(24em / 7.5);
+                top:45%;
+            }            
+
+            .file-input-text {
+                width: 49% !important;
+                font-size: calc(25em / 7.5);
+                padding:4% 0 4% 4%;
+            }            
+
+
+            .policy_txt{padding-top:10%;}
+
+            .modal_btn{margin-left:3%;}
+
+            .modal .modal_popup {
+                max-height: 550px;
+                max-width: 960px;
+                width: 92%;
+                font-size:1vw;
+                padding:5px;
+            }
+
+            .modal .modal_popup .close_btn {
+                right: -44%;
+                top: 4%;
+            }
+
+            .modal .modal_popup .close_btn img{
+                width:4.6%;
+            }
+
+            .modal_popup2{
+                padding: 20px;
+                max-height: 650px;
+                width: 85%;
+                font-size: 1vw;
+                overflow-y: scroll;
+                overflow-x: hidden;                
+            }
+
+            .modal_box h3{
+                font-size: calc(40em / 7.5);
+                margin-bottom: 3%;
+                margin-top: 3%;
+            }
+
+            .modal .modal_popup2 .modal_btn {
+                right: 2%;
+                top: 2%;
+            }
+
+            .modal .modal_popup2 .modal_btn img{
+                width:80%;
+            }                    
+
+            .eventForm_box_store{
+                font-size:1vw;
+            }
+
+            .eventForm_box_store >img{
+                right: 3%;
+                top: 23%;
+                width: 7%;
+            }        
+
+            .modal_box label{
+                font-size:calc(25em / 7.5);
+                line-height:calc(10em / 7.5);            
+            }
+
+            .modal_box .modal_form {
+                font-size:calc(23em / 7.5);
+            }
+
+
+            .modal_pop_join .col input{
+                height:calc(20.5em / 7.5);
+            }
+
+
+            .modal_box input{
+                width: 95%;
+                height: calc(20em / 7.5);
+                border-radius: 10px;
+                border: 2px solid #111;
+                vertical-align: middle;
+                font-size: calc(25em / 7.5);
+                color: #8e8e8e;
+                padding-left:5%;
+            }
+
+            .modal_hidden{height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}     
+
+            .modal_view{
+                /* max-height:412px; */
+                max-height:100%;
+                overflow-y: auto;
+                overflow: hidden;
+                border-collapse: collapse; 
+                width:100%;            
+                margin-top:10%;
+            }
+
+            .modal_store_list .modal_view .ov{
+                font-size: 1vw;
+                gap: 27%;
+            }
+
+            .modal_store_list .modal_view .ov h4{
+                padding:1.5% 0;
+                margin:0;
+            }          
+
+            .modal_pop_join .col{
+                width:100%;
+            }
+
+            .col3 .tab-checkbox{padding:0 0 4% 0;}
+            
+            .store_new .form_label{width:20%;}
+            .store_new .select-wrapper{width:38%;padding:1% 0;}     
+            .store_new select{font-size:calc(20em / 7.5);}
+            .modal_store_list .modal_view .ov p{
+                margin:1.5% 0 0 0;
+            }        
+
+            .modal_store_list .modal_view .ov p.max-w{
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .modal_popup3{
+                max-height: 100%;
+                height: auto;
+                padding-bottom: 10%;
+            }
+
+            .modal_popup3 .modal_box h3{
+                font-size:calc(26em / 7.5);
+            }
+
+            .modal_popup4{
+                max-height: 100%;
+                height: auto;
+                padding-bottom: 10%;        
+            }
+
+            .modal_popup5{
+                max-height: 100%;
+                height: auto;
+                padding-bottom: 10%;        
+            }          
+            .sample_wrap{display:block;}  
+
+
+            .modal_popup6{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0,0,0,0.9);
+                max-height: 100%;
+                max-width: 720px;
+                width: 100%;
+                height:100%;
+                box-sizing: border-box;
+                font-size: 1vw;
+                margin-top:-1px;
+                /* overflow-y: scroll;
+                overflow-x: hidden;                 */
+                overflow: hidden;
+            }        
+
+            .bacode_wrap{
+                position: relative;
+            }           
+            
+            .modal_popup6{display:block;}
+            .modal_box22{position: relative;}
+
+            .modal .modal_popup6 .modal_btn {
+                display: inline-block;
+                position: absolute;
+                right: 3%;
+                top: 1.3%;
+                background: none;
+                border: 0;
+                cursor: pointer;
+                width: calc(36em / 7.5);
+                height: calc(36em / 7.5);
+                padding: 0;
+            }
+
+            .modal .modal_popup6-webkit-scrollbar{
+                display:none;
+            }
+
+            .modal .modal_popup6 .modal_btn img{
+                width:80%;
+            }         
+
+            .modal .modal_popup6 .bacode{
+                position: absolute;
+                left: 50%;
+                top: 42%;
+                transform: translate(-50%, -50%);
+                margin: 0 auto;
+                padding-top: 66.2%;
+                width: 90%;
+                height: 0;   
+                overflow: hidden;              
+            }   
+
+            .modal .modal_popup6 .bacode video{
+                position:absolute;top:0;left:0;width:100%;height:100%;
+                object-fit: cover;
+            }            
+
+            .ba_txt{
+                position: absolute;
+                left: 50%;
+                top: 15%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .ba_txt p{
+                font-size:calc(26em / 7.5);
+                line-height:calc(10em / 7.5);
+                color:#fff;
+                font-weight:400;
+            }
+
+            .ba_txt2{
+                position: absolute;
+                left: 50%;
+                top: 69%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }            
+
+            .ba_txt2 strong{
+                font-size:calc(45em / 7.5);
+                line-height:calc(10em / 7.5);
+                display:block;
+                color:#fff;
+                font-weight:600;
+            }                   
+
+            .ba_txt2 p{
+                font-size:calc(26em / 7.5);
+                line-height:calc(10em / 7.5);
+                color:#fff;
+                font-weight:400;
+                opacity:0.6;
+                margin:0;
+            }            
+            
+            .modal_popup6 .open_mo_txt h4{
+                font-size:calc(32em / 7.5);
+                line-height:calc(10em / 7.5);
+                font-weight:600;      
+                margin:0;
+                color:#111;
+                letter-spacing:0;              
+                padding:2.5% 0;
+                text-align: center;
+                background:#fff;
+            }                
+
+            .eventForm_box222{
+                display:flex;
+                flex-wrap: wrap;
+            }
+
+            input[type="text"] {
+                width: 100% ;          
+                box-sizing: border-box; 
+                text-align: left !important;             
+                padding-left: 4%;
+            }            
+
+            .col4 input[type="text"] {
+                width: 96% ;          
+                box-sizing: border-box; 
+                text-align: left !important;             
+                padding-left: 4%;
+            }
+
+            .col4 input[type="text"]::placeholder {
+                text-align: left !important;  
+                color: #828282 !important;    
+            }                 
+
+            .col4 input[type="date"]{
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background: #fff;
+                border: none;
+                color: #828282;
+                text-align:left !important;
+                padding-left: 2%;
+                width:94%;
+            }      
+            
+            .left-aligned{
+                text-align: left !important;
+                width:96%;
+                /* height:auto; */
+                color:#828282 !important;
+                padding-left: 4%;
+            }        
+
+            input::-webkit-date-and-time-value {
+                text-align: left;
+                padding-left:2%;
+            }
+
+            .flatpickr-wrapper{
+                width:100%;
+            }
+
+
+            .all_suow_box{
+                position:absolute;
+                left: 0;
+                top: 43.4%;
+                display:none;
+                width:100%;
+            }
+
+            .suow_box2{
+                position:absolute;
+                left: 0;
+                top: 59.6%;
+                width: 100%;         
+            }
+
+            .all_more_show_btn{
+                left: 30%;
+                top: 43.6%;
+                width: 40%;
+                height: 1.4%;
+            }        
+
+            .more_show_btn2{
+                left: 30%;
+                top: 59.65%;
+                width: 40%;
+                height: 1.4%;
+            }           
+
+            .all_more_show_btn button{
+                text-indent: -9999px;
+                background:transparent;
+                color:transparent;
+                border:0;
+                width:100%;
+                height:100%;
+                cursor: pointer;
+                
+            }
+
+            .all_suow_box.show{display:block;}
+
+            .all_more_box{
+                background:#fff;
+                border:1px solid #111;
+                box-sizing: border-box;
+                font-size:1vw;
+                text-align: left;
+                padding:6%;
+            }
+
+            .all_more_box p{
+                font-size:calc(23em / 7.5);
+                margin:0; 
+                padding:0;
+            }
+
+            .more_box2 p{
+                padding:0;
+                margin:1% 0;
+            }            
+
+            .all_more_box p >span{
+                display:none;
+            }
+
+            .all_more_close_btn{
+                position: absolute;
+                left: 91%;
+                top: 43.6%;
+                width:7.1%;
+                cursor: pointer;
+                display:none;
+            }             
+
+            .more_close_btn2{
+                position: absolute;
+                left: 91%;
+                top: 59.8%;
+                width:7.1%;            
+            }
+
+            .all_more_close_btn button {
+                border: none;
+                cursor: pointer;
+                padding: 0;
+            }                    
+
+            .add_etc_txt{
+                position: relative;
+                padding:0 8% 5% 5%;
+            }
+
+            .add_etc_txt table th{
+                font-size: calc(20em / 7.5);            
+                width:19%;
+            }
+            .add_etc_txt table td{
+                color:#878787;
+                font-size: calc(20em / 7.5);            
+                line-height: calc(12em / 7.5); 
+                text-indent: 1%;
+            }
+            .add_etc_txt table td.ee_sp{
+                padding-left:1%;
+            }
+            .add_etc_txt table td.td_title{
+                font-weight:600;
+                color:#dadada;
+            }            
+
+            .item_wrap{
+                display:block;
+            }
+            .item_wrap .item_all{
+                text-align: center; 
+                font-size:1vw;
+                padding:0 0 6% 0;
+            }
+            .item_wrap .item_all h2{
+                font-size:calc(26em / 7.5);
+                padding:3% 0 1% 0;
+                letter-spacing: 0;
+            }
+            .item_wrap .item_all p{
+                font-size:calc(28em / 7.5);
+                padding:0 0 4% 0;
+            }
+            .item_wrap .item_all p > span{
+                font-size:calc(6.8em / 7.5);
+            }
+            .item_wrap .item_all a{
+                font-size:calc(24em / 7.5);
+                padding:3% 12%;
+                margin:0 0 8% 0;
+            }
+            
+            .item_wrap .item_all strong{
+                font-size: calc(20em / 7.5);
+                padding: 0 0 5% 0;
+            }            
+
+            /* contents */
+            .contents01 h1 {
+                font-size: calc(30em / 7.5);
+                letter-spacing: 0.025em;
+            }
+            .contents01 .txt_wrap {
+                padding: 16.39% 0 17.36%;
+            }
+            .contents01 .sub_txt {
+                padding-bottom: 8.9%;
+            }
+            .contents01 .desc {
+                line-height: calc(12em / 7.5);
+            }
+            .contents01 .desc:last-child {
+                margin-top: 5%;
+            }
+            .gallary .gallary_list {
+                gap: 0;
+            }
+            .gallary .txt_wrap {
+                padding: 21.25% 0;
+            }
+            .gallary .txt_wrap .desc {
+                font-size: calc(24em / 7.5);
+                line-height: calc(12.5em / 7.5);
+            }
+            .gallary .txt_wrap .desc:last-child {
+                margin-top: 6.9%;
+            }
+            .contents05 .link01{
+                top: 58%;
+                left: 14%;
+                width: 72%;
+                height: 20%;
+            }            
+        }
+
+    </style>
+
+    <div class="Container"> 
+        <div class="contents_rel contents01">
+            <picture>
+                <source data-device="mobile" srcset="image/image01_mo.jpg" media="(max-width: 720px)" >
+                <img src="image/image01_pc.jpg" alt=""/>
+            </picture>     
+            <h1>한정판 오디세이 퍼터와 캘러웨이 골프볼로<br>올인더힙(ALL IN THE HIPS) 퍼팅을 완성하세요.</h1>
+            <div class="txt_wrap">
+                <h2 class="sub_txt">마지막 한정 수량 입고</h2>
+                <p class="desc">전세계 골프팬들의 뜨거운 반응으로 완판되었던<br>해피길모어 2 오디세이 하키 스틱 퍼터가 <br class="mo">단 한 번, 추가 수량으로 돌아왔습니다.</p>
+                <p class="desc">오직 공식 온라인 스토어에서만 만나볼 수 있는 <br class="mo">오디세이 하키 스틱 퍼터와<br class="pc">캘러웨이 해피길모어 2 <br class="mo">한정판 골프볼의 감동을 다시 한 번 느껴보세요.</p>
+            </div>
+        </div>
+
+        <div class="contents_rel gallary">
+            <ul class="gallary_list">
+                <li class="gallary_item">
+                    <picture>
+                        <source data-device="mobile" srcset="image/image02_mo.jpg" media="(max-width: 720px)" >
+                        <img src="image/image02_pc.jpg" alt=""/>
+                    </picture>     
+                </li>
+                <li class="gallary_item">
+                    <picture>
+                        <source data-device="mobile" srcset="image/image03_mo.jpg" media="(max-width: 720px)" >
+                        <img src="image/image03_pc.jpg" alt=""/>
+                    </picture>     
+                </li>
+                <li class="gallary_item">
+                    <picture>
+                        <source data-device="mobile" srcset="image/image04_mo.jpg" media="(max-width: 720px)" >
+                        <img src="image/image04_pc.jpg" alt=""/>
+                    </picture>     
+                </li>
+                <li class="gallary_item">
+                    <picture>
+                        <source data-device="mobile" srcset="image/image05_mo.jpg" media="(max-width: 720px)" >
+                        <img src="image/image05_pc.jpg" alt=""/>
+                    </picture>     
+                </li>
+                <li class="gallary_item last">
+                    <picture>
+                        <source data-device="mobile" srcset="image/image06_mo.jpg" media="(max-width: 720px)" >
+                        <img src="image/image06_pc.jpg" alt=""/>
+                    </picture>     
+                </li>
+            </ul>
+            <div class="txt_wrap">
+                <p class="desc">Happy Gilmore 2의 넷플릭스 공개를 기념하여, 영화에서 영감을 받은 리미티드 에디션 오디세이 하키 스틱 퍼터를 출시합니다.<br>오디세이는 전 세계 주요 투어에서 #1 퍼터 자리를 지켜온 브랜드입니다.</p>
+                <p class="desc">이번 리미티드 에디션은 독특한 퍼터 형태와 오디세이의 최신 기술,<br>그리고 Happy Gilmore 2에서 영감을 받은 튜브 삭(양말) <br class="mo">스타일 헤드커버가 적용된 디자인으로 선보입니다.</p>
+            </div>
+        </div>
+
+        <div class="contents_rel contents02">
+            <div class="item_wrap">
+                <div class="item_all">
+                    <picture>
+                        <source data-device="mobile" srcset="image/image07_mo.jpg" media="(max-width: 720px)" >
+                        <img src="image/image07_pc.jpg" alt=""/>
+                    </picture>                         
+                    <h2>[온라인 단독] 오디세이 하키 스틱 퍼터</h2>
+                    <p>693,000<span>원</span></p>
+                    
+                    <a href="https://kr.callawaygolf.com/kr/c/p/BP_011281/configuratorPage/CPQCONFIGURATOR">제품보기</a>
+                </div>
+                <div class="item_all">
+                    <picture>
+                        <source data-device="mobile" srcset="image/image08_mo.jpg" media="(max-width: 720px)" >
+                        <img src="image/image08_pc.jpg" alt=""/>
+                    </picture>                         
+                    <h2>[온라인 단독] 해피길모어 2 한정판 골프볼 JERSEY 에디션</h2>
+                    <p>70,000<span>원</span></p>
+                    <a href="https://kr.callawaygolf.com/kr/c/p/BP_020512/configuratorPage/CPQCONFIGURATOR">제품보기</a>
+                </div>
+                <div class="item_all">
+                    <picture>
+                        <source data-device="mobile" srcset="image/image09_mo.jpg" media="(max-width: 720px)" >
+                        <img src="image/image09_pc.jpg" alt=""/>
+                    </picture>                         
+                    <h2>[온라인 단독] 캘러웨이 해피길모어 2 한정판 골프볼 TAP IN 에디션</h2>
+                    <p>70,000<span>원</span></p>
+                    <a href="https://kr.callawaygolf.com/kr/c/p/BP_020514/configuratorPage/CPQCONFIGURATOR">제품보기</a>
+                </div>                                
+            </div>
+        </div>
+
+        <div class="contents_rel contents03">
+            <picture>
+                <source data-device="mobile" srcset="image/image10_mo.jpg" media="(max-width: 720px)" >
+                <img src="image/image10_pc.jpg" alt=""/>
+            </picture>  
+        </div>        
+
+        <div class="contents">
+            <div class="contents_wrap">
+                <div class="contents_04">
+                    <div id="store" class="">    
+                        <div class="font_list">
+                            <form class="" method="POST" action="" onsubmit="" name="" id="">
+
+                                <!--성명-->
+                                <div class="eventForm_box eventForm_box4_2">
+                                    <label for="order_name" class="form_label">성명 <span>*</span></label>
+                                    <div class="col col2">
+                                        <input type="text" class="" id="order_name" name="" placeholder="2자 이상" pattern="" minlength="10" maxlength="20">
+                                    </div> 
+                                </div>  
+                                <!--성명-->                                
+
+                                <div class="eventForm_box">
+                                    <label for="number" class="form_label">연락처 <span>*</span></label>
+                                    <div class="col">
+                                        <input type="text" class="" id="number" name="" placeholder="-없이" pattern="" minlength="10" maxlength="20">
+                                    </div> 
+                                    <div class="num_btns">
+                                        <button><a href="" >인증번호 요청</a></button>
+                                    </div>                   
+                                </div>
+
+                                <div class="eventForm_box">
+                                    <label for="number_act" class="form_label">인증 번호 <span>*</span></label>
+                                    <div class="col">
+                                        <input type="text" class="" id="number_act" name="" placeholder="인증번호를 입력해 주세요" pattern="" minlength="10" maxlength="11">
+                                    </div> 
+                                    <div class="num_btns">
+                                        <button><a href="" >인증번호 확인</a></button>
+                                    </div>                   
+                                </div>  
+                            </form>            
+                        </div>
+                    </div>
+                    
+                    <div class="bottom_wrap">
+                        <div class="check_wrap">
+
+                            <div class="form_check">
+                                <input type="checkbox" id="agree" name="agree">
+                                <label for="agree">개인정보 수집 및 이용 동의 <span>(필수)</span><button type="button" id="openPolicyModal" class="modal_btn">자세히 보기</button></label>
+                            </div>
+
+                            <div class="form_check form_check2">
+                                <input type="checkbox" id="agree2" name="agree2">
+                                <label for="agree2">
+                                    <div class="mo_space">본 구매 응모는 구매 대상자에게만 구매 자격이 주어지며,</div>
+                                    <div class="mo_space">구매 자격 당첨 후 안내 된 기한 내에 구매하지 않을 경우</div>
+                                    <div class="pc_space mo_space">다른 응모자에게 자격이 이양되는 점을 확인했습니다.</div>
+                                </label>
+                            </div>                            
+                        </div>
+
+
+                        <div class="form_send">
+                            <div class="modal_send">
+                                <input type='submit' value="응모하기"></input>
+                            </div>
+                            <!-- <div class="modal_inquiry">
+                                <input type='submit' value="신청 조회" id="openJoinModal"></input>
+                            </div>                         -->
+                        </div> 
+
+
+                    </div>
+                </div>      
+                
+                <!--샘플 버튼-->
+                <div class="sample_wrap">
+                    <div class="sample_modal">
+                        <button id="openJoin_ac"><a href="#;" >신청완료</a></button>
+                    </div>                   
+                    
+                    <div class="sample_modal">
+                        <button id="opendb_Join_ac"><a href="#;" >중복참여</a></button>
+                    </div>      
+                </div>
+                <!--샘플 버튼-->                
+            </div>
+        </div>
+    </div>
+
+    <!--이용약관 모달 팝업-->
+    <div id="modal_policy" class="modal">
+        <div class="modal_popup">
+            <div class="policy_txt">
+                <ul>
+                    <li>
+                        <h3>이벤트 개인정보처리방침</h3>
+                        <p>
+                            한국캘러웨이골프 유한회사(kr.callawaygolf.com, 이하 '회사')는 회사가 운영하는 웹사이트의 이용과 관련 하여 이용자의 개인정보를 소중하게 생각하며, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련 법령을 준수하기 위해 개인정보처리방침을 제정하고 이를 준수하고 있습니다.
+                            회사는 개인정보 처리방침을 통하여 이용자의 개인정보가 어떠한 목적과 방식으로 수집, 이용되고 있으며, 이용자의 개인정보 보호를 위해 회사가 어떠한 조치를 취하고 있는지 알려드립니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>1. 처리하는 개인정보의 항목</h3>
+                        <p>회사는 웹사이트에서 운영되는 이벤트 참여 시 이용자로부터 개인정보를 수집하고 있습니다.</p>
+                    </li>
+                    <li>
+                        <h3>(1) 수집항목</h3>
+                        <p>이벤트참여자 이름, 휴대폰번호</p>
+                    </li>   
+                    <li>
+                        <h3>필수항목</h3>
+                        <p>이벤트참여자 이름, 휴대폰번호</p>
+                        <p></p>
+                    </li>   
+                    <li>
+                        <p>※ 개인정보 수집 시 필수 항목의 수집ㆍ이용에 대한 동의를 거부하실 수 있으며, 동의를 거부하실 경우 서비스 이용이 제한 될 수 있습니다. 선택 항목의 수집ㆍ이용 동의를 거부 하실 경우에는 서비스 이용은 제한되지 않습니다.</p>
+                    </li>      
+                    <li>
+                        <h3>(2) 수집방법</h3>
+                        <p>- 웹사이트에서 운영되는 이벤트 참여를 통한 수집</p>
+                    </li>  
+                    <li>
+                        <p>- 로그분석 프로그램을 통한 자동 수집</p>
+                    </li>  
+                    <li>
+                        <h3>2. 개인정보의 처리 목적</h3>
+                        <p>회사는 수집한 개인정보를 이벤트 참여 목적을 위해 활용합니다.</p>
+                    </li>  
+                    <li>
+                        <h3>목적 이벤트 경품 배송</h3>
+                        <p>- 이벤트 참여 시 이벤트 경품 배송</p>
+                    </li>  
+                    <li>
+                        <h3>3. 개인정보의 처리 및 보유 기간</h3>
+                        <p>회사는 원칙적으로 수집한 개인정보를 이벤트 종료 후 3개월까지 보유 및 이용하며 동의 받은 보유 기간이 도래하면 해당 정보를 지체 없이 파기합니다.</p>
+                    </li>  
+                    <li>
+                        <h3>다만 상법, 국세기본법, 전자상거래 등에서의 소비자 보호에 관한 법률 등 관련 법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다. 이 경우 회사는 보관하는 개인정보를 그 보관의 목적으로만 이용하며 보존 기간 및 보존 항목은 아래와 같습니다.</h3>
+                        <p>- 계약 또는 청약철회 등에 관한 기록 : 5 년(전자상거래 등에서의 소비자보호에 관한 법률)</p>
+                        <p>- 대금 결제 및 재화 등의 공급에 관한 기록 : 5년(전자상거래 등에서의 소비자보호에 관한 법률)</p>
+                        <p>- 소비자 불만 또는 분쟁 처리에 관한 기록 : 3년(전자상거래 등에서의 소비자보호에 관한 법률)</p>
+                        <p>- 납세 증거에 관한 기록 : 5년(국세 기본법)</p>
+                    </li>  
+                    <li>
+                        <h3>4. 개인정보 파기에 관한 사항</h3>
+                        <p>
+                            1&#41; 파기절차<br />
+                            서비스 이용을 위해 입력하신 정보는 목적이 달성된 후 기타 관련 법령에 의한 개인정보보관 사유에 해당하지 않는 한 지체없이 파기됩니다.                            
+                        </p>
+                        <p>
+                            2&#41; 파기방법<br />
+                            종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.                            
+                        </p>
+                    </li>  
+                    <li>
+                        <h3>5. 개인정보 제3자 제공에 관한 사항</h3>
+                        <p>회사는 이용자의 동의가 있거나 관련 법령의 규정에 의한 경우를 제외하고는 어떠한 경우에도 '1. 처리하는 개인정보의 항목', '2. 개인정보의 처리 목적'에서 고지한 범위를 넘어 이용자의 개인정보를 이용하거나 제3자에게 제공하지 않습니다. 다만, 다음의 경우에는 예외로 합니다.</p>
+                        <p>가. 이용자가 사전에 동의한 경우</p>
+                        <p>나. 관련 법령의 규정에 의하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</p>
+                        <p>다. 서비스 제공에 따른 요금정산을 위해 필요한 경우</p>
+                        <p>라. 계약 이행을 위해 필요한 경우</p>
+                        <p>마. 타인에게 정신적,물질적 피해를 줌으로써 그에 대한 법적 조치를 취하기 위해 이용자의 정보를 공개해야 한다고 판단되는 충분한 근거가 있는 경우</p>
+                        <p>바. 통계작성, 마케팅분석 또는 시장조사를 위해 필요한 경우로 특정 개인을 식별할 수 없는 형태로 가공하여 외부 기관 또는 단체 등에 제공하는 경우</p>
+                        <p>사. 서비스의 제공에 관한 계약의 이행을 위하여 필요한 개인정보로서 경제적/기술적인 사유로 통상의 동의를 받는 것이 현저히 곤란한 경우</p>
+                    </li>  
+                    <li>
+                        <h3>6. 개인정보의 위탁에 관한 사항</h3>
+                        <p>회사는 서비스 이행을 위해 개인정보 처리업무를 아래와 같이 외부 전문 업체에 위탁하여 운영하고 있습니다.</p>
+                    </li>  
+                    <li>
+                        <h3>위탁업체 위탁업무 내용</h3>
+                        <p>샌텔주식회사</p>
+                    </li>                       
+                    <li>
+                        <h3>이벤트 신청 및 이벤트와 관련한 업무</h3>
+                        <p>7. 개인정보 자동 수집의 목적 및 거부에 관한 사항</p>
+                        <p>회사는 이용자의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie)', 'ActiveX'등 개인정보를 자동으로 수집하는 장치(이하 “쿠키등”)를 설치 운용합니다. 쿠키란 웹사이트를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 아주 작은 텍스트 파일로서 이용자의 컴퓨터 하드디스크에 저장됩니다.</p>
+                    </li>  
+                    <li>
+                        <h3>가. 쿠키등 사용 목적</h3>
+                        <p>1. 회사는 개인 맞춤 서비스를 제공하기 위해서 이용자에 대한 정보를 저장하고 수시로 불러오는 '쿠키(cookie)'를 사용합니다. 쿠키는 웹사이트의 서버가 이용자의 브라우저에게 전송하는 소량의 정보로서 이용자 컴퓨터의 하드디스크에 저장됩니다.</p>
+                        <p>2. 회사는 쿠키의 사용을 통해서만 가능한 특정된 맞춤형 서비스를 제공할 수 있으며, 이용자를 식별하고 이용자의 로그인 상태를 유지하기 위해 쿠키를 사용할 수 있습니다.</p>
+                        <p>3. 이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 이용자가 쿠키 설치 허용 여부를 지정 하는 방법(Internet Explorer의 경우)은 다음과 같습니다.</p>
+                        <p>[도구] 메뉴에서 [인터넷 옵션]을 선택합니다.</p>
+                        <p>[개인정보 탭]에서 설정을 이용하여 모든 쿠키를 허용/거부하거나, 쿠키가 저장될 때마 다 확인을 거치도록 할 수 있습니다.</p>
+                        <p>4. 쿠키의 저장을 거부할 경우에는 개인 맞춤서비스 등 회사가 제공하는 일부 서비스의 이용이 어려울 수 있습니다.</p>
+                    </li>  
+                    <li>
+                        <h3>1&#41; 개인정보 열람, 정정, 삭제 요구의 권리:</h3>
+                        <p>이용자 및 법정대리인은 언제든지 등록되어 있는 자신의 개인정보를 열람하거나 정정, 삭제하실 수 있습니다. 개인정보 열람 및 정정, 삭제를 하고자 할 경우에는 개인정보보호책임자 및 담당자에게 서면, 전화 또는 전자우편주소로 연락하시면 지체 없이 조치하겠습니다.</p>
+                    </li>  
+                    <li>
+                        <h3>2&#41; 개인정보 수집, 이용, 제공에 대한 동의 철회의 권리:</h3>
+                        <p>이용자 및 법정대리인은 서비스 이용을 위해 입력하신 개인정보의 수집, 이용, 제공, 저장에 대해 동의하신 내용을 철회하실 수 있습니다.</p>
+                        <p>동의 철회는 개인정보보호 담당자에게 서면, 전화 또는 전자우편주소로 연락하시면 본인 확인 절차 후 개인정보의 삭제 등 필요한 조치를 하겠습니다.</p>
+                    </li>             
+                    <li>
+                        <h3>8. 개인정보의 열람청구를 접수, 처리하는 부서</h3>
+                        <p>개인정보 관련한 민원처리는 이용자의 개인정보를 보호하고 개인정보와 관련한 의문사항을 처리하기 위하여 다음과 같이 민원처리 콜센터를 운영하고 있습니다.</p>
+                        <p>① 전자우편 : 고객 이메일 문의 이용</p>
+                        <p>② 전화번호 : 02-3218-1900</p>
+                        <p>③ 팩스 :02-3218-7404</p>
+                        <p>기타 개인정보에 관한 상담이 필요한 경우에는 개인정보침해 신고센터, 대검찰청 인터넷 범죄수사센터, 경찰청 사이버테러대응센터 등으로 문의하실 수 있습니다.</p>
+                    </li>  
+                    <li>
+                        <h3>1&#41; 개인정보침해신고센터</h3>
+                        <p>- 전화 : (국번없이) 118</p>
+                        <p>- URL : <a href="http://privacy.kisa.or.kr">http://privacy.kisa.or.kr</a></p>
+                    </li>  
+                    <li>
+                        <h3>2&#41; 개인정보분쟁조정위원회</h3>
+                        <p>- 전화 : 1833-6972</p>
+                        <p>- URL : <a href="http://www.kopico.go.kr">http://www.kopico.go.kr</a></p>
+                    </li>  
+                    <li>
+                        <h3>3&#41; 대검찰청 사이버수사과</h3>
+                        <p>전화 : (국번없이) 1301</p>
+                        <p>- URL : <a href="http://www.spo.go.kr">http://www.spo.go.kr</a></p>
+                    </li>  
+                    <li>
+                        <h3>4&#41; 경찰청 사이버안전국</h3>
+                        <p>전화 : (국번없이) 182</p>
+                        <p>- URL : <a href="http://cyberbureau.police.go.kr">http://cyberbureau.police.go.kr</a></p>
+                    </li>  
+                    <li>
+                        <h3>9. 개인정보보호 책임자</h3>
+                        <p>회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보 보호 책임자를 두고 있습니다</p>
+                    </li>                                       
+                    <li>
+                        <h3>1. 회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 이 용자의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 관리책임자를 지정하고 있습니 다.</h3>
+                        <p>ㄱ. 개인정보 관리책임자</p>
+                        <p>성명 : 김대성</p>
+                        <p>직책 : 상무</p>
+                        <p>전화 02-3218-1900</p>
+                        <p>이메일 daesung.kim@callawaygolf.com</p>
+                    </li>  
+                    <li>
+                        <h3>ㄴ. 개인정보 보호 담당부서</h3>
+                        <p>부서명 : 이커머스</p>
+                        <p>담당자 : 이혜정</p>
+                        <p>전화 : 02-3218-1900</p>
+                        <p>이메일 jen.lee@callawaygolf.com</p>
+                    </li>                                       
+                    <li>
+                        <h3>2. 이용자는 회사의 서비스를 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피 해구제 등에 관한 사항을 개인정보 관리책임자 및 담당부서로 문의하실 수 있습니다. 회사는 이 용자의 문의에 대해 지체 없이 답변 및 처리해 드릴 것입니다.</h3>
+                        <p>10. 개인정보 처리방침의 변경에 관한 사항</p>
+                        <p>이 개인정보처리방침은 법령ㆍ정책 또는 보안 기술의 변경에 따라 내용의 추가ㆍ삭제 및 수정이 있을 시에는 아래와 같은 방법으로 사전 공지하도록 하겠습니다.</p>
+                    </li>  
+                    <li>
+                        <h3>- 인터넷 홈페이지 첫 화면 공지 사항 란 또는 별도의 창을 통하여 수정내용 공지</h3>
+                        <p>시행일자 2024년 09월 20일</p>
+                    </li>                                                                                                                                                                                                                                                                                                                                    
+                </ul>
+            </div>
+
+            <button type="button" class="close_btn" onclick="closeModal('modal_policy')">
+                <img src="image/close.jpg" alt="닫기">                
+            </button>
+
+        </div>
+    </div>
+    <!--이용약관 모달 팝업-->  
+
+    <!--매장찾기 모달 팝업-->
+    <div id="modal_store" class="modal">
+        <div class="modal_popup2">
+            <div class="modal_box">
+                <h3>매장 찾기</h3>
+                <div class="modal_form">
+                    <form class="" method="POST" action="" onsubmit="" name="" id="">
+                        <div class="eventForm_box_store">
+                            <div class="col3">
+                                <div class="eventForm_box3 store_new" style="padding-top:0.5%;">
+                                    <label for="area_le" class="form_label">지역선택</label>
+                                    <div class="select-wrapper">
+                                        <select id="area_le" name="area_le">
+                                            <option value="광역시/도" selected disabled>광역시/도</option>
+                                            <option value="경기도">경기도</option>
+                                            <option value="부산광역시">부산광역시</option>
+                                            <option value="강원도">강원도</option>
+                                            <option value="서울특별시">서울특별시</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrapper">
+                                        <select id="area_ra" name="area_ra">
+                                            <option value="시/군/구" selected disabled>시/군/구</option>
+                                            <option value="경기도">경기도</option>
+                                            <option value="부산광역시">부산광역시</option>
+                                            <option value="강원도">강원도</option>
+                                            <option value="서울특별시">서울특별시</option>
+                                        </select>
+                                    </div>                                                                            
+                                </div>                                                               
+                            </div>
+                        </div>
+                    </form>               
+                </div>
+            </div>
+
+            <div class="modal_store_list">
+                <div class="modal_view">
+                    <!-- <div class="modal_view" style="overflow-x: hidden; position: relative; overflow-y: auto;"></div> -->
+                    <div class="ov">
+                        <h4>캘러웨이(롯데백화점 동탄점)</h4>
+                        <p>서울 강남구 봉은사로 321 1층 (논현동, 대화빌딩)</p>
+                        <p class="max-w">
+                            <a href="tel:02-543-5276" >02-543-5276</a>
+                            <button type="button" class="store_ch">선택</button>
+                        </p>                        
+                    </div>
+                    <div class="ov">
+                        <h4>캘러웨이(롯데백화점 동탄점) 캘러웨이(롯데백화점 동탄점) 캘러웨이(롯데백화점 동탄점)</h4>
+                        <p>서울 강남구 봉은사로 321 1층 (논현동, 대화빌딩) 서울 강남구 봉은사로 321 1층 (논현동, 대화빌딩)</p>
+                        <p class="max-w">
+                            <a href="tel:02-543-5276" >02-543-5276</a>
+                            <button type="button" class="store_ch">선택</button>
+                        </p>                        
+                    </div>
+                    <div class="ov">
+                        <h4>캘러웨이(롯데백화점 동탄점)</h4>
+                        <p>서울 강남구 봉은사로 321 1층 (논현동, 대화빌딩)</p>
+                        <p class="max-w">
+                            <a href="tel:02-543-5276" >02-543-5276</a>
+                            <button type="button" class="store_ch">선택</button>
+                        </p>                        
+                    </div>
+                    <div class="ov">
+                        <h4>캘러웨이(롯데백화점 동탄점)</h4>
+                        <p>서울 강남구 봉은사로 321 1층 (논현동, 대화빌딩)</p>
+                        <p class="max-w">
+                            <a href="tel:02-543-5276" >02-543-5276</a>
+                            <button type="button" class="store_ch">선택</button>
+                        </p>                        
+                    </div>            
+                    <div class="ov">
+                        <h4>캘러웨이(롯데백화점 동탄점)</h4>
+                        <p>서울 강남구 봉은사로 321 1층 (논현동, 대화빌딩)</p>
+                        <p class="max-w">
+                            <a href="tel:02-543-5276" >02-543-5276</a>
+                            <button type="button" class="store_ch">선택</button>
+                        </p>                        
+                    </div>         
+                </div>
+            </div>
+
+            <button type="button" class="modal_btn" onclick="closeModal('modal_store')">
+                <img src="image/modal_store_close.jpg" alt="닫기">
+            </button>
+        </div>
+    </div>  
+    <!--매장찾기 모달 팝업-->
+
+    <!--신청조회 모달 팝업-->
+    <div id="modal_join" class="modal">
+        <div class="modal_popup2 modal_popup4">
+            <div class="modal_box modal_box2">
+                <h3>신청 조회</h3>
+                <form class="" method="POST" action="" onsubmit="" name="" id="">
+                    <div class="eventForm_box modal_pop_join">
+                        <label for="order_name" class="form_label form_label22">성명</label>
+                        <div class="col">
+                            <input type="text" class="" id="order_name" name="" placeholder="" pattern="" minlength="10" maxlength="20">
+                        </div> 
+                    </div>  
+
+                    <div class="eventForm_box modal_pop_join">
+                        <label for="number" class="form_label form_label22">휴대폰번호</label>
+                        <div class="col">
+                            <input type="text" class="" id="number" name="" placeholder="-없이" pattern="" minlength="10" maxlength="20">
+                        </div> 
+                    </div>       
+
+                    <div class="modal_pop_join_btn">
+                        <a href="">조회하기</a>                        
+                    </div>        
+
+                </form>
+                <button type="button" class="modal_btn" onclick="closeModal('modal_join')">
+                    <img src="image/close2.jpg" alt="닫기">
+                </button>                
+            </div>
+        </div>
+    </div>
+    <!--신청조회 모달 팝업-->
+
+    <!--신청완료 모달 팝업-->
+    <div id="openjoin_ac" class="modal">
+        <div class="modal_popup2 modal_popup3">
+            <div class="modal_box open_mo_txt">
+                <h3>
+                    신청이 완료 되었습니다.<br />
+                    참여해주셔서 감사합니다.                    
+                </h3>
+                <a href="https://kr.callawaygolf.com/" class="open_mo_btn">메인으로 돌아가기</a>
+
+                <button type="button" class="modal_btn" onclick="closeModal('openjoin_ac')">
+                    <img src="image/close2.jpg" alt="닫기">
+                </button>                      
+            </div>
+        </div>
+    </div>            
+    <!--신청완료 모달 팝업-->
+
+    <!--중복참여 모달 팝업-->
+    <div id="opendb_join_ac" class="modal">
+        <div class="modal_popup2 modal_popup3">
+            <div class="modal_box open_mo_txt">
+                <h3>
+                    이미 이벤트에 참여하셨습니다.<br />
+                    중복 참여는 불가능합니다.<br />
+                    감사합니다.                    
+                </h3>
+                <a href="https://kr.callawaygolf.com/" class="open_mo_btn">메인으로 돌아가기</a>
+
+                <button type="button" class="modal_btn" onclick="closeModal('opendb_join_ac')">
+                    <img src="image/close2.jpg" alt="닫기">
+                </button>                      
+            </div>
+        </div>
+    </div>            
+    <!--중복참여 모달 팝업-->    
+
+    <!--참여내역이없는경우 모달 팝업-->
+    <div id="openhis_join_ac" class="modal">
+        <div class="modal_popup2 modal_popup3">
+            <div class="modal_box open_mo_txt">
+                <h3>
+                    이벤트 참여 내역이 없습니다.<br />
+                    지금 바로 참여해 주세요.<br />
+                    감사합니다.              
+                </h3>
+                <a href="" class="open_mo_btn">확인</a>
+
+                <button type="button" class="modal_btn" onclick="closeModal('openhis_join_ac')">
+                    <img src="image/close2.jpg" alt="닫기">
+                </button>                      
+            </div>
+        </div>
+    </div>            
+    <!--참여내역이없는경우 모달 팝업-->        
+
+    <!--조회 결과 온라인 모달 팝업-->
+    <div id="opensh_re" class="modal">
+        <div class="modal_popup2 modal_popup5">
+            <div class="modal_box open_mo_txt">
+                <h4>조회 결과</h4>
+                <div class="table_list">
+                    <table>
+                        <tr>
+                            <th>성명</th>
+                            <td>홍길동</td>
+                        </tr>
+                        <tr>
+                            <th>휴대폰번호</th>
+                            <td>01067381111</td>
+                        </tr>
+                        <tr>
+                            <th>캘러웨이 아이디</th>
+                            <td>abced@gamil.com</td>
+                        </tr>
+                        <tr>
+                            <th>구매매장</th>
+                            <td>네이버 캘러웨이 공식 브랜드몰</td>
+                        </tr>                                
+                        <tr>
+                            <th>제품 바코드</th>
+                            <td>K0265482</td>
+                        </tr>                                                                                                
+                    </table>
+                </div>                
+                <a href="" class="open_mo_btn">확인</a>
+
+                <button type="button" class="modal_btn" onclick="closeModal('opensh_re')">
+                    <img src="image/close2.jpg" alt="닫기">
+                </button>                      
+            </div>
+        </div>
+    </div>            
+    <!--조회 결과 온라인 모달 팝업-->      
+
+    <!--조회 결과 오프라인 모달 팝업-->
+    <div id="opensh_re2" class="modal">
+        <div class="modal_popup2 modal_popup5">
+            <div class="modal_box open_mo_txt">
+                <h4>조회 결과</h4>
+                <div class="table_list">
+                    <table>
+                        <tr>
+                            <th>성명</th>
+                            <td>홍길동</td>
+                        </tr>
+                        <tr>
+                            <th>휴대폰번호</th>
+                            <td>01067381111</td>
+                        </tr>
+                        <tr>
+                            <th>캘러웨이 아이디</th>
+                            <td>abced@gamil.com</td>
+                        </tr>
+                        <tr>
+                            <th>구매매장</th>
+                            <td>네이버 캘러웨이 공식 브랜드몰</td>
+                        </tr>                                
+                        <tr>
+                            <th>제품 바코드</th>
+                            <td>K0265482</td>
+                        </tr>                                                                       
+                    </table>
+                </div>                
+                <a href="" class="open_mo_btn">확인</a>
+
+                <button type="button" class="modal_btn" onclick="closeModal('opensh_re2')">
+                    <img src="image/close2.jpg" alt="닫기">
+                </button>                      
+            </div>
+        </div>
+    </div>            
+    <!--조회 결과 오프라인 모달 팝업-->          
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+
+
+    <script type="text/javascript">
+
+
+        document.querySelectorAll('.single-check').forEach(function(checkbox) {
+            checkbox.addEventListener('click', function() {
+                if (this.checked) {
+                    
+                    document.querySelectorAll('.single-check').forEach(function(otherCheckbox) {
+                        if (otherCheckbox !== checkbox) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                } else {
+                    
+                    this.checked = false;
+                }
+            });
+        });
+
+
+        
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // 버튼 ID와 모달 ID
+        const modalMap = {
+            'openPolicyModal': 'modal_policy',
+            'openStoreModal': 'modal_store',
+            'openJoinModal': 'modal_join',
+            'openJoin_ac': 'openjoin_ac',
+            'opendb_Join_ac': 'opendb_join_ac',
+            'openHis_join_ac': 'openhis_join_ac',
+            'openSh_re': 'opensh_re',
+            'openSh_re2': 'opensh_re2'
+        };
+
+        for (const [btnId, modalId] of Object.entries(modalMap)) {
+            const btn = document.getElementById(btnId);
+            if (btn) {
+                btn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    openModal(modalId);
+                });
+            }
+        }   
+
+
+    </script>
+
+</html>
